@@ -35,12 +35,12 @@
     </style>
     <script>
         function setEmail_a() {
-            var name = String.fromCharCode(100 + 10,120 - 19,50 + 55,60 * 2,8 * 7,96 / 2,50 + 6,48); // アカウント名
+            var name = String.fromCharCode(100 + 10, 120 - 19, 50 + 55, 60 * 2, 8 * 7, 96 / 2, 50 + 6, 48); // アカウント名
             var at_symbol = String.fromCharCode((30 * 2) + 4); // @マーク
-            var domain = String.fromCharCode(100 + 19,109,100 + 15,33 * 3,105,23 * 2,99,11 * 11 - 10 ,109); // ドメイン名
+            var domain = String.fromCharCode(100 + 19, 109, 100 + 15, 33 * 3, 105, 23 * 2, 99, 11 * 11 - 10, 109); // ドメイン名
             document.write(name + at_symbol + domain);
             var mailto = document.getElementById("mail");
-            mailto.href = "mailto:" + name + at_symbol + domain; 
+            mailto.href = "mailto:" + name + at_symbol + domain;
         }
     </script>
 </head>
@@ -80,13 +80,22 @@
             <img src="/assets/img/lightcube.webp">
             <p>中学校学習指導要領に準拠した信号を操作するゲーム。</p>
             <a class="btn-light" href="https://www.lccs.tech"><span class="icon icon-sphere"></span>Official Site</a>
+            <h3>SPBUploader</h3>
+            <img src="/assets/img/spbuploader.webp">
+            <p>Sparebeatの音源と譜面をアップロード・プレイできるサイト。</p>
+            <a class="btn-light" href="https://spb.uploader.work"><span class="icon icon-sphere"></span>Official
+                Site</a>
+            <a class="btn-light" href="https://github.com/opera7133/spbuploader"><span
+                    class="icon icon-github"></span>Github</a>
         </div>
     </div>
     <div class="text-center section contact gray-dark">
         <h2>Contact</h2>
         <div class="container">
             <p>ご依頼、ご連絡等ありましたらお気軽にどうぞ</p>
-            <p><a id="mail"><span class="icon icon-email"></span><script>setEmail_a()</script></a></p>
+            <p><a id="mail"><span class="icon icon-email"></span>
+                    <script>setEmail_a()</script>
+                </a></p>
             <p><a href="https://t.me/wamo_sc"><span class="icon icon-telegram"></span>@wamo_sc</a></p>
         </div>
     </div>
