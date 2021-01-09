@@ -55,3 +55,6 @@ theme = "opoint"
     name = "お問い合わせ"
     url = "/contact"
       weight = 2
+
+[build]
+  writeStats = true
