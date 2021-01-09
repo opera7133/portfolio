@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+
+<head>
+    {{- partial "head.html" . -}}
+</head>
+
+<body class="bg-dark flex flex-col min-h-screen">
+    {{- partial "header.html" . -}}
+    <div class="text-white mt-4" id="content">
+        <div class="flex flex-col justify-center items-center text-center h-v8">
+            <h1>404</h1>
+            <p class="text-3xl mb-6">Page Not Found.</p>
+            <div class="relative">
+                <a href="/"
+                    class="w-40 mt-5 transition-color duration-200 border border-color-white text-lg p-3 hover:bg-white hover:text-black">Back
+                    to Home</a>
+            </div>
+        </div>
+    </div>
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>

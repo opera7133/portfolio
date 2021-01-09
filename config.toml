@@ -1,0 +1,57 @@
+baseURL = "https://wmsci.com/"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+title = "Wm.sci"
+theme = "opoint"
+
+[params]
+
+  [params.site]
+    name = "Wm.sci"
+
+  [params.homepage_meta_tags]
+    meta_description = "wamoのポートフォリオ。"
+    meta_og_title = "Wm.sci"
+    meta_og_type = "website"
+    meta_og_url = "https://wmsci.com"
+    meta_og_image = "https://wmsci.com/img/thumbnail.png"
+    meta_og_description = "wamoのポートフォリオ。"
+    meta_twitter_card = "summary_large_image"
+    meta_twitter_site = "@scgame_m"
+    meta_twitter_creator = "@scgame_m"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "works"
+    name = "Works"
+    url = "/works/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "https://blog.wmsci.com"
+    weight = 4
+
+  [[menu.ex]]
+    name = "ご依頼"
+    url = "/req/"
+      weight = 1
+
+  [[menu.ex]]
+    name = "お問い合わせ"
+    url = "/contact"
+      weight = 2

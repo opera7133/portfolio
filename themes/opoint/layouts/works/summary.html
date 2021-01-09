@@ -1,0 +1,10 @@
+<div id="{{.Params.id }}">
+    <a href="{{ .Permalink }}">
+        <div class="transition-all duration-200  hover:shadow rounded-lg p-3">
+            <img class="mt-2 rounded" src="{{ .Params.img | absURL }}" />
+            <h2 class="mt-2 text-center text-2xl">
+                {{ .Title }}
+            </h2>
+        </div>
+    </a>
+</div>
