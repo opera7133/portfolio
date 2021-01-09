@@ -19,7 +19,7 @@ jobs:
           node-version: '12'
 
       - name: generate
-        run: HUGO_ENV=production hugo
+        run: HUGO_ENV=production
       
       - name: Install dependencies
         run: |
