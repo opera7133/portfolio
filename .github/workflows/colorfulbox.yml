@@ -3,7 +3,7 @@ name: colorfulbox
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -17,11 +17,15 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: '12'
+
+      - name: generate
+        run: HUGO_ENV=production hugo
       
       - name: Install dependencies
         run: |
           cd themes/opoint
           npm install
+          
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
