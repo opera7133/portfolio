@@ -4,6 +4,8 @@ defaultContentLanguage = "ja"
 title = "Wm.sci"
 theme = "opoint"
 
+googleAnalytics = "G-M9HYCXQ10J"
+
 [params]
 
   [params.site]
