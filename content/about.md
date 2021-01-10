@@ -5,6 +5,8 @@ date: 2021-01-09
 
 wamoと申します。シンプルなものが好きです。普段はweb制作や動画編集、サーバー構築（Linux）などをしています。
 
+![時間ねぇ](https://user-images.githubusercontent.com/39876629/87847438-4eb0e980-c913-11ea-9916-180535186a13.png)
+
 ## スキル
 
 #### HTML
