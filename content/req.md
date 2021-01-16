@@ -29,4 +29,6 @@ var ad = converter(String.fromCharCode(96,104,109,121,109,104,109,110,63,111)+St
 document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
 //-->
 </script>
-<noscript><img src="https://0px.org" \></noscript>
+<noscript>
+<img src="https://0px.org">
+</noscript>
