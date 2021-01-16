@@ -14,8 +14,7 @@ date: 2021-01-09
 
 私が忙しくなければ大抵受けられるので、気軽に相談してください。  
 &nbsp;  
-依頼はこちらからどうぞ↓  
-&nbsp;  
+依頼はこちらのメールアドレス宛にお送りください↓  
 <script type="text/javascript">
 <!--
 function converter(M){
