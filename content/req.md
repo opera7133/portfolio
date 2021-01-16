@@ -16,5 +16,18 @@ date: 2021-01-09
 &nbsp;  
 依頼はこちらからどうぞ↓  
 &nbsp;  
-ainznino[at]pm.me  
-[at] -> @
+<script type="text/javascript">
+<!--
+function converter(M){
+var str="", str_as="";
+for(var i=0;i<M.length;i++){
+str_as = M.charCodeAt(i);
+str += String.fromCharCode(str_as + 1);
+}
+return str;
+}
+var ad = converter(String.fromCharCode(96,104,109,121,109,104,109,110,63,111)+String.fromCharCode(108,45,108,100));
+document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
+//-->
+</script>
+<noscript><img src="https://0px.org" \></noscript>
