@@ -1,6 +1,6 @@
 {{- partial "analytics" . -}}
 {{- if .Site.Params.Analytics.Yandexmetrica.Enabled -}}
-    {{ partial "yandexmetrica.html" . }}
+    {{ partial "metrica.html" . }}
 {{- end -}}
 <meta charset="utf-8">
 <title>{{site.Title}}{{if not .IsHome}} | {{.Title}}{{end}}</title>
