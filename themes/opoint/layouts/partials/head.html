@@ -1,4 +1,7 @@
 {{- partial "analytics" . -}}
+{{- if .Site.Params.Analytics.Yandexmetrica.Enabled -}}
+    {{ partial "analytics/yandexmetrica.html" . }}
+{{- end -}}
 <meta charset="utf-8">
 <title>{{site.Title}}{{if not .IsHome}} | {{.Title}}{{end}}</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">

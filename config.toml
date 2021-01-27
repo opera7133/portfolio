@@ -4,8 +4,6 @@ defaultContentLanguage = "ja"
 title = "Wm.sci"
 theme = "opoint"
 
-googleAnalytics = "G-M9HYCXQ10J"
-
 [params]
 
   [params.site]
@@ -65,3 +63,7 @@ googleAnalytics = "G-M9HYCXQ10J"
   [markup.goldmark]
     [markup.goldmark.renderer]
     unsafe = true
+
+[params.analytics.yandexmetrica]
+    enabled = true
+    tagNumber = '71549719'
