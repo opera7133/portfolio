@@ -322,6 +322,6 @@ body.scroll-lock {
   top: 0px;
   bottom: 0px;
 }
-input,textarea{
+input,textarea,select{
   -webkit-appearance: none;
 }
