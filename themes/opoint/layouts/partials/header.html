@@ -1,11 +1,31 @@
 <header class="bg-dark">
+    <div id="overlay">
+        <ul class="text-center list-none text-white text-3xl">
+            {{ range .Site.Menus.main }}
+            <li class="p-2">
+                <a href="{{ .URL }}">
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+            {{ end }}
+            {{ range .Site.Menus.ex }}
+            <li class="p-2">
+                <a href="{{ .URL }}">
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
     <nav class="container mx-auto flex items-center justify-between flex-wrap text-white p-8">
         <div class="flex items-center flex-shrink-0 text-2xl mr-6">
             <a href="{{ .Site.BaseURL }}">wamo</a>
         </div>
         <div class="block lg:hidden">
-            <div id="hamburgerbtn" class="flex cursor-pointer items-center py-2 rounded type-1">
-                <span class="icon-menu text-3xl"></span>
+            <div id="hamburgerbtn" class="flex cursor-pointer items-center w-14 h-10 py-2 rounded type-1">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
             </div>
         </div>
         <div class="hidden w-full ml-6 block flex-grow lg:flex lg:flex-row lg:items-center lg:w-auto" id="mobileMenu">
@@ -18,23 +38,24 @@
             </div>
             <div class="text-lg mt-3 lg:m-0">
                 {{ range .Site.Menus.ex }}
-                <a href="{{ .URL }}" class="block button transition-colors duration-100 bg-blue-500 hover:bg-blue-800 rounded py-2 px-5 mt-4 lg:inline-block lg:mt-0 mr-4">{{ .Name }}</a>
+                <a href="{{ .URL }}"
+                    class="block button transition-colors duration-100 bg-blue-500 hover:bg-blue-800 rounded py-2 px-5 mt-4 lg:inline-block lg:mt-0 mr-4">{{ .Name }}</a>
                 {{ end }}
             </div>
         </div>
     </nav>
 </header>
-<style>
-    .active {
-        display: block;
-    }
-</style>
 <script>
-    let hamburger = document.getElementById('hamburgerbtn');
+    function toggleNav() {
+        var hamburger = document.getElementById("hamburgerbtn");
+        var overlay = document.getElementById("overlay");
+        var body = document.body;
 
-    let mobileMenu = document.getElementById('mobileMenu');
-
-    hamburger.addEventListener('click', function () {
-        mobileMenu.classList.toggle('active');
-    });
+        hamburger.addEventListener("click", function () {
+            overlay.classList.toggle("open");
+            hamburger.classList.toggle("is-open");
+            body.classList.toggle("scroll-lock");
+        });
+    }
+    toggleNav();
 </script>

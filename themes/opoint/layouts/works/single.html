@@ -9,48 +9,55 @@
 <meta property="twitter:title" content="{{ .Title }}">
 
 {{ if .Params.image }}
-    {{ with .Params.image }}
-    <meta property="og:image" content="{{ . | absURL }}">
-    <meta property="og:image:url" content="{{ . | absURL }}">
-    {{ end }}
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image:url" content="{{ . | absURL }}">
+{{ end }}
 {{ else }}
-    <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image | absURL }}">
-    <meta property="og:image:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_image | absURL }}">
+<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image | absURL }}">
+<meta property="og:image:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_image | absURL }}">
 {{ end }}
 
 {{- if .Description }}
-  <meta property="og:description" content="{{ substr .Description 0 130 | plainify }}" />
-  <meta property="twitter:description" content="{{ substr .Description 0 130 | plainify }}" />
+<meta property="og:description" content="{{ substr .Description 0 130 | plainify }}" />
+<meta property="twitter:description" content="{{ substr .Description 0 130 | plainify }}" />
 {{- else if .Summary }}
-  <meta property="og:description" content="{{ substr .Summary 0 130 | plainify }}" />
-  <meta property="twitter:description" content="{{ substr .Summary 0 130 | plainify }}" />
+<meta property="og:description" content="{{ substr .Summary 0 130 | plainify }}" />
+<meta property="twitter:description" content="{{ substr .Summary 0 130 | plainify }}" />
 {{- else if .Site.Params.description }}
-  <meta property="og:description" content="{{ substr .Site.Params.description 0 130 | plainify }}" />
-  <meta property="twitter:description" content="{{ substr .Site.Params.description 0 130 | plainify }}" />
+<meta property="og:description" content="{{ substr .Site.Params.description 0 130 | plainify }}" />
+<meta property="twitter:description" content="{{ substr .Site.Params.description 0 130 | plainify }}" />
 {{- end }}
 {{ end }}
 
 {{ define "main" }}
 <div class="max-w-7xl mx-auto px-2 pb-7">
-    <h1 class="title text-5xl mt-3">{{.Title}}</h1>
-    {{ if .Params.img }}
-    <img class="my-4" src="{{ .Params.img | absURL }}">
-    {{ end }}
-    <div class="content text-lg py-3 mb-3">{{.Content}}</div>
-    {{ if .Params.demo }}
-    <a href="{{ .Params.demo }}"
-        class="transition-color duration-200 mb-7 py-3 pl-3 pr-6 button border border-black hover:bg-black hover:text-white"><span
-            class="icon icon-remove_red_eye mb-1 mr-2"></span>Demo</a>
-    {{ end }}
-    {{ if .Params.repo }}
-    <a href="{{ .Params.repo }}"
-        class="transition-color duration-200 mb-7 py-3 pl-3 pr-6 button border border-black hover:bg-black hover:text-white"><span
-            class="icon icon-github mb-1 mr-2"></span>Github</a>
-    {{ end }}
-    {{ if .Params.homepage }}
-    <a href="{{ .Params.homepage }}"
-        class="transition-color duration-200 mb-7 py-3 pl-3 pr-6 button border border-black hover:bg-black hover:text-white"><span
-            class="icon icon-sphere mb-1 mr-2"></span>Official Site</a>
-    {{ end }}
+  <div class="grid grid-cols-5 gap-4">
+    <div class="col-span-5 lg:col-span-1 text-center">
+      <a href="./.." class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border border-black hover:bg-black hover:text-white"><span class="icon icon-keyboard_arrow_left mb-1 mr-2"></span>Back</a>
+      {{ if .Params.demo }}
+      <a href="{{ .Params.demo }}"
+        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border border-black hover:bg-black hover:text-white"><span
+          class="icon icon-remove_red_eye mb-1 mr-2"></span>Demo</a>
+      {{ end }}
+      {{ if .Params.repo }}
+      <a href="{{ .Params.repo }}"
+        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border border-black hover:bg-black hover:text-white"><span
+          class="icon icon-github mb-1 mr-2"></span>Github</a>
+      {{ end }}
+      {{ if .Params.homepage }}
+      <a href="{{ .Params.homepage }}"
+        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border border-black hover:bg-black hover:text-white"><span
+          class="icon icon-sphere mb-1 mr-2"></span>Official Site</a>
+      {{ end }}
+    </div>
+    <div class="col-span-5 lg:col-span-4">
+      <h1 class="title text-5xl mt-3">{{.Title}}</h1>
+      <div class="content text-lg py-3 mb-3">{{.Content}}</div>
+      {{ if .Params.img }}
+      <img class="my-4" src="{{ .Params.img | absURL }}">
+      {{ end }}
+    </div>
+  </div>
 </div>
 {{ end }}
