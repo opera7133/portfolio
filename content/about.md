@@ -36,3 +36,12 @@ https://twitter.com/scgame_m
 &nbsp;  
 Youtube  
 https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA
+
+## 寄付
+
+欲しい物リスト  
+https://www.amazon.jp/hz/wishlist/ls/2ST3GH743NLVN?ref_=wl_share  
+&nbsp;  
+Buy Me a Coffee  
+https://www.buymeacoffee.com/wamosc  
+
