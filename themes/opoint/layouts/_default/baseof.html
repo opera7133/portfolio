@@ -7,7 +7,7 @@
     
     <body class="flex flex-col min-h-screen">
         {{- partial "header.html" . -}}
-        <div class="container mx-auto mt-4 flex-grow" id="content">
+        <div class="container mx-auto max-w-5xl my-4 flex-grow" id="content">
             {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}

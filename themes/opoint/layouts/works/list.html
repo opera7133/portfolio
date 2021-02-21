@@ -1,8 +1,8 @@
 {{ define "main" }}
-<div class="max-w-7xl mx-auto px-2">
+<div class="mx-3 px-2">
     <h1 class="title text-5xl mt-3 mb-2">{{.Title}}</h1>
     {{/* モーダルにすると実装がクソ面倒になるのでやってないよ */}}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
             {{ range .Pages.ByWeight }}
             {{ .Render "summary" }}
             {{ end }}

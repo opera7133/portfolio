@@ -107,7 +107,7 @@
 }
 
 .circle {
-  border: 1px solid #fff;
+  border: 1px solid #000;
   text-decoration: none;
   display: inline-flex;
   margin: 4px;
@@ -275,7 +275,7 @@ ul {
   width: 50px;
   height: 2px;
   display: block;
-  background: #fff;
+  background: #000;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -286,6 +286,9 @@ ul {
 }
 .type-1 .bottom {
   transform: translateY(17px);
+}
+.type-1.is-open span {
+  background: #fff;
 }
 .type-1.is-open .middle {
   background: rgba(255, 255, 255, 0);

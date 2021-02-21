@@ -1,4 +1,4 @@
-<header class="bg-dark">
+<header>
     <div id="overlay">
         <ul class="text-center list-none text-white text-3xl">
             {{ range .Site.Menus.main }}
@@ -17,7 +17,7 @@
             {{ end }}
         </ul>
     </div>
-    <nav class="container mx-auto flex items-center justify-between flex-wrap text-white p-8">
+    <nav class="container mx-auto flex items-center justify-between flex-wrap p-8">
         <div class="flex items-center flex-shrink-0 text-2xl mr-6">
             <a href="{{ .Site.BaseURL }}">wamo</a>
         </div>
@@ -31,7 +31,7 @@
         <div class="hidden w-full ml-6 block flex-grow lg:flex lg:flex-row lg:items-center lg:w-auto" id="mobileMenu">
             <div class="text-lg lg:flex-grow">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-400 mr-8">
+                <a href="{{ .URL }}" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400 mr-8">
                     {{ .Name }}
                 </a>
                 {{ end }}
@@ -39,7 +39,7 @@
             <div class="text-lg mt-3 lg:m-0">
                 {{ range .Site.Menus.ex }}
                 <a href="{{ .URL }}"
-                    class="block button transition-colors duration-100 bg-blue-500 hover:bg-blue-800 rounded py-2 px-5 mt-4 lg:inline-block lg:mt-0 mr-4">{{ .Name }}</a>
+                    class="block button transition-colors text-white duration-100 bg-blue-500 hover:bg-blue-800 rounded py-2 px-5 mt-4 lg:inline-block lg:mt-0 mr-4">{{ .Name }}</a>
                 {{ end }}
             </div>
         </div>
