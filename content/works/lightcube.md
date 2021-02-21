@@ -3,7 +3,7 @@ title: "LightCube"
 date: 2021-01-09 
 img: "img/works/lightcube.png"
 id: "lightcube"
-homepage: "https://www.lccs.tech"
+homepage: "https://www.lccs.ml"
 demo: ""
 repo: ""
 ---
