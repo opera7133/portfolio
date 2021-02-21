@@ -44,6 +44,7 @@
       "bg-gray-800",
       "block",
       "border",
+      "border-2",
       "border-4",
       "border-8",
       "border-black",
@@ -79,7 +80,6 @@
       "h-v8",
       "hidden",
       "hover:bg-black",
-      "hover:bg-blue-800",
       "hover:bg-gray-400",
       "hover:bg-white",
       "hover:shadow",
@@ -174,7 +174,7 @@
       "w-40",
       "w-48",
       "w-6/12",
-      "w-8/12",
+      "w-9/12",
       "w-full"
     ],
     "ids": [

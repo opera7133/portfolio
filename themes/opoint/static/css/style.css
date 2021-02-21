@@ -328,3 +328,28 @@ body.scroll-lock {
 input,textarea,select{
   -webkit-appearance: none;
 }
+/* 読み込み時フェードイン */
+#content {
+  animation: fadein 1.5s ease 0s 1 normal;
+  -webkit-animation: fadein 1.5s ease 0s 1 normal;
+}
+@keyframes fadein {
+  from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+@-webkit-keyframes fadein {
+  from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
