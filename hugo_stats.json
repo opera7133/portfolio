@@ -35,6 +35,7 @@
       "ul"
     ],
     "classes": [
+      "bg-black",
       "bg-blue-500",
       "bg-blue-600",
       "bg-blue-700",
@@ -82,9 +83,10 @@
       "hover:bg-black",
       "hover:bg-gray-400",
       "hover:bg-white",
-      "hover:shadow",
+      "hover:opacity-60",
       "hover:text-black",
       "hover:text-gray-400",
+      "hover:text-opacity-100",
       "hover:text-white",
       "icon",
       "icon-github",
@@ -160,6 +162,7 @@
       "text-5xl",
       "text-center",
       "text-lg",
+      "text-opacity-0",
       "text-white",
       "title",
       "top",
@@ -196,6 +199,7 @@
       "tella",
       "スキル",
       "リンク",
+      "寄付",
       "検定など"
     ]
   }
