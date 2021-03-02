@@ -2,7 +2,7 @@ baseURL = "https://wmsci.com/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 title = "Wm.sci"
-theme = "opoint"
+theme = "noknok"
 
 [params]
 

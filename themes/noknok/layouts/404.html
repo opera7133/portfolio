@@ -5,15 +5,15 @@
     {{- partial "head.html" . -}}
 </head>
 
-<body class="bg-dark flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen">
     {{- partial "header.html" . -}}
-    <div class="text-white mt-4" id="content">
+    <div class="mt-4" id="content">
         <div class="flex flex-col justify-center items-center text-center h-v8">
             <h1>404</h1>
-            <p class="text-3xl mb-6">Page Not Found.</p>
+            <p class="text-3xl mb-2">Page Not Found.</p>
             <div class="relative">
                 <a href="/"
-                    class="w-40 mt-5 transition-color duration-200 border border-color-white text-lg p-3 hover:bg-white hover:text-black">Back
+                    class="block mt-2 transition-color duration-200 border-2 border-black text-lg py-3 pl-2 pr-6 hover:bg-black hover:text-white"><span class="icon mb-1 mr-2 icon-keyboard_arrow_left"></span>Back
                     to Home</a>
             </div>
         </div>

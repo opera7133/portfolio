@@ -1,0 +1,12 @@
+name = "Noknok"
+license = "MIT"
+licenselink = "https://github.com/opera7133/noknok/blob/master/LICENSE"
+description = "A white-based theme for portfolios."
+homepage = "https://github.com/opera7133/noknok"
+tags = ["Hugo", "Tailwind CSS", "theme", "portfolio", "Light", "Projects"]
+features = []
+min_version = "0.69"
+
+[author]
+  name = "wamo"
+  homepage = "https://wmsci.com"
