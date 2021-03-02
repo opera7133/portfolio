@@ -1,10 +1,10 @@
 {
-    "name": "hugo-theme-tailwindcss-starter",
-    "version": "0.2.1",
-    "description": "Starter files for a Hugo theme with Tailwindcss",
+    "name": "noknok",
+    "version": "0.0.1",
+    "description": "Knock, knock!",
     "main": "index.js",
-    "repository": "https://github.com/dirkolbrich/hugo-theme-tailwindcss-starter",
-    "author": "dirkolbrich <github@dirkolbrich.de>",
+    "repository": "https://github.com/opera7133/noknok",
+    "author": "wamo <ainznino@pm.me>",
     "license": "MIT",
     "scripts": {
         "start": "hugo --gc"
