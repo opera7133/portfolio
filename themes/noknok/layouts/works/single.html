@@ -31,23 +31,23 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="max-w-7xl mx-auto px-2 pb-7">
+<div class="max-w-7xl mx-auto px-2 pb-7 dark:text-white">
   <div class="grid grid-cols-5 gap-4">
     <div class="col-span-5 lg:col-span-1 text-center">
-      <a href="./.." class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border-2 border-black hover:bg-black hover:text-white"><span class="icon icon-keyboard_arrow_left mb-1 mr-2"></span>Back</a>
+      <a href="./.." class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-gray-800"><span class="icon icon-keyboard_arrow_left mb-1 mr-2"></span>Back</a>
       {{ if .Params.demo }}
       <a href="{{ .Params.demo }}"
-        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border-2 border-black hover:bg-black hover:text-white"><span
+        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white hover:text-white dark:hover:text-gray-800"><span
           class="icon icon-remove_red_eye mb-1 mr-2"></span>Demo</a>
       {{ end }}
       {{ if .Params.repo }}
       <a href="{{ .Params.repo }}"
-        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border-2 border-black hover:bg-black hover:text-white"><span
+        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-gray-800"><span
           class="icon icon-github mb-1 mr-2"></span>Github</a>
       {{ end }}
       {{ if .Params.homepage }}
       <a href="{{ .Params.homepage }}"
-        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border-2 border-black hover:bg-black hover:text-white"><span
+        class="transition-color duration-200 mb-3 py-2 pl-3 pr-6 w-full block border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white hover:text-white dark:hover:text-gray-800"><span
           class="icon icon-sphere mb-1 mr-2"></span>Official Site</a>
       {{ end }}
     </div>

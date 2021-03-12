@@ -1,4 +1,4 @@
-<header>
+<header class="dark:text-white">
     <div id="overlay">
         <ul class="text-center list-none text-white text-3xl">
             {{ range .Site.Menus.main }}
@@ -23,9 +23,9 @@
         </div>
         <div class="block lg:hidden">
             <div id="hamburgerbtn" class="flex cursor-pointer items-center w-14 h-10 py-2 rounded type-1">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
+                <span class="top bg-black dark:bg-white"></span>
+                <span class="middle bg-black dark:bg-white"></span>
+                <span class="bottom bg-black dark:bg-white"></span>
             </div>
         </div>
         <div class="hidden w-full ml-6 block flex-grow lg:flex lg:flex-row lg:items-center lg:w-auto" id="mobileMenu">
@@ -39,7 +39,7 @@
             <div class="text-lg mt-3 lg:m-0">
                 {{ range .Site.Menus.ex }}
                 <a href="{{ .URL }}"
-                    class="block button transition-colors border-2 border-black duration-100 hover:text-white hover:bg-black py-2 px-5 mt-4 lg:inline-block lg:mt-0 mr-4">{{ .Name }}</a>
+                    class="block button transition-colors border-2 border-black dark:border-white duration-100 hover:text-white hover:bg-black dark:hover:text-gray-800 dark:hover:bg-white py-2 px-5 mt-4 lg:inline-block lg:mt-0 mr-4">{{ .Name }}</a>
                 {{ end }}
             </div>
         </div>

@@ -91,7 +91,7 @@
 }
 .icon {
   font-size: 24px;
-  padding-left:11px;
+  padding-left: 11px;
   display: inline-flex;
   vertical-align: middle;
   font-weight: normal;
@@ -104,14 +104,6 @@
   direction: ltr;
   -moz-font-feature-settings: "liga";
   -moz-osx-font-smoothing: grayscale;
-}
-
-.circle {
-  border: 1px solid #000;
-  text-decoration: none;
-  display: inline-flex;
-  margin: 4px;
-  border-radius: 24px;
 }
 html {
   font-family: "Raleway", "NotoSansJP", sans-serif;
@@ -162,6 +154,12 @@ h4 {
   border-left: 4px solid #222;
   font-weight: 700;
 }
+@media (prefers-color-scheme: dark) {
+  .content h2 {
+    background-color: #1d2021;
+    border-left-color: #4b5563;
+  }
+}
 .content h3 {
   font-size: 1.5rem;
   padding-bottom: 0.25em;
@@ -169,37 +167,37 @@ h4 {
   font-weight: 700;
 }
 .h-v8 {
-  height: 80vh;
+  height: 81vh;
 }
 
-#modal-content{
-	width:50%;
-	margin:1.5em auto 0;
-	padding:10px 20px;
-	border:2px solid #aaa;
-	background:#fff;
-	z-index:2;
+#modal-content {
+  width: 50%;
+  margin: 1.5em auto 0;
+  padding: 10px 20px;
+  border: 2px solid #aaa;
+  background: #fff;
+  z-index: 2;
 }
 
-.modal-p{
-	margin-top:1em;
+.modal-p {
+  margin-top: 1em;
 }
 
-.modal-p:first-child{
-	margin-top:0;
+.modal-p:first-child {
+  margin-top: 0;
 }
 
-.button-link{
-	color:#00f;
-	text-decoration:underline;
+.button-link {
+  color: #00f;
+  text-decoration: underline;
 }
- 
-.button-link:hover{
-	cursor:pointer;
-	color:#f00;
+
+.button-link:hover {
+  cursor: pointer;
+  color: #f00;
 }
 .content li {
-  margin-left:10px;
+  margin-left: 10px;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
@@ -268,14 +266,12 @@ ul {
   position: relative;
   z-index: 1000;
 }
-
 .type-1 span {
   transition: all 0.3s;
   transform: rotate(0deg);
   width: 50px;
   height: 2px;
   display: block;
-  background: #000;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -325,7 +321,9 @@ body.scroll-lock {
   top: 0px;
   bottom: 0px;
 }
-input,textarea,select{
+input,
+textarea,
+select {
   -webkit-appearance: none;
 }
 /* 読み込み時フェードイン */
@@ -335,21 +333,21 @@ input,textarea,select{
 }
 @keyframes fadein {
   from {
-  opacity: 0;
-  transform: translateY(20px);
-}
-to {
-  opacity: 1;
-  transform: translateY(0);
-}
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @-webkit-keyframes fadein {
   from {
-  opacity: 0;
-  transform: translateY(20px);
-}
-to {
-  opacity: 1;
-  transform: translateY(0);
-}
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

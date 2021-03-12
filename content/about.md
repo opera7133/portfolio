@@ -14,17 +14,17 @@ wamoと申します。シンプルなものが好きです。普段はweb制作�
 ## スキル
 
 #### HTML
-{{< skill-full >}}
+{{< skill 9 >}}
 #### CSS
-{{< skill-large >}}
+{{< skill 7 >}}
 #### Python
-{{< skill-medium >}}
+{{< skill 5 >}}
 #### JS
-{{< skill-short >}}
+{{< skill 2 >}}
 #### PHP
-{{< skill-short >}}
+{{< skill 2 >}}
 #### C#
-{{< skill-short >}}
+{{< skill 1 >}}
 #### React
 一生わかりあえない
 

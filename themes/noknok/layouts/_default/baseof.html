@@ -5,7 +5,7 @@
         {{ block "meta_tags" . }}{{end}}
     </head>
     
-    <body class="flex flex-col min-h-screen">
+    <body class="flex flex-col min-h-screen dark:bg-gray-800">
         {{- partial "header.html" . -}}
         <div class="container mx-auto max-w-5xl my-4 flex-grow" id="content">
             {{- block "main" . }}{{- end }}
