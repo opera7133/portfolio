@@ -30,14 +30,10 @@ wamoと申します。シンプルなものが好きです。普段はweb制作�
 
 ## リンク
 
-Github  
-https://github.com/opera7133  
-&nbsp;  
-Twitter  
-https://twitter.com/scgame_m  
-&nbsp;  
-Youtube  
-https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA
+{{< card icon="github" url="https://github.com/opera7133" text="Github" name="opera7133" >}}
+{{< card icon="twitter" url="https://twitter.com/scgame_m" text="Twitter" name="@scgame_m" >}}
+{{< card icon="youtube" url="https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA" text="Youtube" name="wamo" >}}
+{{< card icon="discord" text="Discord" name="wamo#8600">}}
 
 ## 寄付
 
