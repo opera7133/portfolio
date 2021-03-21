@@ -13,10 +13,11 @@
   font-weight: 700;
 }
 @font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.ttf?u094yq") format("truetype"),
-    url("../fonts/icomoon.woff?u094yq") format("woff"),
-    url("../fonts/icomoon.svg?u094yq#icomoon") format("svg");
+  font-family: 'icomoon';
+  src:
+    url('../fonts/icomoon.ttf?4ly58') format('truetype'),
+    url('../fonts/icomoon.woff?4ly58') format('woff'),
+    url('../fonts/icomoon.svg?4ly58#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -52,6 +53,12 @@
 }
 .icon-soundcloud:before {
   content: "\f1be";
+}
+.icon-amazon:before {
+  content: "\f270";
+}
+.icon-buymeacoffee:before {
+  content: "\e90e";
 }
 .icon-discord:before {
   content: "\e907";

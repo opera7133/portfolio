@@ -37,9 +37,5 @@ wamoと申します。シンプルなものが好きです。普段はweb制作�
 
 ## 寄付
 
-欲しい物リスト  
-https://www.amazon.jp/hz/wishlist/ls/2ST3GH743NLVN?ref_=wl_share  
-&nbsp;  
-Buy Me a Coffee  
-https://www.buymeacoffee.com/wamosc  
-
+{{< card icon="amazon" url="https://www.amazon.jp/hz/wishlist/ls/2ST3GH743NLVN?ref_=wl_share" text="Amazon" name="欲しい物リスト" >}}
+{{< card icon="buymeacoffee" url="https://www.buymeacoffee.com/wamosc" text="Buy Me a Coffee" name="wamo" >}}
