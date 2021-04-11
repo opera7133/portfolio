@@ -8,4 +8,4 @@ demo: "https://blonde.pages.dev"
 repo: "https://github.com/opera7133/blonde"
 ---
 
-このテーマは、Tailwind CSSを使用した、ダークモード対応ブログテーマです。
+ブログ用のHugoテーマ。

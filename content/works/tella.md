@@ -7,4 +7,4 @@ homepage: ""
 demo: "https://tella.pages.dev"
 repo: "https://github.com/opera7133/tella"
 ---
-Tailwind CSSを使った、シンプルな企業系テーマ。
+シンプルな企業系テーマ。

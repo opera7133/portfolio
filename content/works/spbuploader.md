@@ -7,5 +7,5 @@ homepage: "https://spb.uploader.work"
 demo: ""
 repo: "https://github.com/opera7133/spbuploader"
 ---
-Sparebeatの譜面と音源をアップロード・プレイするためのアップローダ。
+Sparebeatの譜面と音源をアップロード・プレイするためのアップローダー。
 Beta版非対応。
