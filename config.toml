@@ -47,14 +47,9 @@ theme = "noknok"
     weight = 4
 
   [[menu.ex]]
-    name = "ご依頼"
-    url = "/req/"
-      weight = 1
-
-  [[menu.ex]]
     name = "お問い合わせ"
     url = "/contact"
-      weight = 2
+      weight = 1
 
 [build]
   writeStats = true
