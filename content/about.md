@@ -28,6 +28,9 @@ wamoと申します。シンプルなものが好きです。普段はweb制作�
 #### React
 {{< skill 1 >}}
 
+## バッジ
+https://www.qwiklabs.com/public_profiles/e37c5d98-778a-43f1-9a7a-cd0bcd2c302d
+
 ## リンク
 
 {{< card icon="github" url="https://github.com/opera7133" text="Github" name="opera7133" >}}
