@@ -3,14 +3,14 @@
         <ul class="text-center list-none text-white text-3xl">
             {{ range .Site.Menus.main }}
             <li class="p-2">
-                <a href="{{ .URL }}">
+                <a href="{{ .URL | absLangURL }}">
                     <span>{{ .Name }}</span>
                 </a>
             </li>
             {{ end }}
             {{ range .Site.Menus.ex }}
             <li class="p-2">
-                <a href="{{ .URL }}">
+                <a href="{{ .URL | absLangURL }}">
                     <span>{{ .Name }}</span>
                 </a>
             </li>
@@ -31,14 +31,14 @@
         <div class="hidden w-full ml-6 block flex-grow lg:flex lg:flex-row lg:items-center lg:w-auto" id="mobileMenu">
             <div class="text-lg lg:flex-grow">
                 {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400 mr-8">
+                <a href="{{ .URL | absLangURL }}" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400 mr-8">
                     {{ .Name }}
                 </a>
                 {{ end }}
             </div>
             <div class="text-lg mt-3 lg:m-0">
                 {{ range .Site.Menus.ex }}
-                <a href="{{ .URL }}"
+                <a href="{{ .URL | absLangURL }}"
                     class="block button transition-colors border-2 border-black dark:border-white duration-100 hover:text-white hover:bg-black dark:hover:text-gray-800 dark:hover:bg-white py-2 px-5 mt-4 lg:inline-block lg:mt-0 mr-4">{{ .Name }}</a>
                 {{ end }}
             </div>

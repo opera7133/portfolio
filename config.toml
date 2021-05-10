@@ -1,6 +1,8 @@
 baseURL = "https://wmsci.com/"
-languageCode = "ja"
-defaultContentLanguage = "ja"
+languageCode = "en"
+hasCJKLanguage = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 title = "Wm.sci"
 theme = "noknok"
 
@@ -10,45 +12,87 @@ theme = "noknok"
     name = "Wm.sci"
 
   [params.homepage_meta_tags]
-    meta_description = "wamoのポートフォリオ。"
+    meta_description = "wamo's portfolio"
     meta_og_title = "Wm.sci"
     meta_og_type = "website"
     meta_og_url = "https://wmsci.com"
     meta_og_image = "https://wmsci.com/img/thumbnail.png"
-    meta_og_description = "wamoのポートフォリオ。"
+    meta_og_description = "wamo's portfolio"
     meta_twitter_card = "summary_large_image"
     meta_twitter_site = "@scgame_m"
     meta_twitter_creator = "@scgame_m"
 
-[menu]
-
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    contentDir = "content/en"
     weight = 1
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    [[languages.en.menu.main]]
+      identifier = "home"
+      name = "Home"
+      url = "/"
+      weight = 1
+
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about/"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      identifier = "works"
+      name = "Works"
+      url = "/works/"
+      weight = 3
+
+    [[languages.en.menu.main]]
+      identifier = "blog"
+      name = "Blog"
+      url = "https://blog.wmsci.com"
+      weight = 4
+    
+    [[languages.en.menu.ex]]
+      identifier = "contact"
+      name="Contact"
+      url = "/contact"
+      weight = 1
+
+  [languages.ja]
+    languageName = "日本語"
+    languageCode = "ja"
+    contentDir = "content/ja"
     weight = 2
 
-  [[menu.main]]
-    identifier = "works"
-    name = "Works"
-    url = "/works/"
-    weight = 3
+    [[languages.ja.menu.main]]
+      identifier = "home"
+      name = "Home"
+      url = "/"
+      weight = 1
 
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "https://blog.wmsci.com"
-    weight = 4
+    [[languages.ja.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about/"
+      weight = 2
 
-  [[menu.ex]]
-    name = "お問い合わせ"
-    url = "/contact"
+    [[languages.ja.menu.main]]
+      identifier = "works"
+      name = "Works"
+      url = "/works/"
+      weight = 3
+
+    [[languages.ja.menu.main]]
+      identifier = "blog"
+      name = "Blog"
+      url = "https://blog.wmsci.com"
+      weight = 4
+    
+    [[languages.ja.menu.ex]]
+      identifier = "contact"
+      name="お問い合わせ"
+      url = "/contact"
       weight = 1
 
 [build]

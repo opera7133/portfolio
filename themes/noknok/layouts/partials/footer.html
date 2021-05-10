@@ -1,6 +1,13 @@
 <footer class="dark:text-white">
     <script src="/js/script.js"></script>
         <div class="container mx-auto p-3">
+            <select class="rounded-lg my-3 text-center py-2 px-4 bg-gray-200 dark:bg-gray-700"
+            name="lang" onChange="location.href=value;">
+                <option>{{ i18n "select" . }}</option>
+                {{ range .Translations }}
+                <option value="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</option>
+                {{ end }}
+            </select>
             <p>CopyRight &copy; 2021 <a href="/" class="hover:text-gray-400">wamo</a></p>
         </div>
 </footer>
