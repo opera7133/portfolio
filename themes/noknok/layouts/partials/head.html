@@ -14,3 +14,8 @@
 <link rel="stylesheet" href="{{ $styles.Permalink }}">
 {{ end -}}
 <link href="{{ "/css/style.min.css" | relURL }}" rel="stylesheet" type="text/css">
+{{ if eq .Site.Language.Lang "en" }}
+<link href="/css/fonts.css" rel="stylesheet" type="text/css">
+{{ else }}
+<link href="/css/fonts.{{ .Site.Language.Lang }}.css" rel="stylesheet" type="text/css">
+{{ end }}

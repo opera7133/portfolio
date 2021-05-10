@@ -1,18 +1,4 @@
 @font-face {
-  font-family: ComingSoon;
-  src: url("../fonts/ComingSoon-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: NotoSansJP;
-  src: url("../fonts/NotoSansJP-Regular.otf") format("opentype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: NotoSansJP;
-  src: url("../fonts/NotoSansJP-Bold.otf") format("opentype");
-  font-weight: 700;
-}
-@font-face {
   font-family: 'icomoon';
   src:
     url('../fonts/icomoon.ttf?4ly58') format('truetype'),
@@ -141,16 +127,6 @@
   direction: ltr;
   -moz-font-feature-settings: "liga";
   -moz-osx-font-smoothing: grayscale;
-}
-html {
-  font-family: "ComingSoon", "NotoSansJP", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.content {
-  font-family: "NotoSansJP", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 .bg-dark {
   background-color: #222;
