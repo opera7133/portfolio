@@ -3,7 +3,7 @@ languageCode = "en"
 hasCJKLanguage = true
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-title = "Wm.sci"
+title = "wmsci"
 theme = "noknok"
 
 [params]
