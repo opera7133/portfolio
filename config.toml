@@ -3,17 +3,17 @@ languageCode = "en"
 hasCJKLanguage = true
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
-title = "wmsci"
+title = "wm.sci"
 theme = "noknok"
 
 [params]
 
   [params.site]
-    name = "Wm.sci"
+    name = "wm.sci"
 
   [params.homepage_meta_tags]
     meta_description = "wamo's portfolio"
-    meta_og_title = "Wm.sci"
+    meta_og_title = "wm.sci"
     meta_og_type = "website"
     meta_og_url = "https://wmsci.com"
     meta_og_image = "https://wmsci.com/img/thumbnail.png"
