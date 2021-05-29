@@ -1,0 +1,6 @@
+<a href="{{ .Permalink }}">
+    <article class="rounded-lg my-3 px-4 pt-2 pb-4 bg-gray-200 dark:bg-gray-900 dark:text-white hover:transform hover:translate-y-1">
+        <h1 class="text-xl">{{ .Title }}</h1>
+        <time class="text-gray-600 dark:text-gray-400"><span class="icon-access_time mr-1"></span>{{.Date.Format "2006/01/02"}}</time>
+    </article>
+</a>
