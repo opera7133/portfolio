@@ -7,4 +7,4 @@ homepage: ""
 demo: "https://noknok.pages.dev"
 repo: "https://github.com/opera7133/noknok"
 ---
-白基調のポートフォリオ向けHugoテーマ。
+無駄のない、ポートフォリオのためのテーマ。
