@@ -7,4 +7,4 @@ homepage: ""
 demo: "https://noknok.pages.dev"
 repo: "https://github.com/opera7133/noknok"
 ---
-A white-based theme for portfolios.
+A lean and mean theme for your portfolio.
