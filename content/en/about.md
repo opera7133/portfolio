@@ -25,7 +25,7 @@ My name is WAMO. I like simple things. I am usually involved in web production, 
 {{< skill 1 >}}
 
 ## Badge
-https://www.qwiklabs.com/public_profiles/e37c5d98-778a-43f1-9a7a-cd0bcd2c302d
+{{< card icon="qwiklabs" url="https://www.qwiklabs.com/public_profiles/e37c5d98-778a-43f1-9a7a-cd0bcd2c302d" text="Qwiklabs" name="sc wm" >}}
 
 ## Some Links
 

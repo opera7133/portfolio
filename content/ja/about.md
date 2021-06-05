@@ -29,7 +29,7 @@ wamoと申します。シンプルなものが好きです。普段はweb制作�
 {{< skill 1 >}}
 
 ## バッジ
-https://www.qwiklabs.com/public_profiles/e37c5d98-778a-43f1-9a7a-cd0bcd2c302d
+{{< card icon="qwiklabs" url="https://www.qwiklabs.com/public_profiles/e37c5d98-778a-43f1-9a7a-cd0bcd2c302d" text="Qwiklabs" name="sc wm" >}}
 
 ## リンク
 
