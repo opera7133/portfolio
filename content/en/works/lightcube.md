@@ -1,7 +1,7 @@
 ---
 title: "LightCube"
 date: 2021-01-09 
-img: "img/works/lightcube.png"
+img: "img/works/lightcube.jpg"
 id: "lightcube"
 homepage: "https://www.lccs.ml"
 demo: ""

@@ -1,7 +1,7 @@
 ---
 title: "Blonde"
 date: 2021-01-09 
-img: "img/works/blonde.png"
+img: "img/works/blonde.jpg"
 id: "blonde"
 homepage: ""
 demo: "https://blonde.pages.dev"

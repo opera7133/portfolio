@@ -1,7 +1,7 @@
 ---
 title: "DLBase"
 date: 2021-01-09
-img: "img/works/dlbase.png"
+img: "img/works/dlbase.jpg"
 id: "dlbase"
 homepage: "https://dlbase.cf"
 demo: ""
