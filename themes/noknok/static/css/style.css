@@ -275,6 +275,9 @@ table {
 ul {
   list-style: inside;
 }
+html {
+  scroll-behavior: smooth;
+}
 .type-1 {
   float: left;
   display: block;
@@ -367,4 +370,20 @@ select {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.scroll-top {
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 3rem;
+  height:3rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  padding-top: .55em;
+  padding-bottom: 0.6em;
+  cursor: pointer;
+  transform: rotate(90deg)
 }

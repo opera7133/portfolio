@@ -7,6 +7,9 @@
     
     <body class="flex flex-col min-h-screen dark:bg-gray-800">
         {{- partial "header.html" . -}}
+        <div class="scroll-top rounded-full bg-gray-800 dark:bg-white">
+            <span class="icon-left text-3xl text-white dark:text-black"></span>
+        </div>
         <div class="container mx-auto max-w-5xl my-4 flex-grow" id="content">
             {{- block "main" . }}{{- end }}
         </div>
