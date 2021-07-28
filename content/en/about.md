@@ -33,6 +33,7 @@ My name is WAMO. I like simple things. I am usually involved in web production, 
 {{< card icon="twitter" url="https://twitter.com/scgame_m" text="Twitter" name="@scgame_m" >}}
 {{< card icon="youtube" url="https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA" text="Youtube" name="wamo" >}}
 {{< card icon="discord" text="Discord" name="wamo#8600">}}
+{{< card icon="telegram" url="https://t.me/wamo_sc" text="Telegram" name="wamo_sc">}}
 
 ## Donate
 
