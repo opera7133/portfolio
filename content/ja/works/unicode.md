@@ -1,5 +1,5 @@
 ---
-title: "Unicode character guessing"
+title: "Unicode文字当て"
 date: 2021-08-14
 img: "img/works/unicode.jpg"
 id: "unicode"
