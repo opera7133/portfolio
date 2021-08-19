@@ -30,6 +30,7 @@ My name is WAMO. I like simple things. I am usually involved in web production, 
 ## Some Links
 
 {{< card icon="github" url="https://github.com/opera7133" text="Github" name="opera7133" >}}
+{{< card icon="keybase" url="https://keybase.io/opera7133" text="Keybase" name="opera7133">}}
 {{< card icon="twitter" url="https://twitter.com/scgame_m" text="Twitter" name="@scgame_m" >}}
 {{< card icon="youtube" url="https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA" text="Youtube" name="wamo" >}}
 {{< card icon="discord" text="Discord" name="wamo#8600">}}

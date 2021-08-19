@@ -115,6 +115,9 @@
 .icon-qwiklabs:before {
   content: "\e90f";
 }
+.icon-keybase:before {
+  content: "\e911";
+}
 .icon {
   font-size: 24px;
   padding-left: 11px;
