@@ -1,22 +1,35 @@
 <div class="mt-4" id="content">
-    <div class="flex flex-col justify-center items-center text-center h-v8 dark:text-white">
+    <div class="container mx-auto max-w-7xl flex flex-col justify-center items-start text-center h-v8 dark:text-white">
         <div class="md:block lg:flex">
-            <img src="{{ "img/icon.jpg" | relURL }}" class="w-48 h-48 mx-auto border-4 shadow-2xl rounded-full" alt="Profile Icon" />
-            <h2 class="py-3 px-4 text-center lg:text-left">wamo
+            <img src="{{ .Site.Params.main.image }}" class="w-48 mx-auto border-4 shadow-2xl rounded-full"
+                alt="profile icon" />
+            <h2 class="py-3 px-4 text-center lg:text-left">{{ .Site.Params.main.username }}
                 <p class="text-lg">{{ i18n "about" . }}</p>
-                <a href="https://twitter.com/scgame_m"
-                    class="border border-black dark:border-white rounded-full m-1 inline-flex duration-150 w-12 h-12 items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-gray-800"><span
-                        class="icon icon-twitter" aria-label="Twitter"></span></a>
-                <a href="https://github.com/opera7133"
-                    class="border border-black dark:border-white rounded-full m-1 inline-flex duration-150 w-12 h-12 items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-gray-800"><span
-                        class="icon icon-github" aria-label="Github"></span></a>
-                <a href="https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA"
-                    class="border border-black dark:border-white rounded-full m-1 inline-flex duration-150 w-12 h-12 items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-gray-800"><span
-                        class="icon icon-youtube" aria-label="YouTube"></span></a>
-                <a href="https://keybase.io/opera7133"
-                    class="border border-black dark:border-white rounded-full m-1 inline-flex duration-150 w-12 h-12 items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-gray-800"><span
-                        class="icon icon-keybase" aria-label="Keybase"></span></a>
+                {{ range .Site.Data.sns.socialLinks }}
+                {{ if eq .name "Email" }}
+                <a href="mailto: {{ .url }}"
+                    class="border border-black dark:border-white rounded-full m-1 inline-flex duration-150 w-12 h-12 items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-gray-800"
+                    aria-label="Twitter Link"><span class="{{ .icon }}"></span></a>
+                {{ else if eq .name "Phone" }}
+                <a href="tel: {{ .url }}"
+                    class="border border-black dark:border-white rounded-full m-1 inline-flex duration-150 w-12 h-12 items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-gray-800"
+                    aria-label="Twitter Link"><span class="{{ .icon }}"></span></a>
+                {{ else }}
+                <a href="{{ .url }}"
+                    class="border border-black dark:border-white rounded-full m-1 inline-flex duration-150 w-12 h-12 items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-gray-800"
+                    aria-label="Twitter Link"><span class="{{ .icon }}"></span></a>
+                {{ end }}
+                {{ end }}
             </h2>
         </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0">
+        {{ range (where site.RegularPages "Section" "works") }}
+        <div class="">
+            <a href="{{ .Permalink }}">
+                <img class="h-full w-full object-cover hover:opacity-60 duration-200 " src="{{ .Params.img | absURL }}" alt="{{ .Title }}" />
+            </a>
+        </div>
+        {{ end }}
     </div>
 </div>

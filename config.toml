@@ -22,6 +22,10 @@ theme = "noknok"
     meta_twitter_site = "@scgame_m"
     meta_twitter_creator = "@scgame_m"
 
+  [params.main]
+    username = "wamo"
+    image = "/img/icon.jpg"
+
 [languages]
   [languages.en]
     languageName = "English"
@@ -42,16 +46,10 @@ theme = "noknok"
       weight = 2
 
     [[languages.en.menu.main]]
-      identifier = "works"
-      name = "Works"
-      url = "/works/"
-      weight = 3
-
-    [[languages.en.menu.main]]
       identifier = "blog"
       name = "Blog"
       url = "https://blog.wmsci.com"
-      weight = 4
+      weight = 3
     
     [[languages.en.menu.ex]]
       identifier = "contact"
@@ -78,16 +76,10 @@ theme = "noknok"
       weight = 2
 
     [[languages.ja.menu.main]]
-      identifier = "works"
-      name = "Works"
-      url = "/works/"
-      weight = 3
-
-    [[languages.ja.menu.main]]
       identifier = "blog"
       name = "Blog"
       url = "https://blog.wmsci.com"
-      weight = 4
+      weight = 3
     
     [[languages.ja.menu.ex]]
       identifier = "contact"

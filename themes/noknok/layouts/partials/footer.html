@@ -6,9 +6,9 @@
     });
     </script>
         <div class="container mx-auto p-3">
-            <select class="rounded-lg my-3 text-center py-2 px-4 bg-gray-200 dark:bg-gray-700"
+            <select class="inline-block duration-100 bg-white dark:bg-gray-800 my-3 text-center py-2 px-4 border-2 border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
             name="lang" onChange="location.href=value;">
-                <option>{{ i18n "select" . }}</option>
+                <option>{{ .Site.Language.LanguageName }}</option>
                 {{ range .Translations }}
                 <option value="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</option>
                 {{ end }}
