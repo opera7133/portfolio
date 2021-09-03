@@ -126,6 +126,7 @@
       "lg:hidden",
       "lg:inline-block",
       "lg:items-center",
+      "lg:items-start",
       "lg:m-0",
       "lg:mt-0",
       "lg:text-left",
