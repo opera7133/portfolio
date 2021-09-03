@@ -65,7 +65,6 @@
         <script>
             function viewTable() {
                 window.open("https://ja.wikipedia.org/wiki/Unicode一覧_0000-0FFF");
-                location.reload();
             }
         </script>
         <main>
@@ -157,7 +156,6 @@
                     } else if (type == "number") {
                         text = number[Math.floor(Math.random() * number.length)];
                     }
-                    console.log(text);
                     question = convert(encode.value, text);
                     document.getElementById("question").innerHTML = question;
                 }
@@ -169,7 +167,7 @@
                         result.innerHTML = "正解";
                     } else {
                         result.classList.add("wrong");
-                        result.innerHTML = "不正解";
+                        result.innerHTML = "不正解 　正解は" + text;
                     }
                 }
 
