@@ -8,7 +8,6 @@
   import FaAmazon from 'svelte-icons/fa/FaAmazon.svelte'
   import FaPenNib from 'svelte-icons/fa/FaPenNib.svelte'
   import { _, init, addMessages, getLocaleFromNavigator } from 'svelte-i18n'
-  import Image from 'svelte-image'
 
   import en from './en.json'
   import ja from './ja.json'
