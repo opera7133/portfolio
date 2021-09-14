@@ -137,7 +137,7 @@
       <p class="text-2xl">{$_('short_about')}</p>
       <div class="pt-5 flex flex-row">
         {#each SNS as sns}
-          <a href={sns.url} target="_blank">
+          <a href={sns.url} target="_blank" aria-label={sns.title} rel="noopener noreferrer">
             <div
               class="h-8 w-8 mx-2 duration-100 hover:opacity-80 text-black
               dark:text-white">
@@ -150,14 +150,16 @@
     <a
       class="border-0 focus:outline-none absolute bottom-8 w-6 h-6
       animate-bounce cursor-pointer text-black left-1/2"
-      href="/#about">
+      href="/#about"
+      aria-label="Next Section">
       <div class="relative -left-1/2 text-black dark:text-white">
         <FaChevronDown />
       </div>
     </a>
   </div>
   <div
-    class="dark:bg-gray-800 px-5 flex justify-center items-center h-screen flex-col"
+    class="dark:bg-gray-800 px-5 flex justify-center items-center h-screen
+    flex-col"
     id="about">
     <div class="relative items-center container max-w-4xl">
       <div
@@ -210,7 +212,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {#each myWorks as work}
             <div>
-              <a href={work.url} target="_blank">
+              <a href={work.url} target="_blank" rel="noopener noreferrer">
                 <img
                   class="rounded-lg hover:opacity-70 duration-200"
                   src={work.image}
@@ -223,8 +225,8 @@
     </div>
   </div>
   <div
-    class="dark:bg-gray-800 px-5 relative flex justify-center items-center h-screen
-    flex-col"
+    class="dark:bg-gray-800 px-5 relative flex justify-center items-center
+    h-screen flex-col"
     id="contact">
     <div class="items-center container max-w-4xl">
       <div
