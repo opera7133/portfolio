@@ -131,16 +131,16 @@
     font-family: 'Open Sans', 'Noto Sans JP';
     scroll-behavior: smooth;
   }
-  .svelte-fp-indicator-list-item.svelte-tlycps {
+  .svelte-fp-indicator-list-item {
     justify-content: center;
   }
-  .svelte-fp-indicator-list-item-btn.svelte-tlycps {
+  .svelte-fp-indicator-list-item-btn {
     width:.75rem!important;
     height:.75rem!important;
     border: solid 1px #000!important;
     border-radius: 9999px!important;
   }
-  .svelte-fp-active.svelte-tlycps {
+  .svelte-fp-active {
     width:1rem!important;
     height:1rem!important;
     background-color: #000!important;
@@ -160,7 +160,7 @@
       <p class="text-2xl">{$_('short_about')}</p>
       <div class="pt-5 flex flex-row">
         {#each SNS as sns}
-          <a href={sns.url}>
+          <a href={sns.url} target="_blank">
             <div class="h-8 w-8 mx-2 duration-100 hover:opacity-80 text-black">
               <svelte:component this={sns.icon} />
             </div>
