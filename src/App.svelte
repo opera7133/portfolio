@@ -8,6 +8,7 @@
   import FaAmazon from 'svelte-icons/fa/FaAmazon.svelte'
   import FaPenNib from 'svelte-icons/fa/FaPenNib.svelte'
   import { _, init, addMessages, getLocaleFromNavigator } from 'svelte-i18n'
+  import Image from 'svelte-image'
 
   import en from './en.json'
   import ja from './ja.json'
@@ -33,47 +34,47 @@
   const myWorks = [
     {
       title: 'Blonde',
-      image: '/img/works/blonde.jpg',
+      image: '/img/works/blonde.webp',
       url: 'https://blonde.pages.dev',
     },
     {
       title: 'Tella',
-      image: '/img/works/tella.jpg',
+      image: '/img/works/tella.webp',
       url: 'https://tella.pages.dev',
     },
     {
       title: 'VNovel',
-      image: '/img/works/vnovel.jpg',
+      image: '/img/works/vnovel.webp',
       url: 'https://vnovel.pages.dev',
     },
     {
       title: 'Tech Club',
-      image: '/img/works/tclb.jpg',
+      image: '/img/works/tclb.webp',
       url: 'https://www.tclb.cf',
     },
     {
       title: 'Acto',
-      image: '/img/works/acto.jpg',
+      image: '/img/works/acto.webp',
       url: 'https://blog.wmsci.com',
     },
     {
       title: 'LightCube',
-      image: '/img/works/lightcube.jpg',
+      image: '/img/works/lightcube.webp',
       url: 'https://www.lccs.ml',
     },
     {
       title: 'SPBUploader',
-      image: '/img/works/spbuploader.jpg',
+      image: '/img/works/spbuploader.webp',
       url: 'https://spb.wmsci.com',
     },
     {
       title: 'Unicode Guessing',
-      image: '/img/works/unicode.jpg',
+      image: '/img/works/unicode.webp',
       url: 'https://wmsci.com/unicode/',
     },
     {
       title: 'DLBase',
-      image: '/img/works/dlbase.jpg',
+      image: '/img/works/dlbase.webp',
       url: 'https://dlbase.cf',
     },
   ]
@@ -137,7 +138,11 @@
       <p class="text-2xl">{$_('short_about')}</p>
       <div class="pt-5 flex flex-row">
         {#each SNS as sns}
-          <a href={sns.url} target="_blank" aria-label={sns.title} rel="noopener noreferrer">
+          <a
+            href={sns.url}
+            target="_blank"
+            aria-label={sns.title}
+            rel="noopener noreferrer">
             <div
               class="h-8 w-8 mx-2 duration-100 hover:opacity-80 text-black
               dark:text-white">
@@ -171,9 +176,9 @@
         class="bg-white dark:bg-gray-700 dark:text-white rounded-lg shadow-xl
         p-10">
         <h2 class="text-5xl font-bold">About</h2>
-        <img
-          src="/img/icon.jpg"
+        <Image
           class="absolute right-5 -top-10 rounded-full h-28"
+          src="/img/icon.webp"
           alt="avatar" />
         <p class="py-3 text-xl">{$_('long_about')}</p>
         <div
@@ -213,7 +218,7 @@
           {#each myWorks as work}
             <div>
               <a href={work.url} target="_blank" rel="noopener noreferrer">
-                <img
+                <Image
                   class="rounded-lg hover:opacity-70 duration-200"
                   src={work.image}
                   alt={work.title} />
