@@ -175,7 +175,7 @@
         class="bg-white dark:bg-gray-700 dark:text-white rounded-lg shadow-xl
         p-10">
         <h2 class="text-5xl font-bold">About</h2>
-        <Image
+        <img
           class="absolute right-5 -top-10 rounded-full h-28"
           src="/img/icon.webp"
           alt="avatar" />
@@ -217,7 +217,7 @@
           {#each myWorks as work}
             <div>
               <a href={work.url} target="_blank" rel="noopener noreferrer">
-                <Image
+                <img
                   class="rounded-lg hover:opacity-70 duration-200"
                   src={work.image}
                   alt={work.title} />
