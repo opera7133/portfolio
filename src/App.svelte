@@ -8,7 +8,6 @@
   import FaAmazon from 'svelte-icons/fa/FaAmazon.svelte'
   import FaPenNib from 'svelte-icons/fa/FaPenNib.svelte'
   import { _, init, addMessages, getLocaleFromNavigator } from 'svelte-i18n'
-  import { Fullpage, FullpageSection, FullpageSlide } from 'svelte-fullpage'
 
   import en from './en.json'
   import ja from './ja.json'
@@ -108,15 +107,6 @@
       url: 'https://blog.wmsci.com',
     },
   ]
-
-  const sections = [
-		'Home',
-		'About',
-		'Works',
-		'Get in touch'
-	];
-
-  let activeSection = 0;
 </script>
 
 <style global lang="postcss">
@@ -131,20 +121,6 @@
     font-family: 'Open Sans', 'Noto Sans JP';
     scroll-behavior: smooth;
   }
-  .svelte-fp-indicator-list-item {
-    justify-content: center;
-  }
-  .svelte-fp-indicator-list-item-btn {
-    width:.75rem!important;
-    height:.75rem!important;
-    border: solid 1px #000!important;
-    border-radius: 9999px!important;
-  }
-  .svelte-fp-active {
-    width:1rem!important;
-    height:1rem!important;
-    background-color: #000!important;
-  }
 </style>
 
 <svelte:head>
@@ -152,43 +128,46 @@
     @import url('https://fonts.googleapis.com/css?family=Open+Sans&family=Noto+Sans+JP&display=swap');
   </style>
 </svelte:head>
-<Fullpage bind:activeSection>
-  <FullpageSection>
-  <div class="px-5 flex justify-center items-center h-screen flex-col">
+<main class="overflow-x-hidden">
+  <div
+    class="dark:bg-gray-800 dark:text-white px-5 flex justify-center
+    items-center h-screen flex-col">
     <div class="items-center container max-w-6xl">
       <h1 class="lowercase text-6xl pb-5">wamo</h1>
       <p class="text-2xl">{$_('short_about')}</p>
       <div class="pt-5 flex flex-row">
         {#each SNS as sns}
           <a href={sns.url} target="_blank">
-            <div class="h-8 w-8 mx-2 duration-100 hover:opacity-80 text-black">
+            <div
+              class="h-8 w-8 mx-2 duration-100 hover:opacity-80 text-black
+              dark:text-white">
               <svelte:component this={sns.icon} />
             </div>
           </a>
         {/each}
       </div>
     </div>
-    <button
-      class="border-0 focus:outline-none absolute bottom-8 w-6 h-6 animate-bounce cursor-pointer text-black
-      left-1/2"
-      on:click={() => {
-        activeSection = 1;
-      }}>
-      <div class="relative -left-1/2 text-black">
+    <a
+      class="border-0 focus:outline-none absolute bottom-8 w-6 h-6
+      animate-bounce cursor-pointer text-black left-1/2"
+      href="/#about">
+      <div class="relative -left-1/2 text-black dark:text-white">
         <FaChevronDown />
       </div>
-    </button>
+    </a>
   </div>
-  </FullpageSection>
-  <FullpageSection>
-  <div class="flex justify-center items-center h-screen flex-col">
+  <div
+    class="dark:bg-gray-800 px-5 flex justify-center items-center h-screen flex-col"
+    id="about">
     <div class="relative items-center container max-w-4xl">
       <div
-        class="bg-white rounded-lg shadow-xl absolute py-14 px-40 -top-14
-        -left-10 transform -rotate-6 z-0" />
+        class="bg-white dark:bg-gray-700 rounded-lg shadow-xl absolute py-14
+        px-40 -top-14 -left-10 transform -rotate-6 z-0" />
     </div>
     <div class="relative items-center container max-w-4xl">
-      <div class="bg-white rounded-lg shadow-xl p-10">
+      <div
+        class="bg-white dark:bg-gray-700 dark:text-white rounded-lg shadow-xl
+        p-10">
         <h2 class="text-5xl font-bold">About</h2>
         <img
           src="/img/icon.jpg"
@@ -205,23 +184,27 @@
                 style="background-image: conic-gradient({skill.color} 0% {skill.per}%,
                 #d9d9d9 {skill.per}% 100%);" />
               <div
-                class="absolute top-2 left-2 bg-white w-20 h-20 rounded-full">
-                <p class="pt-6 text-center">{skill.title}</p>
+                class="absolute top-2 left-2 bg-white dark:bg-gray-700 w-20 h-20
+                rounded-full">
+                <p class="pt-7 text-center">{skill.title}</p>
               </div>
             </div>
           {/each}
         </div>
         <div
-          class="bg-white rounded-lg shadow-xl absolute right-0 md:-right-10
-          py-14 px-20 transform rotate-12" />
+          class="bg-white dark:bg-gray-700 rounded-lg shadow-xl absolute right-0
+          md:-right-10 py-14 px-20 transform rotate-12" />
       </div>
     </div>
   </div>
-  </FullpageSection>
-  <FullpageSection>
-  <div class="px-5 flex justify-center items-center h-full flex-col">
+  <div
+    class="dark:bg-gray-800 px-5 flex justify-center items-center h-full
+    flex-col py-32"
+    id="works">
     <div class="items-center container max-w-6xl">
-      <div class="bg-white rounded-lg shadow-xl p-5 md:p-10">
+      <div
+        class="bg-white dark:bg-gray-700 dark:text-white rounded-lg shadow-xl
+        p-5 md:p-10">
         <h2 class="text-5xl font-bold">Works</h2>
         <p class="text-xl py-3">{$_('works')}</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
@@ -239,11 +222,14 @@
       </div>
     </div>
   </div>
-  </FullpageSection>
-  <FullpageSection>
-  <div class="relative flex justify-center items-center h-screen flex-col">
+  <div
+    class="dark:bg-gray-800 px-5 relative flex justify-center items-center h-screen
+    flex-col"
+    id="contact">
     <div class="items-center container max-w-4xl">
-      <div class="bg-white rounded-lg shadow-xl p-10">
+      <div
+        class="bg-white dark:bg-gray-700 dark:text-white border-0 rounded-lg
+        shadow-xl p-10">
         <h2 class="text-5xl font-bold">Get in touch</h2>
         <p class="py-3 text-xl">{$_('contact')}</p>
         <p class="text-xl">
@@ -258,10 +244,9 @@
         </p>
       </div>
     </div>
-    <div class="absolute bottom-0 left-0 py-3 px-5">
+    <div class="absolute bottom-0 left-0 py-3 px-5 dark:text-white">
       &copy; 2021
-      <a href="/">wamo</a>
+      <a href="/" class="text-blue-600">wamo</a>
     </div>
   </div>
-  </FullpageSection>
-</Fullpage>
+</main>

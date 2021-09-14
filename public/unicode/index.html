@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Unicode文字当て</title>
+        <meta name="description" content="Unicodeのコードから何の文字か当てよう！">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <body>
+        <style>
+            main {
+                text-align: center;
+                min-height: 85vh;
+                padding-bottom: 30px;
+            }
+            select {
+                width:8rem;
+                height:1.5rem;
+            }
+            summary {
+                cursor: pointer;
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+            details[open] td {
+                border: 1px solid #000;
+            }
+            table {
+                border-collapse: collapse;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:20px;
+            }
+            td {
+                padding-right:5px;
+                padding-left:5px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                border:none;
+            }
+            .hidden {
+                visibility: hidden;
+                display: none;
+            }
+            body {
+                position: relative;
+            }
+            footer {
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 30px;
+            }
+            .correct {
+                color:red;
+                font-weight: bold;
+            }
+            .wrong {
+                color:blue;
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            function viewTable() {
+                window.open("https://ja.wikipedia.org/wiki/Unicode一覧_0000-0FFF");
+            }
+        </script>
+        <main>
+        <h1>Unicode文字当て</h1>
+        <p>Unicodeのコードから何の文字か当てよう！</p>
+        <p>出題範囲はひらがな・カタカナ・アルファベット・常用漢字・数字です。</p>
+        </p>
+        <select name="type" id="encode" onchange="javascript:start()">
+            <option value="">選択...</option>
+            <option value="utf8">UTF-8（難しい）</option>
+            <option value="utf16">UTF-16BE（簡単）</option>
+        </select>
+        <div class="quiz hidden" id="quiz">
+            <h2>問題</h2>
+            <p id="question"></p>
+            <label for="answer">解答</label>
+            <input type="text" id="answer" name="answer">
+            <button onclick="judge()">OK</button>
+            <p class="" id="result"></p>
+            <button class="hidden" onclick="randomstr()" id="next">次へ</button>
+            <details>
+                <summary>ヒント</summary>
+                <p>だいたいの目安</p>
+                <table>
+                    <tr>
+                        <td>U+0031~</td>
+                        <td>数字</td>
+                    </tr>
+                    <tr>
+                        <td>U+0041~</td>
+                        <td>アルファベット</td>
+                    </tr>
+                    <tr>
+                        <td>U+3042~</td>
+                        <td>ひらがな</td>
+                    </tr>
+                    <tr>
+                        <td>U+4E08~</td>
+                        <td>漢字</td>
+                    </tr>
+                </table>
+                <a href="javascript:viewTable()">対応表はこちら</a>
+            </details>
+        </div>
+        <br>
+        </main>
+        <footer>
+            <a href="https://wmsci.com/ja/">wmsci.com</a>
+            <script>
+                var quiz = document.getElementById("quiz");
+                var encode = document.getElementById("encode");
+                var answer = document.getElementById("answer");
+                var result = document.getElementById("result");
+                var select = ["hiragana", "katakana", "alphabet", "number", "kanji"]
+                var hiragana = "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんゑぁぃぅぇぉっゃゅょがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ".split("");
+                var katakana = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンヱァィゥェォッャュョ".split("");
+                var alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
+                var number = "0123456789０１２３４５６７８９".split("");
+                var kanji = "一七丁下三上丈万与不丘且世丙両並中丹主久及乏乗乙九丸乱乳乾了予争事二五互井亜亡交京享卒亭商率人化介今仁仏以仕仙他代付令仮会企休仰件全仲伝任伐伏位何佐作伺似住伸体但低伯伴余依価佳供使侍舎侮併命例係侯俊信侵促俗便保倹個候借倉値倒俳倍俵倣俸倫偽偶健側停偵偏偉傘備傍傾傑催債傷僧働像僕僚億儀儒償優元兄光充先兆克児免党入八公六共兵具典兼円内冊再同冗写冠冷准凍凝凡処凶凹出凸画刀刃切分初券刈刊刑列判別利刻刷刺制到削前則剣剛剤剖剰副割創劇力加功幼劣助努励労劾効勅勇勉勘動務勤勝募勧勢勺匁包北巨区匹匠医匿十千午半協卓南卑博占印危却即卵卸厄厚厘原去参又収双反友取受叔叙口右可句古号史司召台各吉吸叫向后合吐名吏含吟君呉告吹呈否呼周味和哀咲品員唆唇哲唐喝啓唱問唯喚喜喫善喪嗣嘆器嘱噴舗嚇四囚因回団囲困図固国圏園土圧在地均坑坂坊垂坪垣型城埋域基堀執堂培堪堅場堕塚堤塔塀報塁塩塊塑塗墓境塾増墨墜墳壊墾壌壇壁士壮壱声売冬変夏夕外多夜夢大太天夫央失奇奉奔契奏奥奨奪奮女奴好如妃妄妥妊妨妙委妻始姉姓妹威姻姿姫娯娘娠婚婆婦婿媒嫁嫌嫡嬢子孔存学季孤孫安宇字守宅完官宜実宗宙定宝客室宣宴家害宮宰宵容寄寂宿寒富寛寝寡察寧審寮寸寺寿対専耐封射将尉尋尊導小少当尚単巣営厳就尺尼尽局尿尾届居屈屋展属層履屯山岐岳岸岩岬峡峠島峰崎崇崩密川州工巧左差己巻市布帆希帥帝帰師席帯常帳幅帽幕幣干平年幸幹幻幽幾広庁序床底店府度庫座庭康庶庸廃廊廉廷延建升弁弊式弐弓引弔弟弦弧弱強張弾形修彩彫彰影行役往径征彼後待律従徐徒術得街御循復微徴徳衝徹衛衡心必応忌志忍忘忠念急思怠怒恩恭恐恵息恥恋悪患悠悲惑愛意感愚慈愁想態慕慰慶憂慮憩憲懇懲懸忙快怪性怖悔恒恨悦悟悩惨情惜悼慌惰愉慨慎慣憎慢憤憶懐憾成我戒戦戯戸戻所房扇扉手承挙掌撃摩才打払扱技抗抄折択投把抜批扶抑押拐拡拒拠拘招拙拓担抽抵拝拍披抱抹括挟拷指持拾挑振捜挿捕掛据掘掲控採捨授推接措掃探排描握援換揮提搭揚揺携搾摂損搬摘撮撤撲操擁擬擦支改攻放故政敏救教赦敗敢敬散数敵敷整文斗料斜斤斥断新方施旅旋族旗既日旧曲旨旬早更易昆昇昔明映昨春昭是星昼冒時書曹暁景最暑晶晴替晩普暗暇暖暮暦暫暴曇曜月肌有肝肖育肩肯肢肥服肪胃胎胆肺背胞胸脅脂朕胴能脈朗脚脱脳望期朝脹腕腸腹腰膜膚膨臓木札本末未机朽朱朴材杉条束村来果枝松枢析東杯板枚林枠栄架枯査柔染柱柄某柳案桜格核校根栽桟株栓桑桃梅械棺棋極検植森棟棚棒楽棄業楼概構模様横権槽標機橋樹欄欠次欧欲款欺歌歓止正武歩歳歴死残殊殉殖殴段殺殻殿母毎毒比毛氏民気水永氷求泉泰汁汚汗江池汽決沢沖沈没泳沿河泣況治沼注泥波泊泌沸法泡油海活洪浄津浅洗洞派洋消浸浜浮浦浴流涙浪液涯渇渓混済渋淑渉深清淡添涼温渦減湖港滋湿測渡湯満湾滑漢源溝準滞漠滅溶滝演漁漬漆漸滴漂漫漏潔潤潟潜潮澄激濁濃濯濫瀬火灰灯災炎炊炉炭焼煙煩燃燥爆為点烈煮焦然無照勲熟熱爵父片版牛物牧牲特犠犬状献獣犯狂狭狩独猫猛猟猶猿獄獲玄玉王珍珠班球現理琴環璽瓶甘甚生産用田甲申由男町界畑畜畔畝留異略畳番疎疑疫疾症疲病痛痘痢痴療癖癒発登白百的皆皇皮皿盆益盛盗盟監盤目直盲看県省相盾真眠眼眺着睡督瞬矛矢知短矯石研砂砕破砲硬硝硫碁磁碑確磨礁礎示礼社祈祉祝神祖祭祥票禁禍禅福私秀科秋秒称租秩秘移税程稚穀種稲稼稿穂穏積穫穴究空突窃窓窒窮窯立章童端競竹笑第笛符筋策答等筒筆節箇管算箱範築篤簡簿籍米粋粉粗粘粒粧精糖糧糸系紀級糾紅約索紙純素納紛紡紋経紺細終紹紳組累絵給結絞紫絶統絡継絹続維綱緒総綿網緑練縁緩緊縄線締編緯縦縛繁縫縮績繊繭織繕繰缶罪署置罰罷羅羊美義群羽翁習翌翼翻老考孝者耕耗耳聖聞聴職粛肉腐自臭至致興舌舞舟航般船舶艇艦良色芋芝花芸芳英芽苦茎若苗茂荒草荘茶荷華菓菊菌菜著葬葉落蒸蓄蔵薫薪薦薄薬藩藻虐虚虞虜虫蚕蚊蛍蛇蛮血衆衣表衰衷袋裁装裂裏製褒襲被補裕褐裸複襟西要覆覇臣臨見規視覚親覧観角解触言計訂記訓託討許訟設訪訳詠詐詞証詔診訴評該詰誇詩試詳誠誉話語誤誌誓説読認誘謁課諸請諾誕談調論諮謀諭謡謹謙講謝謄警識譜議護譲谷豆豊豚象豪貝貞負貢財貨貫責販貧賀貴貸貯買費貿資賊賃賄賛賜質賞賠賓賦賢購贈赤走赴起越超趣足距跡践跳路踊踏躍身車軌軍軒転軟軽軸較載輝輩輪輸轄辛辞辱農辺込巡迅近迎返述迭迫逆送退追逃迷逝造速逐通逓途透連逸週進逮運過遇遂達遅道遍遊違遠遣遮遭適遺遵選遷還避邦邪邸郊郎郡郭郷都部郵酌酒配酔酢酬酪酵酷酸醸釈里重野量金針釣鈍鉛鉱鉄鉢鈴銀銃銭銑銅銘鋭鋳鋼錯錠錘錬録鍛鎖鎮鏡鐘鑑長門閉開間閑閣関閥閲闘防阻附限院陥降除陣陛陰険陳陶陪陸隆陵階隅随隊陽隔隠際障隣隷隻雇集雄雅雑雌難離雨雪雲雰電雷零需震霊霜霧露青静非面革靴音韻響頂項順頑頒預領頭頼頻額顔顕題類願顧風飛食飢飲飯飼飾飽養餓館首香馬駅駆駄駐騎験騒騰驚骨髄高髪融鬼魂魅醜魔魚鮮鯨鳥鳴鶏麗麦麻黄黒黙鼓鼻斉斎歯齢竜".split("");
+                var question = "";
+                var text = ""
+                function start() {
+                    if (encode.value == "") {
+                        quiz.classList.add("hidden");
+                    } else {
+                        var visibility = quiz.classList;
+                        if (quiz.classList.contains("hidden")) {
+                            quiz.classList.remove("hidden");
+                        }
+                        randomstr();
+                    }
+                }
+
+                function randomstr() {
+                    if (!next.classList.contains("hidden")) {
+                        next.classList.add("hidden")
+                    }
+                    result.innerHTML = "";
+                    answer.value = "";
+                    const type = select[Math.floor(Math.random() * select.length)]
+                    if (type == "hiragana") {
+                        text = hiragana[Math.floor(Math.random() * hiragana.length)];
+                    } else if (type == "katakana") {
+                        text = katakana[Math.floor(Math.random() * katakana.length)];
+                    } else if (type == "alphabet") {
+                        text = alphabet[Math.floor(Math.random() * alphabet.length)];
+                    } else if (type == "kanji") {
+                        text = kanji[Math.floor(Math.random() * kanji.length)];
+                    } else if (type == "number") {
+                        text = number[Math.floor(Math.random() * number.length)];
+                    }
+                    question = convert(encode.value, text);
+                    document.getElementById("question").innerHTML = question;
+                }
+
+                function judge() {
+                    next.classList.remove("hidden");
+                    if (text == answer.value) {
+                        result.classList.add("correct");
+                        result.innerHTML = "正解";
+                    } else {
+                        result.classList.add("wrong");
+                        result.innerHTML = "不正解 　正解は" + text;
+                    }
+                }
+
+                function convert(encode, text) {
+                    if (encode == "utf8") {
+                        var codePoint = text.codePointAt(0);
+                        if( codePoint < 0xd800 || 0xdfff < codePoint )
+                        {
+                            var bytes = [ Number.NaN ];
+                            if( codePoint < 0 )
+                            {
+                            }
+                            else if( codePoint < 0x80 )
+                            {
+                                bytes = [ codePoint ];
+                            }
+                            else if( codePoint < 0x800 )
+                            {
+                                bytes = [
+                                    ( codePoint & 0x7c0 ) >> 6 | 0xc0,
+                                    ( codePoint & 0x3f ) | 0x80 ];
+                            }
+                            else if( codePoint < 0x10000 )
+                            {
+                                bytes = [
+                                    ( codePoint & 0xf000 ) >> 12 | 0xe0,
+                                    ( codePoint & 0xfc0 ) >> 6 | 0x80,
+                                    ( codePoint & 0x3f ) | 0x80 ];
+                            }
+                            else if( codePoint < 0x110000 )
+                            {
+                                bytes = [
+                                    ( codePoint & 0x1c0000 ) >> 18 | 0xf0,
+                                    ( codePoint & 0x3f000 ) >> 12 | 0x80,
+                                    ( codePoint & 0xfc0 ) >> 6 | 0x80,
+                                    ( codePoint & 0x3f ) | 0x80 ];
+                            }
+
+                            var hexStr = [];
+                            for( var k = 0; k < bytes.length; k++ )
+                            {
+                                hexStr.push( ( '00' + bytes[ k ].toString( 16 ).toUpperCase() ).slice( -2 ) );
+                            }
+                            return "U+" + hexStr.join( '' );
+                        }
+                    } else {
+                        return "U+" + text.codePointAt(0).toString(16).toUpperCase();
+                    }
+                }
+            </script>
+        </footer>
+    </body>
+</html>
