@@ -49,7 +49,7 @@
     {
       title: 'Tech Club',
       image: '/img/works/tclb.webp',
-      url: 'https://www.tclb.cf',
+      url: '#',
     },
     {
       title: 'Acto',
