@@ -118,20 +118,20 @@
     height: 32px;
   }
   html {
-    font-family: 'Open Sans', 'Noto Sans JP';
+    font-family: 'Poppins', 'Noto Sans JP';
     scroll-behavior: smooth;
   }
 </style>
 
 <svelte:head>
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans&family=Noto+Sans+JP&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Poppins&family=Noto+Sans+JP&display=swap');
   </style>
 </svelte:head>
-<main class="overflow-x-hidden">
+<main class="dark:bg-gray-800 overflow-x-hidden">
   <div
-    class="dark:bg-gray-800 dark:text-white px-5 flex justify-center
-    items-center h-screen flex-col">
+    class="dark:text-white px-5 flex justify-center items-center min-h-screen
+    flex-col">
     <div class="items-center container max-w-6xl">
       <h1 class="lowercase text-6xl pb-5">wamo</h1>
       <p class="text-2xl">{$_('short_about')}</p>
@@ -162,8 +162,7 @@
     </a>
   </div>
   <div
-    class="dark:bg-gray-800 px-5 flex justify-center items-center h-screen
-    flex-col"
+    class="px-5 flex justify-center items-center min-h-screen flex-col"
     id="about">
     <div class="relative items-center container max-w-4xl">
       <div
@@ -174,7 +173,7 @@
       <div
         class="bg-white dark:bg-gray-700 dark:text-white rounded-lg shadow-xl
         p-10">
-        <h2 class="text-5xl font-bold">About</h2>
+        <h2 class="text-5xl font-medium">About</h2>
         <img
           class="absolute right-5 -top-10 rounded-full h-28"
           src="/img/icon.webp"
@@ -204,14 +203,40 @@
     </div>
   </div>
   <div
-    class="dark:bg-gray-800 px-5 flex justify-center items-center h-full
-    flex-col py-32"
+    class="px-5 relative flex justify-center items-center min-h-screen flex-col"
+    id="contact">
+    <div class="items-center container max-w-4xl">
+      <div
+        class="bg-white dark:bg-gray-700 dark:text-white border-0 rounded-lg
+        shadow-xl p-10">
+        <h2 class="mb-5 text-5xl font-medium">What I'm doing</h2>
+        <div
+          class="relative border-l-2 dark:border-color-white border-solid py-3
+          px-5">
+          <div class="bg-white rounded-full absolute p-2 -left-2.5 top-5" />
+          <h3 class="text-2xl">{$_('future')}</h3>
+          <time>20xx/xx</time>
+        </div>
+        <div
+          class="relative border-l-2 dark:border-color-white border-solid py-3
+          px-5">
+          <div class="bg-white rounded-full absolute p-2 -left-2.5 top-5" />
+          <h3 class="text-2xl">
+            {$_('entered_tmcit')}
+          </h3>
+          <time>2021/04</time>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="px-5 flex min-h-screen justify-center items-center h-full flex-col py-32"
     id="works">
     <div class="items-center container max-w-6xl">
       <div
         class="bg-white dark:bg-gray-700 dark:text-white rounded-lg shadow-xl
         p-5 md:p-10">
-        <h2 class="text-5xl font-bold">Works</h2>
+        <h2 class="text-5xl font-medium">Works</h2>
         <p class="text-xl py-3">{$_('works')}</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {#each myWorks as work}
@@ -229,14 +254,13 @@
     </div>
   </div>
   <div
-    class="dark:bg-gray-800 px-5 relative flex justify-center items-center
-    h-screen flex-col"
+    class="px-5 relative flex justify-center items-center min-h-screen flex-col"
     id="contact">
     <div class="items-center container max-w-4xl">
       <div
         class="bg-white dark:bg-gray-700 dark:text-white border-0 rounded-lg
         shadow-xl p-10">
-        <h2 class="text-5xl font-bold">Get in touch</h2>
+        <h2 class="text-5xl font-medium">Get in touch</h2>
         <p class="py-3 text-xl">{$_('contact')}</p>
         <p class="text-xl">
           E-Mail:
