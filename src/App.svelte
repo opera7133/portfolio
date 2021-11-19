@@ -162,7 +162,7 @@
     </a>
   </div>
   <div
-    class="px-5 flex justify-center items-center min-h-screen flex-col"
+    class="px-5 flex justify-center items-center min-h-screen flex-col py-32"
     id="about">
     <div class="relative items-center container max-w-4xl">
       <div
