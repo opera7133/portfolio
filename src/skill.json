@@ -1,0 +1,7 @@
+[
+  { "title": "HTML", "color": "#ed6a47", "per": "90" },
+  { "title": "CSS", "color": "#4968e3", "per": "90" },
+  { "title": "JS", "color": "#f7df1e", "per": "60" },
+  { "title": "Next.js", "color": "#000", "per": "30" },
+  { "title": "Svelte", "color": "#ff3e00", "per": "20" }
+]

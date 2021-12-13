@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Blonde",
+    "image": "/img/works/blonde.webp",
+    "url": "https://blonde.pages.dev"
+  },
+  {
+    "title": "Tella",
+    "image": "/img/works/tella.webp",
+    "url": "https://tella.pages.dev"
+  },
+  {
+    "title": "VNovel",
+    "image": "/img/works/vnovel.webp",
+    "url": "https://vnovel.pages.dev"
+  },
+  {
+    "title": "Tech Club",
+    "image": "/img/works/tclb.webp",
+    "url": "#"
+  },
+  {
+    "title": "Acto",
+    "image": "/img/works/acto.webp",
+    "url": "https://blog.wmsci.com"
+  },
+  {
+    "title": "LightCube",
+    "image": "/img/works/lightcube.webp",
+    "url": "https://www.lccs.ml"
+  },
+  {
+    "title": "MCborn",
+    "image": "/img/works/mcborn.webp",
+    "url": "https://mc.vcborn.com"
+  },
+  {
+    "title": "SPBUploader",
+    "image": "/img/works/spbuploader.webp",
+    "url": "https://spb.wmsci.com"
+  },
+  {
+    "title": "Unicode Guessing",
+    "image": "/img/works/unicode.webp",
+    "url": "https://wmsci.com/unicode/"
+  },
+  {
+    "title": "DLBase",
+    "image": "/img/works/dlbase.webp",
+    "url": "https://dlbase.cf"
+  }
+]

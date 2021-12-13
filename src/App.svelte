@@ -11,6 +11,8 @@
 
   import en from './en.json'
   import ja from './ja.json'
+  import myWorks from './works.json'
+  import Skill from './skill.json'
 
   addMessages('en', en)
   addMessages('ja', ja)
@@ -21,62 +23,6 @@
   })
 
   const mail = 'ainznino@pm.me'
-
-  const Skill = [
-    { title: 'HTML', color: '#ed6a47', per: '90' },
-    { title: 'CSS', color: '#4968e3', per: '90' },
-    { title: 'JS', color: '#f7df1e', per: '60' },
-    { title: 'Next.js', color: '#000', per: '30' },
-    { title: 'Svelte', color: '#ff3e00', per: '20' },
-  ]
-
-  const myWorks = [
-    {
-      title: 'Blonde',
-      image: '/img/works/blonde.webp',
-      url: 'https://blonde.pages.dev',
-    },
-    {
-      title: 'Tella',
-      image: '/img/works/tella.webp',
-      url: 'https://tella.pages.dev',
-    },
-    {
-      title: 'VNovel',
-      image: '/img/works/vnovel.webp',
-      url: 'https://vnovel.pages.dev',
-    },
-    {
-      title: 'Tech Club',
-      image: '/img/works/tclb.webp',
-      url: '#',
-    },
-    {
-      title: 'Acto',
-      image: '/img/works/acto.webp',
-      url: 'https://blog.wmsci.com',
-    },
-    {
-      title: 'LightCube',
-      image: '/img/works/lightcube.webp',
-      url: 'https://www.lccs.ml',
-    },
-    {
-      title: 'SPBUploader',
-      image: '/img/works/spbuploader.webp',
-      url: 'https://spb.wmsci.com',
-    },
-    {
-      title: 'Unicode Guessing',
-      image: '/img/works/unicode.webp',
-      url: 'https://wmsci.com/unicode/',
-    },
-    {
-      title: 'DLBase',
-      image: '/img/works/dlbase.webp',
-      url: 'https://dlbase.cf',
-    },
-  ]
 
   export const SNS = [
     {
@@ -119,6 +65,7 @@
   }
   html {
     font-family: 'Poppins', 'Noto Sans JP';
+    font-feature-settings: 'palt';
     scroll-behavior: smooth;
   }
 </style>
@@ -162,7 +109,7 @@
     </a>
   </div>
   <div
-    class="px-5 flex justify-center items-center min-h-screen flex-col"
+    class="px-5 py-40 flex justify-center items-center min-h-screen flex-col"
     id="about">
     <div class="relative items-center container max-w-4xl">
       <div
@@ -221,16 +168,15 @@
           class="relative border-l-2 dark:border-color-white border-solid py-3
           px-5">
           <div class="bg-white rounded-full absolute p-2 -left-2.5 top-5" />
-          <h3 class="text-2xl">
-            {$_('entered_tmcit')}
-          </h3>
+          <h3 class="text-2xl">{$_('entered_tmcit')}</h3>
           <time>2021/04</time>
         </div>
       </div>
     </div>
   </div>
   <div
-    class="px-5 flex min-h-screen justify-center items-center h-full flex-col py-32"
+    class="px-5 flex min-h-screen justify-center items-center h-full flex-col
+    py-32"
     id="works">
     <div class="items-center container max-w-6xl">
       <div
