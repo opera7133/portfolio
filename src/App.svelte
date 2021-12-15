@@ -75,7 +75,7 @@
     @import url('https://fonts.googleapis.com/css?family=Poppins&family=Noto+Sans+JP&display=swap');
   </style>
 </svelte:head>
-<main class="dark:bg-gray-800 overflow-x-hidden">
+<main class="dark:bg-zinc-800 overflow-x-hidden">
   <div
     class="dark:text-white px-5 flex justify-center items-center min-h-screen
     flex-col">
@@ -113,12 +113,13 @@
     id="about">
     <div class="relative items-center container max-w-4xl">
       <div
-        class="bg-white dark:bg-gray-700 rounded-lg shadow-xl absolute py-14
-        px-40 -top-14 -left-10 transform -rotate-6 z-0" />
+        class="bg-amber-500 rounded-lg shadow-md shadow-amber-300
+        dark:shadow-amber-800 absolute py-14 px-40 -top-14 -left-10 transform
+        -rotate-6 z-0" />
     </div>
     <div class="relative items-center container max-w-4xl">
       <div
-        class="bg-white dark:bg-gray-700 dark:text-white rounded-lg shadow-xl
+        class="bg-white dark:bg-zinc-700 dark:text-white rounded-lg shadow-xl
         p-10">
         <h2 class="text-5xl font-medium">About</h2>
         <img
@@ -136,7 +137,7 @@
                 style="background-image: conic-gradient({skill.color} 0% {skill.per}%,
                 #d9d9d9 {skill.per}% 100%);" />
               <div
-                class="absolute top-2 left-2 bg-white dark:bg-gray-700 w-20 h-20
+                class="absolute top-2 left-2 bg-white dark:bg-zinc-700 w-20 h-20
                 rounded-full">
                 <p class="pt-7 text-center">{skill.title}</p>
               </div>
@@ -144,8 +145,9 @@
           {/each}
         </div>
         <div
-          class="bg-white dark:bg-gray-700 rounded-lg shadow-xl absolute right-0
-          md:-right-10 py-14 px-20 transform rotate-12" />
+          class="bg-cyan-500 rounded-lg shadow-md shadow-cyan-300
+          dark:shadow-cyan-800 absolute right-0 md:-right-10 py-14 px-20
+          transform rotate-12" />
       </div>
     </div>
   </div>
@@ -154,20 +156,24 @@
     id="contact">
     <div class="items-center container max-w-4xl">
       <div
-        class="bg-white dark:bg-gray-700 dark:text-white border-0 rounded-lg
+        class="bg-white dark:bg-zinc-700 dark:text-white border-0 rounded-lg
         shadow-xl p-10">
         <h2 class="mb-5 text-5xl font-medium">What I'm doing</h2>
         <div
           class="relative border-l-2 dark:border-color-white border-solid py-3
           px-5">
-          <div class="bg-white rounded-full absolute p-2 -left-2.5 top-5" />
+          <div
+            class="bg-white rounded-full border-2 border-gray-300 absolute p-2
+            -left-2.5 top-5" />
           <h3 class="text-2xl">{$_('future')}</h3>
           <time>20xx/xx</time>
         </div>
         <div
           class="relative border-l-2 dark:border-color-white border-solid py-3
           px-5">
-          <div class="bg-white rounded-full absolute p-2 -left-2.5 top-5" />
+          <div
+            class="bg-white rounded-full border-2 border-gray-300 absolute p-2
+            -left-2.5 top-5" />
           <h3 class="text-2xl">{$_('entered_tmcit')}</h3>
           <time>2021/04</time>
         </div>
@@ -180,7 +186,7 @@
     id="works">
     <div class="items-center container max-w-6xl">
       <div
-        class="bg-white dark:bg-gray-700 dark:text-white rounded-lg shadow-xl
+        class="bg-white dark:bg-zinc-700 dark:text-white rounded-lg shadow-xl
         p-5 md:p-10">
         <h2 class="text-5xl font-medium">Works</h2>
         <p class="text-xl py-3">{$_('works')}</p>
@@ -204,17 +210,27 @@
     id="contact">
     <div class="items-center container max-w-4xl">
       <div
-        class="bg-white dark:bg-gray-700 dark:text-white border-0 rounded-lg
+        class="bg-white dark:bg-zinc-700 dark:text-white border-0 rounded-lg
         shadow-xl p-10">
         <h2 class="text-5xl font-medium">Get in touch</h2>
         <p class="py-3 text-xl">{$_('contact')}</p>
         <p class="text-xl">
           E-Mail:
-          <a class="text-blue-600" href="mailto:{mail}">{mail}</a>
+          <a
+            class="text-blue-600 border-b-2 leading-3 border-transparent
+            hover:border-blue-500 duration-200 visited:text-purple-600
+            visited:hover:border-purple-600"
+            href="mailto:{mail}">
+            {mail}
+          </a>
         </p>
         <p class="text-xl">
           Twitter:
-          <a class="text-blue-600" href="https://twitter.com/scgame_m">
+          <a
+            class="text-blue-600 border-b-2 leading-3 border-transparent
+            hover:border-blue-500 duration-200 visited:text-purple-600
+            visited:hover:border-purple-600"
+            href="https://twitter.com/scgame_m">
             @scgame_m
           </a>
         </p>
@@ -222,7 +238,7 @@
     </div>
     <div class="absolute bottom-0 left-0 py-3 px-5 dark:text-white">
       &copy; 2021
-      <a href="/" class="text-blue-600">wamo</a>
+      <a href="/" class="text-blue-600 hover:opacity-70 duration-200">wamo</a>
     </div>
   </div>
 </main>
