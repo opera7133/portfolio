@@ -4,6 +4,7 @@
   import FaYoutube from 'svelte-icons/fa/FaYoutube.svelte'
   import FaKeybase from 'svelte-icons/fa/FaKeybase.svelte'
   import FaChevronDown from 'svelte-icons/fa/FaChevronDown.svelte'
+  import FaCoffee from 'svelte-icons/fa/FaCoffee.svelte'
   import FaTelegramPlane from 'svelte-icons/fa/FaTelegramPlane.svelte'
   import FaAmazon from 'svelte-icons/fa/FaAmazon.svelte'
   import FaPenNib from 'svelte-icons/fa/FaPenNib.svelte'
@@ -41,7 +42,7 @@
       url: 'https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA',
     },
     { title: 'Keybase', icon: FaKeybase, url: 'https://keybase.io/opera7133' },
-    { title: 'Telegram', icon: FaTelegramPlane, url: 'https://t.me/wamo_sc' },
+    { title: 'Ko-fi', icon: FaCoffee, url: 'https://ko-fi.com/wamosc' },
     {
       title: 'Amazon',
       icon: FaAmazon,
