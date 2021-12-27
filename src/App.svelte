@@ -165,7 +165,7 @@
           px-5">
           <div
             class="bg-white rounded-full border-2 border-gray-300 absolute p-2
-            -left-2.5 top-5" />
+            -left-[11px] top-5" />
           <h3 class="text-2xl">{$_('future')}</h3>
           <time>20xx/xx</time>
         </div>
@@ -174,7 +174,16 @@
           px-5">
           <div
             class="bg-white rounded-full border-2 border-gray-300 absolute p-2
-            -left-2.5 top-5" />
+            -left-[11px] top-5" />
+          <h3 class="text-2xl">{$_('it_secman')}</h3>
+          <time>2021/12</time>
+        </div>
+        <div
+          class="relative border-l-2 dark:border-color-white border-solid py-3
+          px-5">
+          <div
+            class="bg-white rounded-full border-2 border-gray-300 absolute p-2
+            -left-[11px] top-5" />
           <h3 class="text-2xl">{$_('entered_tmcit')}</h3>
           <time>2021/04</time>
         </div>
