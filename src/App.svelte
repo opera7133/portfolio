@@ -8,6 +8,7 @@
   import FaTelegramPlane from 'svelte-icons/fa/FaTelegramPlane.svelte'
   import FaAmazon from 'svelte-icons/fa/FaAmazon.svelte'
   import FaPenNib from 'svelte-icons/fa/FaPenNib.svelte'
+  import FaVrCardboard from 'svelte-icons/fa/FaVrCardboard.svelte'
   import { _, init, addMessages, getLocaleFromNavigator } from 'svelte-i18n'
 
   import en from './en.json'
@@ -42,6 +43,13 @@
       url: 'https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA',
     },
     { title: 'Keybase', icon: FaKeybase, url: 'https://keybase.io/opera7133' },
+    { title: 'Telegram', icon: FaTelegramPlane, url: 'https://t.me/wamo_sc' },
+    {
+      title: 'VRChat',
+      icon: FaVrCardboard,
+      url:
+        'https://vrchat.com/home/user/usr_f5d27827-3a96-45ba-921f-10b0d2aa4213',
+    },
     { title: 'Ko-fi', icon: FaCoffee, url: 'https://ko-fi.com/wamosc' },
     {
       title: 'Amazon',
@@ -83,7 +91,7 @@
     <div class="items-center container max-w-6xl">
       <h1 class="lowercase text-6xl pb-5">wamo</h1>
       <p class="text-2xl">{$_('short_about')}</p>
-      <div class="pt-5 flex flex-row">
+      <div class="pt-5 flex flex-row flex-wrap items-center">
         {#each SNS as sns}
           <a
             href={sns.url}
@@ -91,7 +99,7 @@
             aria-label={sns.title}
             rel="noopener noreferrer">
             <div
-              class="h-8 w-8 mx-2 duration-100 hover:opacity-80 text-black
+              class="w-8 mx-2 duration-100 hover:opacity-80 text-black
               dark:text-white">
               <svelte:component this={sns.icon} />
             </div>
@@ -129,7 +137,7 @@
           alt="avatar" />
         <p class="py-3 text-xl">{$_('long_about')}</p>
         <div
-          class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 max-w-xs
+          class="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 max-w-xs
           lg:max-w-lg">
           {#each Skill as skill}
             <div class="relative m-1">
