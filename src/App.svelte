@@ -62,6 +62,28 @@
       url: 'https://blog.wmsci.com',
     },
   ]
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal')
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight
+      var elementTop = reveals[i].getBoundingClientRect().top
+      var elementVisible = 150
+
+      if (
+        elementTop < windowHeight - elementVisible &&
+        !reveals[i].classList.contains('motion-safe:animate-fadeIn')
+      ) {
+        reveals[i].classList.add('motion-safe:animate-fadeIn')
+        if (reveals[i].classList.contains('opacity-0')) {
+          reveals[i].classList.remove('opacity-0')
+        }
+      }
+    }
+  }
+
+  window.addEventListener('scroll', reveal)
 </script>
 
 <style global lang="postcss">
@@ -73,7 +95,6 @@
     height: 32px;
   }
   html {
-    font-family: 'Poppins', 'Noto Sans JP';
     font-feature-settings: 'palt';
     scroll-behavior: smooth;
   }
@@ -88,7 +109,7 @@
   <div
     class="dark:text-white px-5 flex justify-center items-center min-h-screen
     flex-col">
-    <div class="items-center container max-w-6xl">
+    <div class="items-center container max-w-6xl motion-safe:animate-fadeIn">
       <h1 class="lowercase text-6xl pb-5">wamo</h1>
       <p class="text-2xl">{$_('short_about')}</p>
       <div class="pt-5 flex flex-row flex-wrap items-center">
@@ -118,7 +139,8 @@
     </a>
   </div>
   <div
-    class="px-5 py-40 flex justify-center items-center min-h-screen flex-col"
+    class="px-5 py-40 flex justify-center items-center min-h-screen flex-col
+    reveal opacity-0"
     id="about">
     <div class="relative items-center container max-w-4xl">
       <div
@@ -161,7 +183,8 @@
     </div>
   </div>
   <div
-    class="px-5 relative flex justify-center items-center min-h-screen flex-col"
+    class="px-5 relative flex justify-center items-center min-h-screen flex-col
+    reveal opacity-0"
     id="contact">
     <div class="items-center container max-w-4xl">
       <div
@@ -200,7 +223,7 @@
   </div>
   <div
     class="px-5 flex min-h-screen justify-center items-center h-full flex-col
-    py-32"
+    py-32 reveal opacity-0"
     id="works">
     <div class="items-center container max-w-6xl">
       <div
@@ -224,7 +247,8 @@
     </div>
   </div>
   <div
-    class="px-5 relative flex justify-center items-center min-h-screen flex-col"
+    class="px-5 relative flex justify-center items-center min-h-screen flex-col
+    reveal opacity-0"
     id="contact">
     <div class="items-center container max-w-4xl">
       <div
