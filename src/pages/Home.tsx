@@ -12,7 +12,7 @@ const Home: Component<{}> = () => {
             <img src="/img/wamo.jpg" alt="usericon" class="rounded-full w-36 shadow-md" />
             <div>
               <h2 class="text-5xl pb-2 font-semibold font-futura">wamo</h2>
-              <p class="text-3xl pb-4 font-futura">I make websites and videos as a hobby.</p>
+              <p class="text-3xl pb-4 font-futura">Somebody who does everything.</p>
             </div>
           </div>
         </div>
