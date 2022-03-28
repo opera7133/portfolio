@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         main: ['Zen Kaku Gothic Antique', ...defaultTheme.fontFamily.sans],
-        futura: ['Futura PT', 'Zen Kaku Gothic Antique', ...defaultTheme.fontFamily.sans],
+        futura: ['futura-pt', 'Zen Kaku Gothic Antique', ...defaultTheme.fontFamily.sans],
       }
     },
   },
