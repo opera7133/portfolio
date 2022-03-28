@@ -18,7 +18,10 @@ const Works: Component<{}> = () => {
               {data.map((work, key) => {
                 return (
                 <NavLink href={`/works/${work[0]}`}>
-                  <img src={work[1].img} class='rounded-md' />
+                  <picture>
+                    <source srcset={work[1].img.replace("jpg", "webp")} type="image/webp">
+                    <img src={work[1].img} class='rounded-md' />
+                  </picture>
                 </NavLink>
                 );
               })}
