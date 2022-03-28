@@ -13,6 +13,7 @@ export const App = () => {
 
   return (
     <main class="min-h-screen">
+      <link rel="stylesheet" href="https://use.typekit.net/gdc2fvk.css">
       <div class="splashbg"></div>
       <Router>
         <MetaProvider>
