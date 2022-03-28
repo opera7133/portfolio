@@ -19,7 +19,7 @@ const Works: Component<{}> = () => {
                 return (
                 <NavLink href={`/works/${work[0]}`}>
                   <picture>
-                    <source srcset={work[1].img.replace("jpg", "webp")} type="image/webp">
+                    <source srcset={work[1].img.replace("jpg", "webp")} type="image/webp" />
                     <img src={work[1].img} class='rounded-md' />
                   </picture>
                 </NavLink>
