@@ -44,6 +44,10 @@ const About: Component<{}> = () => {
               <h3 class="text-3xl my-4 font-semibold font-futura">Histories</h3>
               <div class="flex flex-col gap-7 ml-8 py-4 pl-6 border-l-2 border-black">
                 <div>
+                  <h4 class="font-semibold text-lg">基本情報技術者試験合格</h4>
+                  <p>2022/05</p>
+                </div>
+                <div>
                   <h4 class="font-semibold text-lg">情報セキュリティマネジメント試験合格</h4>
                   <p>2021/12</p>
                 </div>
