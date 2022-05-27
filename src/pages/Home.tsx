@@ -1,8 +1,9 @@
 import { Component } from 'solid-js';
 import { MetaProvider, Title } from 'solid-meta';
+
 const Home: Component<{}> = () => {
   return (
-    <>
+    <div class='overflow-hidden relative'>
       <MetaProvider>
         <Title>wamo</Title>
       </MetaProvider>
@@ -12,12 +13,18 @@ const Home: Component<{}> = () => {
             <img src="/img/wamo.jpg" alt="usericon" class="rounded-full w-36 shadow-md" />
             <div>
               <h2 class="text-5xl pb-2 font-semibold font-futura">wamo</h2>
-              <p class="text-3xl pb-4 font-futura">Somebody who does everything.</p>
+              <p class="text-3xl pb-4 font-futura">Pretending to be busy.</p>
             </div>
           </div>
         </div>
       </div>
-    </>
+      
+      <div class="w-screen absolute -bottom-16 left-0 bg-blue-700">
+        <div innerHTML='<!--\nCopyright (c) 2017 Ted McDonald (@tedmcdo)\nReleased under the MIT license\nhttp://opensource.org/licenses/mit-license.php\n-->'></div>
+        <div class="wave h-48 absolute -top-48 w-[6400px]"></div>
+        <div class="wave h-48 absolute -top-44 w-[6400px] opacity-100"></div>
+      </div>
+    </div>
   );
 };
 

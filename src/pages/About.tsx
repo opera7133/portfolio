@@ -31,7 +31,7 @@ const About: Component<{}> = () => {
             <h2 class="text-3xl mb-4 font-semibold font-futura">About</h2>
             <div class="mb-12">
               <h3 class="text-5xl mb-3 font-semibold font-futura">wamo</h3>
-              <p class="text-2xl font-semibold mb-4 font-futura">Frontend, Backend Developer / Server Administrator</p>
+              <p class="text-2xl font-semibold text-neutral-500 mb-4 font-futura">Frontend, Backend Developer</p>
               <p>
                 wamoと申します。
                 <br />
@@ -42,16 +42,25 @@ const About: Component<{}> = () => {
             </div>
             <div class="mb-12">
               <h3 class="text-3xl my-4 font-semibold font-futura">Histories</h3>
-              <div class="flex flex-col gap-7 ml-8 py-4 pl-6 border-l-2 border-black">
-                <div>
+              <div class="flex flex-col ml-8">
+                <div class='group pl-6 border-l-2 border-black relative py-4'>
+                  <div class='absolute bg-black p-3 rounded-full -left-[13px] top-5'>
+                    <div class='absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full'></div>
+                  </div>
                   <h4 class="font-semibold text-lg">基本情報技術者試験合格</h4>
                   <p>2022/05</p>
                 </div>
-                <div>
+                <div class='group pl-6 border-l-2 border-black relative py-4'>
+                  <div class='absolute bg-black p-3 rounded-full -left-[13px] top-5'>
+                    <div class='absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full'></div>
+                  </div>
                   <h4 class="font-semibold text-lg">情報セキュリティマネジメント試験合格</h4>
                   <p>2021/12</p>
                 </div>
-                <div>
+                <div class='group pl-6 border-l-2 border-black relative py-4'>
+                  <div class='absolute bg-black p-3 rounded-full -left-[13px] top-5'>
+                    <div class='absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full'></div>
+                  </div>
                   <h4 class="font-semibold text-lg">東京都立産業技術高等専門学校品川キャンパスに入学</h4>
                   <p>2021/04</p>
                 </div>
@@ -65,7 +74,7 @@ const About: Component<{}> = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div class="bg-youtube flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-youtube flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsYoutube size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Youtube</h4>
@@ -74,7 +83,7 @@ const About: Component<{}> = () => {
                   </div>
                 </a>
                 <a href="https://twitter.com/scgame_m" target="_blank" rel="noopener noreferrer">
-                  <div class="bg-twitter flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-twitter flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsTwitter size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Twitter</h4>
@@ -83,7 +92,7 @@ const About: Component<{}> = () => {
                   </div>
                 </a>
                 <a href="https://github.com/opera7133" target="_blank" rel="noopener noreferrer">
-                  <div class="bg-github flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-github flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsGithub size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">GitHub</h4>
@@ -92,7 +101,7 @@ const About: Component<{}> = () => {
                   </div>
                 </a>
                 <a href="https://keybase.io/opera7133" target="_blank" rel="noopener noreferrer">
-                  <div class="bg-[#ff6f21] flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-[#ff6f21] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsKeybase size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Keybase</h4>
@@ -101,7 +110,7 @@ const About: Component<{}> = () => {
                   </div>
                 </a>
                 <a href="https://t.me/wamo_sc" target="_blank" rel="noopener noreferrer">
-                  <div class="bg-telegram flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-telegram flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsTelegram size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Telegram</h4>
@@ -114,7 +123,7 @@ const About: Component<{}> = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div class="bg-[#053c48] flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-[#053c48] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaSolidVrCardboard size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">VRChat</h4>
@@ -123,7 +132,7 @@ const About: Component<{}> = () => {
                   </div>
                 </a>
                 <a href="https://ko-fi.com/wamosc" target="_blank" rel="noopener noreferrer">
-                  <div class="bg-[#FF5E5B] flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-[#FF5E5B] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaSolidCoffee size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Ko-fi</h4>
@@ -136,7 +145,7 @@ const About: Component<{}> = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div class="bg-amazon flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-amazon flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsAmazon size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Amazon</h4>
@@ -145,7 +154,7 @@ const About: Component<{}> = () => {
                   </div>
                 </a>
                 <a href="https://blog.wmsci.com" target="_blank" rel="noopener noreferrer">
-                  <div class="bg-[#222] flex flex-row items-center px-4 py-3 rounded-lg gap-4">
+                  <div class="bg-[#222] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaSolidPenNib size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Blog</h4>

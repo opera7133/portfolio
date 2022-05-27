@@ -1,6 +1,7 @@
 import { Component, createContext, createEffect, createResource, useContext } from 'solid-js';
-import { useLocation } from 'solid-app-router';
+import { useIsRouting, useLocation } from 'solid-app-router';
 import { createCookieStorage } from '@solid-primitives/storage';
+import { Transition } from 'solid-transition-group';
 
 interface AppContextInterface {
   isDark: boolean;
@@ -15,6 +16,7 @@ type DataParams = {
 };
 
 export const AppContextProvider: Component<{}> = (props) => {
+  const isRouting = useIsRouting();
   const now = new Date();
   const cookieOptions = {
     expires: new Date(now.getFullYear() + 1, now.getMonth(), now.getDate()),
@@ -53,7 +55,24 @@ export const AppContextProvider: Component<{}> = (props) => {
 
   return (
     <AppContext.Provider value={store}>
-      <div>{props.children}</div>
+      <Transition
+            appear={true}
+            name="slide-fade"
+              onEnter={(el, done) => {
+                const a = el.animate([{ opacity: 0 }, { opacity: 1 }], {
+                  duration: 600
+                });
+                a.finished.then(done);
+              }}
+              onExit={(el, done) => {
+                const a = el.animate([{ opacity: 1 }, { opacity: 0 }], {
+                  duration: 600
+                });
+                a.finished.then(done);
+              }}
+            >
+      <div classList={{ "transition-opacity duration-400 ease-out opacity-0" : isRouting()}}>{props.children}</div>
+      </Transition>
     </AppContext.Provider>
   );
 };

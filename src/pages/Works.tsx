@@ -17,7 +17,7 @@ const Works: Component<{}> = () => {
             <div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3'>
               {data.map((work, key) => {
                 return (
-                <NavLink href={`/works/${work[0]}`}>
+                <NavLink href={`/works/${work[0]}`} class="duration-300 hover:drop-shadow drop-shadow-lg">
                   <picture>
                     <source srcset={work[1].img.replace("jpg", "webp")} type="image/webp" />
                     <img src={work[1].img} class='rounded-md' />
