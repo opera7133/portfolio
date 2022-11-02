@@ -70,7 +70,7 @@ const About: Component<{}> = () => {
               <h3 class="text-3xl my-4 font-semibold font-futura">Socials</h3>
               <div class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4">
                 <a
-                  href="https://www.youtube.com/channel/UCWwPrIQCPvjH3mce-CVfCIA"
+                  href="https://www.youtube.com/@wamo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
