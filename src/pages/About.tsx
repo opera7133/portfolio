@@ -119,6 +119,15 @@ const About: Component<{}> = () => {
                     </div>
                   </div>
                 </a>
+                <a href="https://space.bilibili.com/1269277407" target="_blank" rel="noopener noreferrer">
+                  <div class="bg-[#07A3D7] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
+                    <SiBilibili size={24} color="#FFF" />
+                    <div>
+                      <h4 class="font-semibold text-lg">Bilibili</h4>
+                      <p>wamosc</p>
+                    </div>
+                  </div>
+                </a>
                 <a href="https://keybase.io/opera7133" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#ff6f21] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsKeybase size={24} color="#FFF" />
