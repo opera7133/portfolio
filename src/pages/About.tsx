@@ -17,7 +17,7 @@ import {
   FaSolidPenNib,
   FaSolidVrCardboard,
 } from 'solid-icons/fa';
-import { SiNiconico } from 'solid-icons/si'
+import { SiNiconico, SiBilibili } from 'solid-icons/si'
 import { MetaProvider, Title } from 'solid-meta';
 
 const About: Component<{}> = () => {
