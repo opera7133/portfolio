@@ -6,21 +6,21 @@ export const list: { [key: string]: WorksInfo } = {
     title: 'Blonde',
     url: 'https://blonde.pages.dev',
     repo: 'https://github.com/opera7133/blonde',
-    description: 'Blonde, Tailwind CSSを使ったシンプルなテーマ。',
+    description: 'Tailwind CSSを使ったシンプルなテーマ。',
   },
   'tella': {
     img: '/img/works/tella.jpg',
     title: 'Tella',
     url: 'https://tella.pages.dev',
     repo: 'https://github.com/opera7133/tella',
-    description: 'Tella, 企業向けのHugoテーマ。',
+    description: '企業向けのHugoテーマ。',
   },
   'vnovel': {
     img: '/img/works/vnovel.jpg',
     title: 'VNovel',
     url: 'https://vnovel.pages.dev',
     repo: 'https://github.com/opera7133/vnovel',
-    description: '小節のためのPixivみたいなHugoテーマ。',
+    description: '小説のためのPixivみたいなHugoテーマ。',
   },
   'operandi': {
     img: '/img/works/operandi.jpg',
@@ -41,17 +41,11 @@ export const list: { [key: string]: WorksInfo } = {
     url: 'https://blog.wmsci.com',
     description: 'wamoのブログ。',
   },
-  'lightcube': {
-    img: '/img/works/lightcube.jpg',
-    title: 'LightCube',
-    url: 'https://www.lccs.ml',
-    description: '中学校の学習指導要領に記載されている「双方向通信」「プログラムの構造を支える要素」を含んだプログラミングゲーム。',
-  },
   'vcborn': {
     img: '/img/works/vcborn.jpg',
     title: 'VCborn',
     url: 'https://vcborn.com',
-    description: 'VCLinuxを主に開発しているグループのウェブサイトとメンバー限定サイト。',
+    description: 'VCLinuxを主に開発しているグループのウェブサイト。',
   },
   'mcborn': {
     img: '/img/works/mcborn.jpg',
@@ -77,7 +71,7 @@ export const list: { [key: string]: WorksInfo } = {
     title: 'DLBase',
     url: 'https://dlbase.cf',
     repo: 'https://github.com/opera7133/DLBase',
-    description: 'Linkcoreみたいなページを作成。',
+    description: 'Linkcoreみたいなページを作成するツール。',
   },
 };
 
