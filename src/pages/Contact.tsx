@@ -12,7 +12,7 @@ const Contact: Component<{}> = () => {
         <div class="container mx-auto max-w-7xl z-20">
           <div class="mx-4">
             <h2 class="text-3xl mb-4 font-semibold font-futura">Contact</h2>
-            <p>依頼、配布物、その他お問い合わせ等ありましたらこちらからどうぞ。<br/>メールかTwitterで連絡していただけると助かります。</p>
+            <p>依頼、配布物、その他お問い合わせ等ありましたらこちらからどうぞ。<br/>メールまたはTelegramで連絡していただけると助かります。</p>
             <div class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4 mt-10">
                 <a href="mailto:ainznino@pm.me">
                   <div class="bg-zinc-800 flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
