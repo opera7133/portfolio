@@ -6,6 +6,9 @@ import tailwindcss from '../img/skills/tailwindcss.svg';
 import flutter from '../img/skills/flutter.svg';
 import php from '../img/skills/php.svg';
 import python from '../img/skills/python.svg';
+import csharp from '../img/skills/csharp.svg';
+import electron from '../img/skills/electron.svg';
+import react from '../img/skills/react.svg';
 import {
   FaBrandsAmazon,
   FaBrandsGithub,
@@ -13,17 +16,17 @@ import {
   FaBrandsTelegram,
   FaBrandsTwitter,
   FaBrandsYoutube,
-  FaSolidCoffee,
+  FaSolidMugSaucer,
   FaSolidPenNib,
   FaSolidVrCardboard,
 } from 'solid-icons/fa';
-import { SiNiconico, SiBilibili } from 'solid-icons/si'
+import { SiNiconico, SiBilibili } from 'solid-icons/si';
 import { MetaProvider, Title } from 'solid-meta';
 
 const About: Component<{}> = () => {
   return (
     <>
-    <MetaProvider>
+      <MetaProvider>
         <Title>About | wamo</Title>
       </MetaProvider>
       <div class="mt-28">
@@ -42,23 +45,23 @@ const About: Component<{}> = () => {
             <div class="mb-12">
               <h3 class="text-3xl my-4 font-semibold font-futura">Histories</h3>
               <div class="flex flex-col ml-8">
-                <div class='group pl-6 border-l-2 border-black relative py-4'>
-                  <div class='absolute bg-black p-3 rounded-full -left-[13px] top-5'>
-                    <div class='absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full'></div>
+                <div class="group pl-6 border-l-2 border-black relative py-4">
+                  <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
+                    <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full"></div>
                   </div>
                   <h4 class="font-semibold text-lg">基本情報技術者試験合格</h4>
                   <p>2022/05</p>
                 </div>
-                <div class='group pl-6 border-l-2 border-black relative py-4'>
-                  <div class='absolute bg-black p-3 rounded-full -left-[13px] top-5'>
-                    <div class='absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full'></div>
+                <div class="group pl-6 border-l-2 border-black relative py-4">
+                  <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
+                    <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full"></div>
                   </div>
                   <h4 class="font-semibold text-lg">情報セキュリティマネジメント試験合格</h4>
                   <p>2021/12</p>
                 </div>
-                <div class='group pl-6 border-l-2 border-black relative py-4'>
-                  <div class='absolute bg-black p-3 rounded-full -left-[13px] top-5'>
-                    <div class='absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full'></div>
+                <div class="group pl-6 border-l-2 border-black relative py-4">
+                  <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
+                    <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full"></div>
                   </div>
                   <h4 class="font-semibold text-lg">東京都立産業技術高等専門学校品川キャンパスに入学</h4>
                   <p>2021/04</p>
@@ -68,16 +71,12 @@ const About: Component<{}> = () => {
             <div class="mb-12">
               <h3 class="text-3xl my-4 font-semibold font-futura">Socials</h3>
               <div class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4">
-                <a
-                  href="https://www.youtube.com/@wamo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.youtube.com/@wamo" target="_blank" rel="noopener noreferrer">
                   <div class="bg-youtube flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsYoutube size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Youtube</h4>
-                      <p>wamo</p>
+                      <p>@wamo</p>
                     </div>
                   </div>
                 </a>
@@ -159,7 +158,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://ko-fi.com/wamosc" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#FF5E5B] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaSolidCoffee size={24} color="#FFF" />
+                    <FaSolidMugSaucer size={24} color="#FFF" />
                     <div>
                       <h4 class="font-semibold text-lg">Ko-fi</h4>
                       <p>wamosc</p>
@@ -197,13 +196,37 @@ const About: Component<{}> = () => {
                   <div class="relative m-1">
                     <div
                       class="percent w-24 h-24 rounded-full"
-                      style="background-image: conic-gradient(#000 0%, #000 60%, rgb(217, 217, 217) 60%, rgb(217, 217, 217) 100%);"
+                      style="background-image: conic-gradient(#000 0%, #000 70%, rgb(217, 217, 217) 70%, rgb(217, 217, 217) 100%);"
                     ></div>
                     <div class="flex justify-center items-center absolute top-2 left-2 bg-white w-20 h-20 rounded-full">
                       <img src={nextjs} class="w-12" />
                     </div>
                   </div>
                   <h4 class="font-semibold text-lg">Next.js</h4>
+                </div>
+                <div class="flex flex-row items-center gap-4">
+                  <div class="relative m-1">
+                    <div
+                      class="percent w-24 h-24 rounded-full"
+                      style="background-image: conic-gradient(#60DDFD 0%, #60DDFD 50%, rgb(217, 217, 217) 50%, rgb(217, 217, 217) 100%);"
+                    ></div>
+                    <div class="flex justify-center items-center absolute top-2 left-2 bg-white w-20 h-20 rounded-full">
+                      <img src={react} class="w-12" />
+                    </div>
+                  </div>
+                  <h4 class="font-semibold text-lg">React</h4>
+                </div>
+                <div class="flex flex-row items-center gap-4">
+                  <div class="relative m-1">
+                    <div
+                      class="percent w-24 h-24 rounded-full"
+                      style="background-image: conic-gradient(#282B36 0%, #282B36 70%, rgb(217, 217, 217) 70%, rgb(217, 217, 217) 100%);"
+                    ></div>
+                    <div class="flex justify-center items-center absolute top-2 left-2 bg-white w-20 h-20 rounded-full">
+                      <img src={electron} class="w-12" />
+                    </div>
+                  </div>
+                  <h4 class="font-semibold text-lg">Electron</h4>
                 </div>
                 <div class="flex flex-row items-center gap-4">
                   <div class="relative m-1">
@@ -221,7 +244,7 @@ const About: Component<{}> = () => {
                   <div class="relative m-1">
                     <div
                       class="percent w-24 h-24 rounded-full"
-                      style="background-image: conic-gradient(#3179c6 0%, #3179c6 50%, rgb(217, 217, 217) 50%, rgb(217, 217, 217) 100%);"
+                      style="background-image: conic-gradient(#3179c6 0%, #3179c6 60%, rgb(217, 217, 217) 60%, rgb(217, 217, 217) 100%);"
                     ></div>
                     <div class="flex justify-center items-center absolute top-2 left-2 bg-white w-20 h-20 rounded-full">
                       <img src={typescript} class="w-10" />
@@ -264,6 +287,18 @@ const About: Component<{}> = () => {
                     </div>
                   </div>
                   <h4 class="font-semibold text-lg">PHP</h4>
+                </div>
+                <div class="flex flex-row items-center gap-4">
+                  <div class="relative m-1">
+                    <div
+                      class="percent w-24 h-24 rounded-full"
+                      style="background-image: conic-gradient(#189F21 0%, #189F21 30%, rgb(217, 217, 217) 30%, rgb(217, 217, 217) 100%);"
+                    ></div>
+                    <div class="flex justify-center items-center absolute top-2 left-2 bg-white w-20 h-20 rounded-full">
+                      <img src={csharp} class="w-12" />
+                    </div>
+                  </div>
+                  <h4 class="font-semibold text-lg">C#</h4>
                 </div>
                 <div class="flex flex-row items-center gap-4">
                   <div class="relative m-1">

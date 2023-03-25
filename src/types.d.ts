@@ -1,8 +1,9 @@
 type WorksInfo = {
-    id?: string;
-    img: string;
-    title: string;
-    url: string;
-    repo?: string;
-    description: string;
-  };
+  id?: string;
+  img: string;
+  title: string;
+  url: string;
+  repo?: string;
+  tech?: Array<string>;
+  description: string;
+};
