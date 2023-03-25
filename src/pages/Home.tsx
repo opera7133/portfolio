@@ -1,9 +1,9 @@
 import { Component } from 'solid-js';
-import { MetaProvider, Title } from 'solid-meta';
+import { MetaProvider, Title } from '@solidjs/meta';
 
 const Home: Component<{}> = () => {
   return (
-    <div class='overflow-hidden relative'>
+    <div class="overflow-hidden relative">
       <MetaProvider>
         <Title>wamo</Title>
       </MetaProvider>
@@ -18,9 +18,9 @@ const Home: Component<{}> = () => {
           </div>
         </div>
       </div>
-      
+
       <div class="w-screen absolute -bottom-16 left-0 bg-blue-700">
-        <div innerHTML='<!--\nCopyright (c) 2017 Ted McDonald (@tedmcdo)\nReleased under the MIT license\nhttp://opensource.org/licenses/mit-license.php\n-->'></div>
+        <div innerHTML="<!--\nCopyright (c) 2017 Ted McDonald (@tedmcdo)\nReleased under the MIT license\nhttp://opensource.org/licenses/mit-license.php\n-->"></div>
         <div class="wave h-48 absolute -top-48 w-[6400px]"></div>
         <div class="wave h-48 absolute -top-44 w-[6400px] opacity-100"></div>
       </div>

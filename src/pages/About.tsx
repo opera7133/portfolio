@@ -21,7 +21,7 @@ import {
   FaSolidVrCardboard,
 } from 'solid-icons/fa';
 import { SiNiconico, SiBilibili } from 'solid-icons/si';
-import { MetaProvider, Title } from 'solid-meta';
+import { MetaProvider, Title } from '@solidjs/meta';
 
 const About: Component<{}> = () => {
   return (

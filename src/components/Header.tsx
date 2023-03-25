@@ -1,5 +1,5 @@
 import { Component } from 'solid-js';
-import { Link, NavLink } from 'solid-app-router';
+import { NavLink } from '@solidjs/router';
 
 const Header: Component<{ title?: string }> = () => {
   return (

@@ -1,5 +1,5 @@
 import { Component } from 'solid-js';
-import { MetaProvider, Title } from 'solid-meta';
+import { MetaProvider, Title } from '@solidjs/meta';
 import { setOpen } from '../signals';
 import { list } from './Works.data';
 import WorksDialog from '../components/WorksDialog';

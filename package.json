@@ -1,7 +1,7 @@
 {
   "name": "portfolio-v3",
   "version": "0.0.1",
-  "description": "",
+  "description": "portfolio",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -21,13 +21,12 @@
   },
   "dependencies": {
     "@solid-primitives/storage": "^1.3.8",
-    "solid-app-router": "^0.4.2",
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.8.2",
     "solid-headless": "^0.13.1",
     "solid-icons": "^1.0.4",
     "solid-js": "^1.6.15",
-    "solid-meta": "^0.28.1",
     "solid-transition-group": "^0.2.2",
-    "solid-utils": "^0.8.1",
     "tailwindcss-brand-colors": "^0.3.3"
   }
 }

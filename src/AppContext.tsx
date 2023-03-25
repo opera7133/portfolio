@@ -1,5 +1,5 @@
-import { Component, createContext, createEffect, createResource, useContext } from 'solid-js';
-import { useIsRouting, useLocation } from 'solid-app-router';
+import { Component, createContext, createEffect, useContext } from 'solid-js';
+import { useIsRouting, useLocation } from '@solidjs/router';
 import { createCookieStorage } from '@solid-primitives/storage';
 import { Transition } from 'solid-transition-group';
 
@@ -56,22 +56,22 @@ export const AppContextProvider: Component<{}> = (props) => {
   return (
     <AppContext.Provider value={store}>
       <Transition
-            appear={true}
-            name="slide-fade"
-              onEnter={(el, done) => {
-                const a = el.animate([{ opacity: 0 }, { opacity: 1 }], {
-                  duration: 600
-                });
-                a.finished.then(done);
-              }}
-              onExit={(el, done) => {
-                const a = el.animate([{ opacity: 1 }, { opacity: 0 }], {
-                  duration: 600
-                });
-                a.finished.then(done);
-              }}
-            >
-      <div classList={{ "transition-opacity duration-400 ease-out opacity-0" : isRouting()}}>{props.children}</div>
+        appear={true}
+        name="slide-fade"
+        onEnter={(el, done) => {
+          const a = el.animate([{ opacity: 0 }, { opacity: 1 }], {
+            duration: 600,
+          });
+          a.finished.then(done);
+        }}
+        onExit={(el, done) => {
+          const a = el.animate([{ opacity: 1 }, { opacity: 0 }], {
+            duration: 600,
+          });
+          a.finished.then(done);
+        }}
+      >
+        <div classList={{ 'transition-opacity duration-400 ease-out opacity-0': isRouting() }}>{props.children}</div>
       </Transition>
     </AppContext.Provider>
   );

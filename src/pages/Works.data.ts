@@ -1,4 +1,4 @@
-import { RouteDataFunc } from 'solid-app-router';
+import { RouteDataFunc } from '@solidjs/router';
 
 export const list: { [key: string]: WorksInfo } = {
   'moisskey': {
