@@ -98,7 +98,7 @@ const About: Component<{}> = () => {
                     </div>
                   </div>
                 </a>
-                <a href="https://www.nicovideo.jp/user/124870787" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.nicovideo.jp/user/72238400" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#252525] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <SiNiconico size={24} color="#FFF" />
                     <div>
@@ -107,7 +107,7 @@ const About: Component<{}> = () => {
                     </div>
                   </div>
                 </a>
-                <a href="https://www.nicovideo.jp/user/72238400" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.nicovideo.jp/user/124870787" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#252525] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <SiNiconico size={24} color="#FFF" />
                     <div>
