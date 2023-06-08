@@ -5,9 +5,9 @@ export const list: { [key: string]: WorksInfo } = {
     img: '/img/works/moisskey.jpg',
     title: 'Moisskey',
     url: 'https://moisskey.com',
-    repo: 'https://github.com/vcborn/moisskey',
+    repo: 'https://github.com/opera7133/moisskey',
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Prisma"],
-    description: 'Misskey版Togetterです。\nいくつかの理由から宣伝はしていません。',
+    description: 'Misskey版Togetterです。',
   },
   'spbuploader': {
     img: '/img/works/spbuploader.jpg',
