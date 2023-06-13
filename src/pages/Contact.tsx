@@ -31,7 +31,7 @@ const Contact: Component<{}> = () => {
                 <FaBrandsDiscord size={24} color="#FFF" />
                 <div>
                   <h4 class="font-semibold text-lg">Discord</h4>
-                  <p>wamo#8600</p>
+                  <p>wamo#8600 / wamosc</p>
                 </div>
               </div>
               <a href="https://twitter.com/scgame_m" target="_blank" rel="noopener noreferrer">
