@@ -20,7 +20,7 @@ const Contact: Component<{}> = () => {
             <div class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4 mt-10">
               <a href="mailto:ainznino@pm.me">
                 <div class="bg-zinc-800 flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaSolidEnvelope size={24} color="#FFF" />
+                  <FaSolidEnvelope size={24} color="#FFF" class="fill-white" />
                   <div>
                     <h4 class="font-semibold text-lg">Mail</h4>
                     <p>ainznino@pm.me</p>
@@ -28,7 +28,7 @@ const Contact: Component<{}> = () => {
                 </div>
               </a>
               <div class="bg-discord flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                <FaBrandsDiscord size={24} color="#FFF" />
+                <FaBrandsDiscord size={24} color="#FFF" class="fill-white" />
                 <div>
                   <h4 class="font-semibold text-lg">Discord</h4>
                   <p>wamo#8600 / wamosc</p>
@@ -36,7 +36,7 @@ const Contact: Component<{}> = () => {
               </div>
               <a href="https://twitter.com/scgame_m" target="_blank" rel="noopener noreferrer">
                 <div class="bg-twitter flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaBrandsTwitter size={24} color="#FFF" />
+                  <FaBrandsTwitter size={24} color="#FFF" class="fill-white" />
                   <div>
                     <h4 class="font-semibold text-lg">Twitter</h4>
                     <p>@scgame_m</p>
@@ -45,7 +45,7 @@ const Contact: Component<{}> = () => {
               </a>
               <a href="https://keybase.io/opera7133" target="_blank" rel="noopener noreferrer">
                 <div class="bg-[#ff6f21] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaBrandsKeybase size={24} color="#FFF" />
+                  <FaBrandsKeybase size={24} color="#FFF" class="fill-white" />
                   <div>
                     <h4 class="font-semibold text-lg">Keybase</h4>
                     <p>opera7133</p>
@@ -54,7 +54,7 @@ const Contact: Component<{}> = () => {
               </a>
               <a href="https://t.me/wamo_sc" target="_blank" rel="noopener noreferrer">
                 <div class="bg-telegram flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaBrandsTelegram size={24} color="#FFF" />
+                  <FaBrandsTelegram size={24} color="#FFF" class="fill-white" />
                   <div>
                     <h4 class="font-semibold text-lg">Telegram</h4>
                     <p>wamo_sc</p>

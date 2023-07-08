@@ -73,7 +73,7 @@ const About: Component<{}> = () => {
               <div class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4">
                 <a href="https://www.youtube.com/@wamo" target="_blank" rel="noopener noreferrer">
                   <div class="bg-youtube flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaBrandsYoutube size={24} color="#FFF" />
+                    <FaBrandsYoutube size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Youtube</h4>
                       <p>@wamo</p>
@@ -82,7 +82,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://twitter.com/scgame_m" target="_blank" rel="noopener noreferrer">
                   <div class="bg-twitter flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaBrandsTwitter size={24} color="#FFF" />
+                    <FaBrandsTwitter size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Twitter</h4>
                       <p>@scgame_m</p>
@@ -91,7 +91,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://github.com/opera7133" target="_blank" rel="noopener noreferrer">
                   <div class="bg-github flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaBrandsGithub size={24} color="#FFF" />
+                    <FaBrandsGithub size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">GitHub</h4>
                       <p>opera7133</p>
@@ -100,7 +100,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://www.nicovideo.jp/user/72238400" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#252525] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <SiNiconico size={24} color="#FFF" />
+                    <SiNiconico size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Niconico (main)</h4>
                       <p>わも</p>
@@ -109,7 +109,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://www.nicovideo.jp/user/124870787" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#252525] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <SiNiconico size={24} color="#FFF" />
+                    <SiNiconico size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Niconico (sub)</h4>
                       <p>わも</p>
@@ -118,7 +118,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://space.bilibili.com/1269277407" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#07A3D7] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <SiBilibili size={24} color="#FFF" />
+                    <SiBilibili size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Bilibili</h4>
                       <p>wamosc</p>
@@ -127,7 +127,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://keybase.io/opera7133" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#ff6f21] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaBrandsKeybase size={24} color="#FFF" />
+                    <FaBrandsKeybase size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Keybase</h4>
                       <p>opera7133</p>
@@ -136,7 +136,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://t.me/wamo_sc" target="_blank" rel="noopener noreferrer">
                   <div class="bg-telegram flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaBrandsTelegram size={24} color="#FFF" />
+                    <FaBrandsTelegram size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Telegram</h4>
                       <p>wamo_sc</p>
@@ -149,7 +149,7 @@ const About: Component<{}> = () => {
                   rel="noopener noreferrer"
                 >
                   <div class="bg-[#053c48] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaSolidVrCardboard size={24} color="#FFF" />
+                    <FaSolidVrCardboard size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">VRChat</h4>
                       <p>wamosc</p>
@@ -158,7 +158,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://ko-fi.com/wamosc" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#FF5E5B] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaSolidMugSaucer size={24} color="#FFF" />
+                    <FaSolidMugSaucer size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Ko-fi</h4>
                       <p>wamosc</p>
