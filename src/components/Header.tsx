@@ -16,6 +16,11 @@ const Header: Component<{ title?: string }> = () => {
                   works
                 </NavLink>
               </li>
+              <li class="hidden md:block">
+                <NavLink href="/services" class="hover:text-blue-500 duration-200">
+                  services
+                </NavLink>
+              </li>
               <li>
                 <NavLink href="/about" class="hover:text-blue-500 duration-200">
                   about
