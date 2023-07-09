@@ -171,7 +171,7 @@ const About: Component<{}> = () => {
                   rel="noopener noreferrer"
                 >
                   <div class="bg-amazon flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaBrandsAmazon size={24} color="#FFF" />
+                    <FaBrandsAmazon size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Amazon</h4>
                       <p>欲しい物リスト</p>
@@ -180,7 +180,7 @@ const About: Component<{}> = () => {
                 </a>
                 <a href="https://blog.wmsci.com" target="_blank" rel="noopener noreferrer">
                   <div class="bg-[#222] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                    <FaSolidPenNib size={24} color="#FFF" />
+                    <FaSolidPenNib size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Blog</h4>
                       <p>Acto</p>
