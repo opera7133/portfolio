@@ -194,6 +194,15 @@ const About: Component<{}> = () => {
                     </div>
                   </div>
                 </a>
+                <a href="https://wamo.enoki.xyz" target="_blank" rel="noopener noreferrer">
+                  <div class="bg-[#222] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
+                    <FaSolidPenNib size={24} color="#FFF" class="fill-white" />
+                    <div>
+                      <h4 class="font-semibold text-lg">エンカ録™</h4>
+                      <p>wamo.enoki.xyz</p>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
             <div>
