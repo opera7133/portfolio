@@ -141,12 +141,12 @@ const About: Component<{}> = () => {
                     </div>
                   </div>
                 </a>
-                <a href="https://t.me/wamo_sc" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/wamosc" target="_blank" rel="noopener noreferrer">
                   <div class="bg-telegram flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                     <FaBrandsTelegram size={24} color="#FFF" class="fill-white" />
                     <div>
                       <h4 class="font-semibold text-lg">Telegram</h4>
-                      <p>wamo_sc</p>
+                      <p>wamosc</p>
                     </div>
                   </div>
                 </a>
