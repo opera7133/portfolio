@@ -205,7 +205,7 @@ const About: Component<{}> = () => {
                   </div>
                 </a>
                 <div class="bg-[#111] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FiRadio size={24} color="#FFF" class="fill-white" />
+                  <FiRadio size={24} color="#FFF" class="stroke-white" />
                   <div>
                     <h4 class="font-semibold text-lg">無線局</h4>
                     <p>JK1UPE</p>
