@@ -56,7 +56,7 @@ export default function WorksDialog({ id, data }: { id: string; data: WorksInfo 
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FiGlobe size={25} color="#fff" class="fill-white" />
+                      <FiGlobe size={25} color="#fff" class="stroke-white" />
                     </a>
                     {data.repo ? (
                       <a
@@ -65,7 +65,7 @@ export default function WorksDialog({ id, data }: { id: string; data: WorksInfo 
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FiGithub size={23} color="#fff" class="fill-white" />
+                        <FiGithub size={23} color="#fff" class="stroke-white" />
                       </a>
                     ) : (
                       ''
