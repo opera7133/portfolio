@@ -21,6 +21,7 @@ import {
   FaSolidVrCardboard,
 } from 'solid-icons/fa';
 import { SiNiconico, SiBilibili } from 'solid-icons/si';
+import { FiRadio } from 'solid-icons/fi';
 import { MetaProvider, Title } from '@solidjs/meta';
 
 const About: Component<{}> = () => {
@@ -203,6 +204,13 @@ const About: Component<{}> = () => {
                     </div>
                   </div>
                 </a>
+                <div class="bg-[#111] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
+                  <FiRadio size={24} color="#FFF" class="fill-white" />
+                  <div>
+                    <h4 class="font-semibold text-lg">無線局</h4>
+                    <p>JK1UPE</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div>
