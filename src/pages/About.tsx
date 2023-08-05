@@ -46,6 +46,13 @@ const About: Component<{}> = () => {
             <div class="mb-12">
               <h3 class="text-3xl my-4 font-semibold font-futura">Histories</h3>
               <div class="flex flex-col ml-8">
+                 <div class="group pl-6 border-l-2 border-black relative py-4">
+                  <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
+                    <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full"></div>
+                  </div>
+                  <h4 class="font-semibold text-lg">アマチュア局の免許状を取得</h4>
+                  <p>2023/08</p>
+                </div>
                 <div class="group pl-6 border-l-2 border-black relative py-4">
                   <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
                     <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full"></div>
