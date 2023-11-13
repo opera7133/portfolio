@@ -19,6 +19,7 @@ import {
   FaSolidMugSaucer,
   FaSolidPenNib,
   FaSolidVrCardboard,
+  FaSolidSquare,
 } from 'solid-icons/fa';
 import { SiNiconico, SiBilibili } from 'solid-icons/si';
 import { FiRadio } from 'solid-icons/fi';
@@ -110,6 +111,15 @@ const About: Component<{}> = () => {
                     <div>
                       <h4 class="font-semibold text-lg">GitHub</h4>
                       <p>opera7133</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://bsky.app/profile/wmsci.com" target="_blank" rel="noopener noreferrer">
+                  <div class="bg-[#0085ff] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
+                    <FaSolidSquare size={24} color="#FFF" class="fill-white" />
+                    <div>
+                      <h4 class="font-semibold text-lg">Bluesky</h4>
+                      <p>@wmsci.com</p>
                     </div>
                   </div>
                 </a>
