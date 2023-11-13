@@ -21,7 +21,7 @@ import {
   FaSolidVrCardboard,
   FaSolidSquare,
 } from 'solid-icons/fa';
-import { SiNiconico, SiBilibili } from 'solid-icons/si';
+import { SiNiconico, SiBilibili, SiMisskey } from 'solid-icons/si';
 import { FiRadio } from 'solid-icons/fi';
 import { MetaProvider, Title } from '@solidjs/meta';
 
@@ -120,6 +120,15 @@ const About: Component<{}> = () => {
                     <div>
                       <h4 class="font-semibold text-lg">Bluesky</h4>
                       <p>@wmsci.com</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://misskey.io/@wamo" target="_blank" rel="noopener noreferrer">
+                  <div class="bg-[#86b300] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
+                    <SiMisskey size={24} color="#FFF" class="fill-white" />
+                    <div>
+                      <h4 class="font-semibold text-lg">Misskey.io</h4>
+                      <p>wamo@misskey.io</p>
                     </div>
                   </div>
                 </a>
