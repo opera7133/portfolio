@@ -74,7 +74,7 @@ export const list: { [key: string]: WorksInfo } = {
     img: '/img/works/mcborn.jpg',
     title: 'MCborn',
     url: 'https://mc.vcborn.com',
-    description: 'VCbornのマインクラフトサーバーを運営しています。',
+    description: 'VCbornのマインクラフトサーバーを運営していました。（〜2023）',
   },
   'unicode': {
     img: '/img/works/unicode.jpg',
