@@ -13,7 +13,7 @@ const Contact: Component<{}> = () => {
           <div class="mx-4">
             <h2 class="text-3xl mb-4 font-semibold font-futura">Contact</h2>
             <p>
-              依頼、配布物、その他お問い合わせ等ありましたらこちらからどうぞ。
+              お仕事の依頼や配布物についての質問等々ありましたらこちらからどうぞ。
               <br />
               メールまたはTelegramで連絡していただけると助かります。
             </p>
