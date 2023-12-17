@@ -50,6 +50,15 @@ const Services: Component<{}> = () => {
                 <h4 class="text-xl">feddit.jp</h4>
                 <RiArrowsArrowRightSLine size={30} />
               </a>
+              <a
+                href="https://firefish.jp"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="py-5 px-8 bg-gray-100 duration-200 hover:bg-gray-300 flex justify-between"
+              >
+                <h4 class="text-xl">firefish.jp</h4>
+                <RiArrowsArrowRightSLine size={30} />
+              </a>
             </div>
             <div class="flex flex-col mb-8">
               <div class="bg-slate-800 text-white p-8 flex items-center gap-5 rounded-t-xl">
