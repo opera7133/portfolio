@@ -15,15 +15,24 @@ const Contact: Component<{}> = () => {
             <p>
               お仕事の依頼や配布物についての質問等々ありましたらこちらからどうぞ。
               <br />
-              メールまたはTelegramで連絡していただけると助かります。
+              メールで連絡していただけると助かります。
             </p>
             <div class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4 mt-10">
               <a href="mailto:ainznino@pm.me">
                 <div class="bg-zinc-800 flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
                   <FaSolidEnvelope size={24} color="#FFF" class="fill-white" />
                   <div>
-                    <h4 class="font-semibold text-lg">Mail</h4>
-                    <p>ainznino@pm.me</p>
+                    <h4 class="font-semibold text-lg">Mail(main)</h4>
+                    <p>ainznino@proton.me</p>
+                  </div>
+                </div>
+              </a>
+              <a href="mailto:ainznino@pm.me">
+                <div class="bg-zinc-800 flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
+                  <FaSolidEnvelope size={24} color="#FFF" class="fill-white" />
+                  <div>
+                    <h4 class="font-semibold text-lg">Mail(sub)</h4>
+                    <p>endxop@gmail.com</p>
                   </div>
                 </div>
               </a>
