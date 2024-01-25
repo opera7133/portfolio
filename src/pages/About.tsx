@@ -51,6 +51,13 @@ const About: Component<{}> = () => {
                   <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
                     <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full"></div>
                   </div>
+                  <h4 class="font-semibold text-lg">第14回品川区ビジネス創造コンテスト 受賞</h4>
+                  <p>2024/02</p>
+                </div>
+                <div class="group pl-6 border-l-2 border-black relative py-4">
+                  <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
+                    <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full"></div>
+                  </div>
                   <h4 class="font-semibold text-lg">Hack U 都立産技高専 2023にてHappy Hacking賞を受賞</h4>
                   <p>2024/01</p>
                 </div>
