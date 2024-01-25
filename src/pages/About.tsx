@@ -72,7 +72,7 @@ const About: Component<{}> = () => {
                   <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
                     <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full"></div>
                   </div>
-                  <h4 class="font-semibold text-lg">TOEIC 840点</h4>
+                  <h4 class="font-semibold text-lg">TOEIC 公開テスト 840点</h4>
                   <p>2023/03</p>
                 </div>
                 <div class="group pl-6 border-l-2 border-black relative py-4">
