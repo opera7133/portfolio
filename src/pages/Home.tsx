@@ -2,6 +2,12 @@ import { Component } from 'solid-js';
 import { MetaProvider, Title } from '@solidjs/meta';
 
 const Home: Component<{}> = () => {
+  const sentenceList = [
+    "Pretending to be busy.",
+    "There\'s never enough time.",
+    "So far so good."
+  ]
+  const sentence = sentence[Math.floor(Math.random() * sentence.length)];
   return (
     <div class="overflow-hidden relative">
       <MetaProvider>
@@ -13,7 +19,7 @@ const Home: Component<{}> = () => {
             <img src="/img/wamo.jpg" alt="usericon" class="rounded-full w-36 shadow-md" />
             <div>
               <h2 class="text-5xl pb-2 font-semibold font-futura">wamo</h2>
-              <p class="text-3xl pb-4 font-futura">Pretending to be busy.</p>
+              <p class="text-3xl pb-4 font-futura">{sentence}</p>
             </div>
           </div>
         </div>
