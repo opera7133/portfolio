@@ -2,12 +2,8 @@ import { Component } from 'solid-js';
 import { MetaProvider, Title } from '@solidjs/meta';
 
 const Home: Component<{}> = () => {
-  const sentenceList = [
-    "Pretending to be busy.",
-    "There\'s never enough time.",
-    "So far so good."
-  ]
-  const sentence = sentence[Math.floor(Math.random() * sentence.length)];
+  const sentenceList = ['Pretending to be busy.', "There's never enough time.", 'So far so good.'];
+  const sentence = sentenceList[Math.floor(Math.random() * sentenceList.length)];
   return (
     <div class="overflow-hidden relative">
       <MetaProvider>
