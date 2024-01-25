@@ -37,7 +37,7 @@ const About: Component<{}> = () => {
             <h2 class="text-3xl mb-4 font-semibold font-futura">About</h2>
             <div class="mb-12">
               <h3 class="text-5xl mb-3 font-semibold font-futura">wamo</h3>
-              <p class="text-2xl font-semibold text-neutral-500 mb-4 font-futura">Frontend, Backend Developer</p>
+              <p class="text-2xl font-semibold text-neutral-500 mb-4 font-futura">[Frontend, Backend] Developer, Designer</p>
               <p>
                 wamoと申します。
                 <br />
