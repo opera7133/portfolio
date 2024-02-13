@@ -1,6 +1,13 @@
 import { RouteDataFunc } from '@solidjs/router';
 
 export const list: { [key: string]: WorksInfo } = {
+  'ez-pos': {
+    img: '/img/works/ez-pos.jpg',
+    title: "EZ POS SYSTEM",
+    repo: 'https://github.com/opera7133/ez_pos_system_app',
+    tech: ["Flutter", "Dart", "Firebase", "Square"],
+    description: "簡易的なPOSアプリケーション",
+  },
   'moisskey': {
     img: '/img/works/moisskey.jpg',
     title: 'Moisskey',
