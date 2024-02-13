@@ -50,14 +50,18 @@ export default function WorksDialog({ id, data }: { id: string; data: WorksInfo 
                     ))}
                   </ul>
                   <div class="my-2 flex flex-row gap-3">
-                    <a
-                      class="p-2 bg-gray-900 rounded-full duration-200 hover:opacity-80"
-                      href={data.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FiGlobe size={25} color="#fff" class="stroke-white" />
-                    </a>
+                    {data.url ? (
+                      <a
+                        class="p-2 bg-gray-900 rounded-full duration-200 hover:opacity-80"
+                        href={data.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FiGlobe size={25} color="#fff" class="stroke-white" />
+                      </a>
+                    ) : (
+                      ''
+                    )}
                     {data.repo ? (
                       <a
                         class="flex items-center justify-center p-2 pr-2.5 bg-gray-900 rounded-full duration-200 hover:opacity-80"
