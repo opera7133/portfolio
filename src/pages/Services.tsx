@@ -69,7 +69,12 @@ const Services: Component<{}> = () => {
                   <h3 class="text-2xl">Sook.6th</h3>
                 </div>
               </div>
-              <a href="#" class="py-5 px-8 bg-gray-100 duration-200 hover:bg-gray-300 flex justify-between">
+              <a
+                href="https://sbtn.tokyo"
+                target="_blank"
+                rel="noreferrer noopener
+                class="py-5 px-8 bg-gray-100 duration-200 hover:bg-gray-300 flex justify-between"
+              >
                 <h4 class="text-xl">SBTN Server</h4>
                 <RiArrowsArrowRightSLine size={30} />
               </a>
@@ -108,15 +113,6 @@ const Services: Component<{}> = () => {
                 class="py-5 px-8 bg-gray-100 duration-200 hover:bg-gray-300 flex justify-between"
               >
                 <h4 class="text-xl">WMSocial</h4>
-                <RiArrowsArrowRightSLine size={30} />
-              </a>
-              <a
-                href="https://mstdn.ja1ykl.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="py-5 px-8 bg-gray-100 duration-200 hover:bg-gray-300 flex justify-between"
-              >
-                <h4 class="text-xl">Moden</h4>
                 <RiArrowsArrowRightSLine size={30} />
               </a>
               <a
