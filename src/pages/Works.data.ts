@@ -1,6 +1,14 @@
 import { RouteDataFunc } from '@solidjs/router';
 
 export const list: { [key: string]: WorksInfo } = {
+  'emcshop': {
+    img: '/img/works/emcshop.jpg',
+    title: 'EMC Shop',
+    url: 'https://shop.emcmusic.net',
+    repo: 'https://github.com/ElectroMusicCompany/emc-shop',
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Prisma", "Stripe", "Meilisearch"],
+    description: 'EMCのオンラインフリマ。',
+  },
   'ez-pos': {
     img: '/img/works/ez-pos.jpg',
     title: "EZ POS SYSTEM",

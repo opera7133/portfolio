@@ -72,7 +72,7 @@ const Services: Component<{}> = () => {
               <a
                 href="https://sbtn.tokyo"
                 target="_blank"
-                rel="noreferrer noopener
+                rel="noreferrer noopener"
                 class="py-5 px-8 bg-gray-100 duration-200 hover:bg-gray-300 flex justify-between"
               >
                 <h4 class="text-xl">SBTN Server</h4>
