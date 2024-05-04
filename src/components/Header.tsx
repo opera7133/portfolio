@@ -8,7 +8,7 @@ const Header: Component<{ title?: string }> = () => {
         <div class="container mx-auto py-6">
           <nav class="mx-4 flex flex-row justify-between font-futura">
             <h1 class="text-2xl font-semibold">
-              <NavLink href="/">wamo</NavLink>
+              <NavLink href="/">wm.sci</NavLink>
             </h1>
             <ul class="text-xl gap-4 flex flex-row list-none font-medium">
               <li>
