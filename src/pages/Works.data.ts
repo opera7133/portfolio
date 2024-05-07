@@ -75,8 +75,8 @@ export const list: { [key: string]: WorksInfo } = {
     img: '/img/works/acto.jpg',
     title: 'Acto',
     url: 'https://blog.wmsci.com',
-    tech: ["WordPress"],
-    description: 'wamoのブログ。',
+    tech: ["Astro", "TailwindCSS"],
+    description: 'wamoのブログ。元はWordpressで運用していたが、Astroに変更。',
   },
   'vcborn': {
     img: '/img/works/vcborn.jpg',
