@@ -16,6 +16,7 @@ import {
   FaBrandsTelegram,
   FaBrandsTwitter,
   FaBrandsYoutube,
+  FaBrandsSoundcloud,
   FaSolidMugSaucer,
   FaSolidPenNib,
   FaSolidVrCardboard,
@@ -170,6 +171,15 @@ const About: Component<{}> = () => {
                     <div>
                       <h4 class="font-semibold text-lg">Bilibili</h4>
                       <p>wamosc</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://soundcloud.com/wamo0" target="_blank" rel="noopener noreferrer">
+                  <div class="bg-[#ff5500] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
+                    <FaBrandsSoundcloud size={24} color="#FFF" class="fill-white" />
+                    <div>
+                      <h4 class="font-semibold text-lg">SoundCloud</h4>
+                      <p>wamo0</p>
                     </div>
                   </div>
                 </a>
