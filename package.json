@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
+    "build/cfpages": "vinxi build --preset cloudflare-pages",
     "start": "vinxi start"
   },
   "dependencies": {
