@@ -6,6 +6,7 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "build/cfpages": "vinxi build --preset cloudflare-pages",
+    "build/static": "vinxi build --preset static",
     "start": "vinxi start"
   },
   "dependencies": {
