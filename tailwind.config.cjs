@@ -8,7 +8,7 @@ module.exports = {
         waves: "wave 15s infinite linear"
       },
       fontFamily: {
-        main: ['Zen Kaku Gothic Antique', ...defaultTheme.fontFamily.sans],
+        sans: ['Zen Kaku Gothic Antique', ...defaultTheme.fontFamily.sans],
         futura: ['futura-pt', 'Zen Kaku Gothic Antique', ...defaultTheme.fontFamily.sans],
       },
     },
