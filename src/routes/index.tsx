@@ -9,7 +9,7 @@ const Home = () => {
   const sentence =
     sentenceList[Math.floor(Math.random() * sentenceList.length)];
   return (
-    <>
+    <main>
       <MetaProvider>
         <Title>wamo</Title>
       </MetaProvider>
@@ -36,7 +36,7 @@ const Home = () => {
           <div class="wave h-48 absolute -top-44 w-[6400px] opacity-100"></div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

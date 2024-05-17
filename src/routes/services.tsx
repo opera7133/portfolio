@@ -4,7 +4,7 @@ import { RiArrowsArrowRightSLine } from "solid-icons/ri";
 
 const Services = () => {
   return (
-    <>
+    <main>
       <MetaProvider>
         <Title>Services | wamo</Title>
       </MetaProvider>
@@ -136,7 +136,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

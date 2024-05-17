@@ -7,7 +7,7 @@ const NotFound = () => {
     return String(num).match(/^([0-9])\1+$/) !== null;
   }
   return (
-    <>
+    <main>
       <Title>404 | wamo</Title>
       <div class="flex flex-col justify-center h-screen">
         <div class="container mx-auto max-w-5xl z-20">
@@ -27,7 +27,7 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

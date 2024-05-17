@@ -10,7 +10,7 @@ export default function App() {
     <Router
       root={(props) => (
         <MetaProvider>
-          <main class="min-h-screen overflow-hidden">
+          <div class="min-h-screen overflow-hidden">
             <div class="splashbg"></div>
             <Header />
             <div id="main-content">
@@ -18,7 +18,7 @@ export default function App() {
                 <Suspense>{props.children}</Suspense>
               </div>
             </div>
-          </main>
+          </div>
         </MetaProvider>
       )}
     >

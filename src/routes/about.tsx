@@ -27,7 +27,7 @@ import { MetaProvider, Title } from "@solidjs/meta";
 
 const About = () => {
   return (
-    <>
+    <main>
       <MetaProvider>
         <Title>About | wamo</Title>
       </MetaProvider>
@@ -486,7 +486,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

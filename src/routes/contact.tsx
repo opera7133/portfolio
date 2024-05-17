@@ -9,7 +9,7 @@ import { MetaProvider, Title } from "@solidjs/meta";
 
 const Contact = () => {
   return (
-    <>
+    <main>
       <MetaProvider>
         <Title>Contact | wamo</Title>
       </MetaProvider>
@@ -91,7 +91,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

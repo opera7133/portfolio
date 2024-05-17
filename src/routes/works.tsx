@@ -6,7 +6,7 @@ import WorksDialog from "../components/WorksDialog";
 const Works = () => {
   const data = Object.entries(list);
   return (
-    <>
+    <main>
       <MetaProvider>
         <Title>Works | wamo</Title>
       </MetaProvider>
@@ -38,7 +38,7 @@ const Works = () => {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 
