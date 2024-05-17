@@ -1,4 +1,3 @@
-import { Component } from "solid-js";
 import nextjs from "../img/skills/nextjs.svg";
 import solidjs from "../img/skills/solidjs.svg";
 import typescript from "../img/skills/typescript.svg";
@@ -26,7 +25,7 @@ import { SiNiconico, SiBilibili, SiMisskey } from "solid-icons/si";
 import { FiRadio } from "solid-icons/fi";
 import { MetaProvider, Title } from "@solidjs/meta";
 
-const About: Component<{}> = () => {
+const About = () => {
   return (
     <>
       <MetaProvider>

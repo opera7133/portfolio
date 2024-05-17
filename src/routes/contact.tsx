@@ -5,10 +5,9 @@ import {
   FaBrandsTwitter,
   FaSolidEnvelope,
 } from "solid-icons/fa";
-import { Component } from "solid-js";
 import { MetaProvider, Title } from "@solidjs/meta";
 
-const Contact: Component<{}> = () => {
+const Contact = () => {
   return (
     <>
       <MetaProvider>

@@ -1,7 +1,6 @@
-import { Component } from "solid-js";
 import { MetaProvider, Title } from "@solidjs/meta";
 
-const Home: Component<{}> = () => {
+const Home = () => {
   const sentenceList = [
     "Pretending to be busy.",
     "There's never enough time.",

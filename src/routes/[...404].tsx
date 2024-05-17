@@ -1,7 +1,7 @@
-import { Component, createSignal } from "solid-js";
+import { createSignal } from "solid-js";
 import { Title } from "@solidjs/meta";
 
-const NotFound: Component<{}> = () => {
+const NotFound = () => {
   const [count, setCount] = createSignal(404);
   return (
     <>

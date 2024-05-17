@@ -1,10 +1,9 @@
-import { Component } from "solid-js";
 import { MetaProvider, Title } from "@solidjs/meta";
 import { setOpen } from "../signals";
 import { list } from "./works.data";
 import WorksDialog from "../components/WorksDialog";
 
-const Works: Component<{}> = () => {
+const Works = () => {
   const data = Object.entries(list);
   return (
     <>

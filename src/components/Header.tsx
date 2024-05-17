@@ -1,5 +1,4 @@
 import { Component } from "solid-js";
-import { A } from "@solidjs/router";
 
 const Header: Component<{ title?: string }> = () => {
   return (
@@ -8,28 +7,28 @@ const Header: Component<{ title?: string }> = () => {
         <div class="container mx-auto py-6">
           <nav class="mx-4 flex flex-row justify-between font-futura">
             <h1 class="text-2xl font-semibold">
-              <A href="/">wm.sci</A>
+              <a href="/">wm.sci</a>
             </h1>
             <ul class="text-xl gap-4 flex flex-row list-none font-medium">
               <li>
-                <A href="/works" class="hover:text-blue-500 duration-200">
+                <a href="/works" class="hover:text-blue-500 duration-200">
                   works
-                </A>
+                </a>
               </li>
               <li class="hidden md:block">
-                <A href="/services" class="hover:text-blue-500 duration-200">
+                <a href="/services" class="hover:text-blue-500 duration-200">
                   services
-                </A>
+                </a>
               </li>
               <li>
-                <A href="/about" class="hover:text-blue-500 duration-200">
+                <a href="/about" class="hover:text-blue-500 duration-200">
                   about
-                </A>
+                </a>
               </li>
               <li>
-                <A href="/contact" class="hover:text-blue-500 duration-200">
+                <a href="/contact" class="hover:text-blue-500 duration-200">
                   contact
-                </A>
+                </a>
               </li>
             </ul>
           </nav>
