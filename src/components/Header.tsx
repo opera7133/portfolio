@@ -1,5 +1,5 @@
-import { Component } from 'solid-js';
-import { NavLink } from '@solidjs/router';
+import { Component } from "solid-js";
+import { A } from "@solidjs/router";
 
 const Header: Component<{ title?: string }> = () => {
   return (
@@ -8,28 +8,28 @@ const Header: Component<{ title?: string }> = () => {
         <div class="container mx-auto py-6">
           <nav class="mx-4 flex flex-row justify-between font-futura">
             <h1 class="text-2xl font-semibold">
-              <NavLink href="/">wm.sci</NavLink>
+              <A href="/">wm.sci</A>
             </h1>
             <ul class="text-xl gap-4 flex flex-row list-none font-medium">
               <li>
-                <NavLink href="/works" class="hover:text-blue-500 duration-200">
+                <A href="/works" class="hover:text-blue-500 duration-200">
                   works
-                </NavLink>
+                </A>
               </li>
               <li class="hidden md:block">
-                <NavLink href="/services" class="hover:text-blue-500 duration-200">
+                <A href="/services" class="hover:text-blue-500 duration-200">
                   services
-                </NavLink>
+                </A>
               </li>
               <li>
-                <NavLink href="/about" class="hover:text-blue-500 duration-200">
+                <A href="/about" class="hover:text-blue-500 duration-200">
                   about
-                </NavLink>
+                </A>
               </li>
               <li>
-                <NavLink href="/contact" class="hover:text-blue-500 duration-200">
+                <A href="/contact" class="hover:text-blue-500 duration-200">
                   contact
-                </NavLink>
+                </A>
               </li>
             </ul>
           </nav>

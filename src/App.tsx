@@ -1,31 +1,28 @@
-import { Suspense } from 'solid-js';
-import { useRoutes, Router } from '@solidjs/router';
-import { routes } from './routes';
-import Header from './components/Header';
-import { AppContextProvider } from './AppContext';
-import { preventSmoothScrollOnTabbing } from './utils';
-import { MetaProvider } from '@solidjs/meta';
+import { Router } from "@solidjs/router";
+import { FileRoutes } from "@solidjs/start/router";
+import { Suspense } from "solid-js";
+import Header from "~/components/Header";
+import "./app.css";
+import { MetaProvider } from "@solidjs/meta";
 
-export const App = () => {
-  const Routes = useRoutes(routes);
-  preventSmoothScrollOnTabbing();
+export default function App() {
   return (
-    <main class="min-h-screen overflow-hidden">
-      <div class="splashbg"></div>
-      <Router>
+    <Router
+      root={(props) => (
         <MetaProvider>
-          <Header />
-          <AppContextProvider>
+          <main class="min-h-screen overflow-hidden">
+            <div class="splashbg"></div>
+            <Header />
             <div id="main-content">
               <div>
-                <Suspense>
-                  <Routes />
-                </Suspense>
+                <Suspense>{props.children}</Suspense>
               </div>
             </div>
-          </AppContextProvider>
+          </main>
         </MetaProvider>
-      </Router>
-    </main>
+      )}
+    >
+      <FileRoutes />
+    </Router>
   );
-};
+}

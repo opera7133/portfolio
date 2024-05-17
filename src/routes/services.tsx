@@ -1,7 +1,7 @@
-import { Component } from 'solid-js';
-import { MetaProvider, Title } from '@solidjs/meta';
-import { BiRegularServer } from 'solid-icons/bi';
-import { RiArrowsArrowRightSLine } from 'solid-icons/ri';
+import { Component } from "solid-js";
+import { MetaProvider, Title } from "@solidjs/meta";
+import { BiRegularServer } from "solid-icons/bi";
+import { RiArrowsArrowRightSLine } from "solid-icons/ri";
 
 const Services: Component<{}> = () => {
   return (

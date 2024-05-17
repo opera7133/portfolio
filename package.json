@@ -1,32 +1,26 @@
 {
-  "name": "portfolio-v3",
-  "version": "0.0.1",
-  "description": "portfolio",
+  "name": "portfolio",
+  "version": "4.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "https-localhost": "^4.7.1",
-    "postcss": "^8.4.25",
-    "tailwindcss": "^3.3.2",
-    "typescript": "^5.1.6",
-    "vite": "^5.2.7",
-    "vite-plugin-solid": "^2.10.2"
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
   },
   "dependencies": {
-    "@solid-primitives/storage": "^2.0.0",
-    "@solidjs/meta": "^0.28.5",
-    "@solidjs/router": "^0.8.2",
-    "solid-headless": "^0.13.1",
-    "solid-icons": "^1.0.11",
-    "solid-js": "^1.7.7",
-    "solid-transition-group": "^0.2.2",
-    "tailwindcss-brand-colors": "^0.3.3"
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.13.3",
+    "@solidjs/start": "^1.0.0-rc.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "solid-icons": "^1.1.0",
+    "solid-js": "^1.8.17",
+    "tailwindcss": "^3.4.3",
+    "tailwindcss-brand-colors": "^0.3.6",
+    "terracotta": "^1.0.5",
+    "vinxi": "^0.3.11"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

@@ -1,17 +1,34 @@
-import { Dialog, DialogPanel, DialogTitle, Transition, TransitionChild, DialogOverlay } from 'solid-headless';
-import { nl2br } from '../utils/nl2br';
-import { open, setOpen } from '../signals';
-import { FiGithub, FiGlobe } from 'solid-icons/fi';
+import {
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  Transition,
+  TransitionChild,
+  DialogOverlay,
+} from "terracotta";
+import { nl2br } from "../utils/nl2br";
+import { open, setOpen } from "../signals";
+import { FiGithub, FiGlobe } from "solid-icons/fi";
 
-export default function WorksDialog({ id, data }: { id: string; data: WorksInfo }) {
+export default function WorksDialog({
+  id,
+  data,
+}: {
+  id: string;
+  data: WorksInfo;
+}) {
   function closeModal() {
-    setOpen('');
+    setOpen("");
   }
 
   return (
     <>
       <Transition appear show={id === open()}>
-        <Dialog isOpen class="fixed inset-0 z-10 overflow-y-auto" onClose={closeModal}>
+        <Dialog
+          isOpen
+          class="fixed inset-0 z-10 overflow-y-auto"
+          onClose={closeModal}
+        >
           <div class="min-h-screen px-4 flex items-center justify-center">
             <TransitionChild
               enter="ease-out duration-300"
@@ -37,7 +54,10 @@ export default function WorksDialog({ id, data }: { id: string; data: WorksInfo 
             >
               <DialogPanel class="inline-block w-full max-w-sm md:max-w-lg overflow-hidden text-left align-middle transition-all transform bg-gray-50 shadow-xl rounded-2xl">
                 <picture>
-                  <source srcset={data.img.replace('jpg', 'webp')} type="image/webp" />
+                  <source
+                    srcset={data.img.replace("jpg", "webp")}
+                    type="image/webp"
+                  />
                   <img src={data.img} />
                 </picture>
                 <div class="px-6 my-4">
@@ -46,7 +66,9 @@ export default function WorksDialog({ id, data }: { id: string; data: WorksInfo 
                   </DialogTitle>
                   <ul class="my-2 list-none flex flex-row flex-wrap items-center gap-2">
                     {data.tech?.map((t) => (
-                      <li class="bg-gray-900 text-white px-3 py-1 rounded-full">{t}</li>
+                      <li class="bg-gray-900 text-white px-3 py-1 rounded-full">
+                        {t}
+                      </li>
                     ))}
                   </ul>
                   <div class="my-2 flex flex-row gap-3">
@@ -60,7 +82,7 @@ export default function WorksDialog({ id, data }: { id: string; data: WorksInfo 
                         <FiGlobe size={25} color="#fff" class="stroke-white" />
                       </a>
                     ) : (
-                      ''
+                      ""
                     )}
                     {data.repo ? (
                       <a
@@ -72,11 +94,14 @@ export default function WorksDialog({ id, data }: { id: string; data: WorksInfo 
                         <FiGithub size={23} color="#fff" class="stroke-white" />
                       </a>
                     ) : (
-                      ''
+                      ""
                     )}
                   </div>
                   <div class="mt-2">
-                    <p class="text-gray-900">{nl2br(data.description)}</p>
+                    <p
+                      class="text-gray-900"
+                      innerHTML={nl2br(data.description).toString()}
+                    ></p>
                   </div>
 
                   <div class="mt-4">

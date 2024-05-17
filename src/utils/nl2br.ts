@@ -1,10 +1,8 @@
-import html from "solid-js/html"
-
 export function nl2br(str: string) {
   const newlineRegex = /(\r\n|\r|\n)/g;
   return str.split(newlineRegex).map(function (line, index) {
     if (line.match(newlineRegex)) {
-      return html`<br />`
+      return `<br />`
     }
     return line;
   });
