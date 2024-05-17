@@ -78,3 +78,7 @@ http://opensource.org/licenses/mit-license.php
     transform: translate3d(0,5px,0);
   }
 }
+
+#site[data-hk] {
+  display: none;
+}

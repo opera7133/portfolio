@@ -5,5 +5,5 @@ export function nl2br(str: string) {
       return `<br />`
     }
     return line;
-  });
+  }).join("");
 }

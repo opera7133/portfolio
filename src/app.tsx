@@ -10,7 +10,7 @@ export default function App() {
     <Router
       root={(props) => (
         <MetaProvider>
-          <div class="min-h-screen overflow-hidden">
+          <div class="min-h-screen overflow-hidden" id="site">
             <div class="splashbg"></div>
             <Header />
             <div id="main-content">

@@ -100,7 +100,7 @@ export default function WorksDialog({
                   <div class="mt-2">
                     <p
                       class="text-gray-900"
-                      innerHTML={nl2br(data.description).toString()}
+                      innerHTML={nl2br(data.description)}
                     ></p>
                   </div>
 
