@@ -6,6 +6,7 @@ import {
   FaSolidEnvelope,
 } from "solid-icons/fa";
 import { MetaProvider, Title } from "@solidjs/meta";
+import LinkCard from "~/components/LinkCard";
 
 const Contact = () => {
   return (
@@ -23,70 +24,47 @@ const Contact = () => {
               メールで連絡していただけると助かります。
             </p>
             <div class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4 mt-10">
-              <a href="mailto:ainznino@pm.me">
-                <div class="bg-zinc-800 flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaSolidEnvelope size={24} color="#FFF" class="fill-white" />
-                  <div>
-                    <h4 class="font-semibold text-lg">Mail(main)</h4>
-                    <p>ainznino@proton.me</p>
-                  </div>
-                </div>
-              </a>
-              <a href="mailto:ainznino@pm.me">
-                <div class="bg-zinc-800 flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaSolidEnvelope size={24} color="#FFF" class="fill-white" />
-                  <div>
-                    <h4 class="font-semibold text-lg">Mail(sub)</h4>
-                    <p>endxop@gmail.com</p>
-                  </div>
-                </div>
-              </a>
-              <div class="bg-discord flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                <FaBrandsDiscord size={24} color="#FFF" class="fill-white" />
-                <div>
-                  <h4 class="font-semibold text-lg">Discord</h4>
-                  <p>wamo#8600 / wamosc</p>
-                </div>
-              </div>
-              <a
+              <LinkCard
+                className="bg-zinc-800"
+                icon={FaSolidEnvelope}
+                title="Mail(main)"
+                user="ainznino@pm.me"
+                href="mailto:ainznino@pm.me"
+              />
+              <LinkCard
+                className="bg-zinc-800"
+                icon={FaSolidEnvelope}
+                title="Mail(sub)"
+                user="endxop@gmail.com"
+                href="mailto:endxop@gmail.com"
+              />
+              <LinkCard
+                className="bg-discord"
+                icon={FaBrandsDiscord}
+                title="Discord"
+                user="wamo#8600 / wamosc"
+              />
+              <LinkCard
+                className="bg-twitter"
+                icon={FaBrandsTwitter}
+                title="Twitter"
+                user="@scgame_m"
                 href="https://twitter.com/scgame_m"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="bg-twitter flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaBrandsTwitter size={24} color="#FFF" class="fill-white" />
-                  <div>
-                    <h4 class="font-semibold text-lg">Twitter</h4>
-                    <p>@scgame_m</p>
-                  </div>
-                </div>
-              </a>
-              <a
+              />
+              <LinkCard
+                className="bg-[#ff6f21]"
+                icon={FaBrandsKeybase}
+                title="Keybase"
+                user="opera7133"
                 href="https://keybase.io/opera7133"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="bg-[#ff6f21] flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaBrandsKeybase size={24} color="#FFF" class="fill-white" />
-                  <div>
-                    <h4 class="font-semibold text-lg">Keybase</h4>
-                    <p>opera7133</p>
-                  </div>
-                </div>
-              </a>
-              <a
+              />
+              <LinkCard
+                className="bg-telegram"
+                icon={FaBrandsTelegram}
+                title="Telegram"
+                user="wamo_sc"
                 href="https://t.me/wamo_sc"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="bg-telegram flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300">
-                  <FaBrandsTelegram size={24} color="#FFF" class="fill-white" />
-                  <div>
-                    <h4 class="font-semibold text-lg">Telegram</h4>
-                    <p>wamo_sc</p>
-                  </div>
-                </div>
-              </a>
+              />
             </div>
           </div>
         </div>
