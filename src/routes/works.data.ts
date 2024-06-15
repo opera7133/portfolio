@@ -98,7 +98,7 @@ export const list: { [key: string]: WorksInfo } = {
   'dlbase': {
     img: '/img/works/dlbase.jpg',
     title: 'DLBase',
-    url: 'https://dlbase.cf',
+    url: 'https://dlbase.wmsci.com',
     repo: 'https://github.com/opera7133/DLBase',
     tech: ["PHP"],
     description: 'Linkcoreみたいなページを作成するツール。',
