@@ -144,13 +144,6 @@ const About = () => {
                   className="bg-telegram"
                 />
                 <LinkCard
-                  href="https://vrchat.com/home/user/usr_f5d27827-3a96-45ba-921f-10b0d2aa4213"
-                  title="VRChat"
-                  user="wamosc"
-                  icon={FaSolidVrCardboard}
-                  className="bg-[#053c48]"
-                />
-                <LinkCard
                   href="https://ko-fi.com/wamosc"
                   title="Ko-fi"
                   user="wamosc"
