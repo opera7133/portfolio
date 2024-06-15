@@ -22,6 +22,14 @@ export const list: { [key: string]: WorksInfo } = {
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Prisma"],
     description: 'Misskey版Togetterです。',
   },
+  'mattar': {
+    img: '/img/works/mattar.jpg',
+    title: 'Mattar',
+    url: 'https://mattar.wmsci.com',
+    repo: 'https://github.com/opera7133/mattar',
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Prisma", "NextAuth.js", "socket.io", "Cloudinary"],
+    description: '旧き良きTwitterを目指したまったりできるSNS',
+  },
   'spbuploader': {
     img: '/img/works/spbuploader.jpg',
     title: 'SPBUploader',
