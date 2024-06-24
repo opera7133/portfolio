@@ -14,10 +14,10 @@ const Others = () => {
         <div class="container mx-auto max-w-7xl pb-20 z-20">
           <div class="mx-4">
             <h2 class="text-3xl mb-4 font-semibold font-futura">Others</h2>
-            <div class="flex flex-col md:flex-row gap-2 items-start">
+            <div class="flex flex-col md:flex-row gap-2 md:items-start">
               <A
                 href="/services"
-                class="bg-black px-8 py-6 h-40 text-white rounded-lg flex flex-col gap-2"
+                class="bg-black px-8 py-6 md:h-40 text-white rounded-lg flex flex-col gap-2"
               >
                 <VsServer class="fill-white" size={48} />
                 <h3 class="text-xl font-bold">Services</h3>
@@ -25,7 +25,7 @@ const Others = () => {
               </A>
               <A
                 href="/contact"
-                class="bg-black px-8 py-6 h-40 text-white rounded-lg flex flex-col gap-2"
+                class="bg-black px-8 py-6 md:h-40 text-white rounded-lg flex flex-col gap-2"
               >
                 <IoMail class="fill-white" size={48} />
                 <h3 class="text-xl font-bold">Contact</h3>
@@ -33,7 +33,7 @@ const Others = () => {
               </A>
               <A
                 href="/commission"
-                class="bg-black px-8 py-6 h-40 text-white rounded-lg flex flex-col gap-2"
+                class="bg-black px-8 py-6 md:h-40 text-white rounded-lg flex flex-col gap-2"
               >
                 <RiDocumentFileEditLine class="fill-white" size={48} />
                 <h3 class="text-xl font-bold">Commission</h3>
