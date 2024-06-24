@@ -12,14 +12,14 @@ const Contact = () => {
   return (
     <main>
       <MetaProvider>
-        <Title>Contact | wamo</Title>
+        <Title>Contact | wm.sci</Title>
       </MetaProvider>
       <div class="mt-28 pb-32 md:pb-0">
         <div class="container mx-auto max-w-7xl z-20">
           <div class="mx-4">
             <h2 class="text-3xl mb-4 font-semibold font-futura">Contact</h2>
             <p>
-              お仕事の依頼や配布物についての質問等々ありましたらこちらからどうぞ。
+              運営しているサイト・サービスへの質問等々ありましたらこちらからどうぞ。
               <br />
               メールで連絡していただけると助かります。
             </p>

@@ -8,7 +8,7 @@ const NotFound = () => {
   }
   return (
     <main>
-      <Title>404 | wamo</Title>
+      <Title>404 | wm.sci</Title>
       <div class="flex flex-col justify-center h-screen">
         <div class="container mx-auto max-w-5xl z-20">
           <div class="mx-4 text-center">

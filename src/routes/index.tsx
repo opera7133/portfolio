@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <main>
       <MetaProvider>
-        <Title>wamo</Title>
+        <Title>wm.sci</Title>
       </MetaProvider>
       <div class="overflow-hidden relative">
         <div class="flex flex-col justify-center h-screen">

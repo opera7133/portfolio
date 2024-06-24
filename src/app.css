@@ -83,6 +83,6 @@ http://opensource.org/licenses/mit-license.php
  * 暫定処置
  * https://github.com/solidjs/solid-start/issues/1470
  */
-#site[data-hk] {
+/*#site[data-hk] {
   display: none;
-}
+}*/

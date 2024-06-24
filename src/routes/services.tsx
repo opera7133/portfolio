@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <main>
       <MetaProvider>
-        <Title>Services | wamo</Title>
+        <Title>Services | wm.sci</Title>
       </MetaProvider>
       <div class="mt-28">
         <div class="container mx-auto max-w-7xl pb-20 z-20">

@@ -18,12 +18,11 @@ import {
   FaBrandsSoundcloud,
   FaSolidMugSaucer,
   FaSolidPenNib,
-  FaSolidVrCardboard,
   FaSolidSquare,
 } from "solid-icons/fa";
 import { SiNiconico, SiBilibili, SiMisskey } from "solid-icons/si";
 import { FiRadio } from "solid-icons/fi";
-import { Link, MetaProvider, Title } from "@solidjs/meta";
+import { MetaProvider, Title } from "@solidjs/meta";
 import LinkCard from "~/components/LinkCard";
 import { histories } from "./histories.data";
 import { CircularProgress } from "~/components/CircularProgress";
@@ -32,7 +31,7 @@ const About = () => {
   return (
     <main>
       <MetaProvider>
-        <Title>About | wamo</Title>
+        <Title>About | wm.sci</Title>
       </MetaProvider>
       <div class="mt-28">
         <div class="container mx-auto max-w-7xl pb-20 z-20">

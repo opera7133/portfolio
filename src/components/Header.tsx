@@ -15,19 +15,14 @@ const Header: Component<{ title?: string }> = () => {
                   works
                 </a>
               </li>
-              <li class="hidden md:block">
-                <a href="/services" class="hover:text-blue-500 duration-200">
-                  services
-                </a>
-              </li>
               <li>
                 <a href="/about" class="hover:text-blue-500 duration-200">
                   about
                 </a>
               </li>
               <li>
-                <a href="/contact" class="hover:text-blue-500 duration-200">
-                  contact
+                <a href="/others" class="hover:text-blue-500 duration-200">
+                  others
                 </a>
               </li>
             </ul>
