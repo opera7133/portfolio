@@ -100,7 +100,7 @@ export const list: { [key: string]: WorksInfo } = {
   'unicode': {
     img: '/img/works/unicode.jpg',
     title: 'Unicode文字当て',
-    url: 'https://wmsci.com/unicode/',
+    url: 'https://dl.wmsci.com/unicode/',
     description: 'Unicodeのコードから文字が何であるかを当てるゲーム。',
   },
   'dlbase': {
