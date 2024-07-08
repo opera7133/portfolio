@@ -82,7 +82,7 @@ const Interests = () => {
               <li>
                 <A
                   class="underline"
-                  href="https://open.spotify.com/playlist/3VotBaESno4wTfFXjbuKvf?si=577c159c65b148d5"
+                  href="https://open.spotify.com/playlist/4BVILUEwsY4t0ZTAsBY5nX?si=Fhlbm-e0SgW4hGjtrhzGSg&pi=V49vuAFgRP6-z"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
