@@ -89,6 +89,16 @@ const Interests = () => {
                   2024年7月
                 </A>
               </li>
+              <li>
+                <A
+                  class="underline"
+                  href="https://open.spotify.com/playlist/2ZeOKXTSszTJEMuORln56a?si=a7c97f26fc014b88"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  2024年8月
+                </A>
+              </li>
             </ul>
             <h4 class="text-xl font-semibold">2023年</h4>
             <ul class="list-disc ml-8">
