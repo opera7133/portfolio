@@ -157,7 +157,7 @@ const About = () => {
                   className="bg-amazon"
                 />
                 <LinkCard
-                  href="https://wmsci.com"
+                  href="https://blog.wmsci.com"
                   title="Blog"
                   user="Acto"
                   icon={FaSolidPenNib}
