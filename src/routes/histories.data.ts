@@ -1,5 +1,9 @@
 export const histories = [
   {
+    event: "TOEIC 公開テスト 885点",
+    date: "2024/08"
+  },
+  {
     event: "第14回品川区ビジネス創造コンテスト 優秀賞受賞",
     date: "2024/02",
   },
@@ -10,10 +14,6 @@ export const histories = [
   {
     event: "アマチュア局の免許状を取得",
     date: "2023/08"
-  },
-  {
-    event: "TOEIC 公開テスト 840点",
-    date: "2023/03"
   },
   {
     event: "基本情報技術者試験合格",
