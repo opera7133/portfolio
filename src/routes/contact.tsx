@@ -39,6 +39,13 @@ const Contact = () => {
                 href="mailto:endxop@gmail.com"
               />
               <LinkCard
+                className="bg-zinc-800"
+                icon={FaSolidEnvelope}
+                title="Mail(中国用)"
+                user="ainznino@126.com"
+                href="mailto:ainznino@126.com"
+              />
+              <LinkCard
                 className="bg-discord"
                 icon={FaBrandsDiscord}
                 title="Discord"
