@@ -20,7 +20,7 @@ import {
   FaSolidPenNib,
   FaSolidSquare,
 } from "solid-icons/fa";
-import { SiNiconico, SiBilibili, SiMisskey } from "solid-icons/si";
+import { SiNiconico, SiBilibili, SiMisskey, SiCredly } from "solid-icons/si";
 import { FiRadio } from "solid-icons/fi";
 import { MetaProvider, Title } from "@solidjs/meta";
 import LinkCard from "~/components/LinkCard";
@@ -143,18 +143,18 @@ const About = () => {
                   className="bg-telegram"
                 />
                 <LinkCard
-                  href="https://ko-fi.com/wamosc"
-                  title="Ko-fi"
-                  user="wamosc"
-                  icon={FaSolidMugSaucer}
-                  className="bg-[#FF5E5B]"
-                />
-                <LinkCard
                   href="https://www.amazon.jp/hz/wishlist/ls/2ST3GH743NLVN?ref_=wl_share"
                   title="Amazon"
                   user="欲しい物リスト"
                   icon={FaBrandsAmazon}
                   className="bg-amazon"
+                />
+                <LinkCard
+                  href="https://www.credly.com/users/wamosc"
+                  title="Credly"
+                  user="wamosc"
+                  icon={SiCredly}
+                  className="bg-[#015850]"
                 />
                 <LinkCard
                   href="https://blog.wmsci.com"
