@@ -1,6 +1,4 @@
-import { FaSolidEnvelope } from "solid-icons/fa";
 import { MetaProvider, Title } from "@solidjs/meta";
-import LinkCard from "~/components/LinkCard";
 import { A } from "@solidjs/router";
 
 const Interests = () => {
