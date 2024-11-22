@@ -1,5 +1,9 @@
 export const histories = [
   {
+    event: "技術英検1級合格",
+    date: "2024/11"
+  },
+  {
     event: "TOEIC 公開テスト 885点",
     date: "2024/08"
   },
