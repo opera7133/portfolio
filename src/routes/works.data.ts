@@ -16,7 +16,7 @@ export const list: { [key: string]: WorksInfo } = {
   "station-picker": {
     img: "/img/works/station-picker.jpg",
     title: "Station Picker",
-    url: "https://dl.wmsci.com/station/",
+    url: "https://station-picker.pages.dev/",
     repo: "https://github.com/opera7133/station-picker",
     tech: ["JavaScript"],
     description: "旅の行き先をランダムに決める",
