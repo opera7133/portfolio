@@ -7,7 +7,7 @@ const Interests = () => {
       <MetaProvider>
         <Title>Interests | wm.sci</Title>
       </MetaProvider>
-      <div class="mt-28 pb-32 md:pb-0">
+      <div class="mt-28 pb-32 md:pb-16">
         <div class="container mx-auto max-w-7xl z-20">
           <div class="mx-4">
             <h2 class="text-3xl mb-4 font-semibold font-futura">Interests</h2>
@@ -125,6 +125,16 @@ const Interests = () => {
                   rel="noreferrer noopener"
                 >
                   2024年11月
+                </A>
+              </li>
+              <li>
+                <A
+                  class="underline"
+                  href="https://open.spotify.com/playlist/3SYnU8sfxK7ulVrkSYybVm?si=987463afdd3247e0"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  2024年12月
                 </A>
               </li>
             </ul>
