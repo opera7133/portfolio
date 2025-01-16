@@ -243,6 +243,7 @@ const Interests = () => {
               </p>
               <ul class="list-disc ml-8">
                 <li>Suica</li>
+                <li>toica</li>
                 <li>Kitaca</li>
                 <li>はやかけん</li>
                 <li>nimoca</li>
@@ -250,6 +251,7 @@ const Interests = () => {
                 <li>totra</li>
                 <li>PiTaPa</li>
                 <li>N+カード</li>
+                <li>くまモンのIC CARD</li>
               </ul>
             </div>
           </div>
