@@ -133,12 +133,6 @@ export const list: { [key: string]: WorksInfo } = {
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Auth.js"],
     description: "VCbornのウェブサイトを作成しました。",
   },
-  mcborn: {
-    img: "/img/works/mcborn.jpg",
-    title: "MCborn",
-    url: "https://mc.vcborn.com",
-    description: "VCbornのマインクラフトサーバーを運営していました。（〜2023）",
-  },
   unicode: {
     img: "/img/works/unicode.jpg",
     title: "Unicode文字当て",
