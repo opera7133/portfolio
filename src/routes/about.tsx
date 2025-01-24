@@ -8,6 +8,10 @@ import python from "../img/skills/python.svg";
 import csharp from "../img/skills/csharp.svg";
 import electron from "../img/skills/electron.svg";
 import react from "../img/skills/react.svg";
+import vuejs from "../img/skills/vuejs.svg";
+import rust from "../img/skills/rust.svg";
+import astro from "../img/skills/astro.svg";
+import rails from "../img/skills/rails.svg";
 import {
   FaBrandsAmazon,
   FaBrandsGithub,
@@ -190,8 +194,14 @@ const About = () => {
                 <CircularProgress
                   title="React"
                   color="#60DDFD"
-                  percent={50}
+                  percent={60}
                   icon={react}
+                />
+                <CircularProgress
+                  title="Vue.js"
+                  color="#41B883"
+                  percent={40}
+                  icon={vuejs}
                 />
                 <CircularProgress
                   title="Electron"
@@ -204,6 +214,13 @@ const About = () => {
                   color="#2c4f7c"
                   percent={40}
                   icon={solidjs}
+                />
+                <CircularProgress
+                  title="Astro"
+                  color="#7C1CBB"
+                  width="w-10"
+                  percent={50}
+                  icon={astro}
                 />
                 <CircularProgress
                   title="TypeScript"
@@ -221,7 +238,7 @@ const About = () => {
                 <CircularProgress
                   title="Flutter"
                   color="#0553B1"
-                  percent={35}
+                  percent={45}
                   icon={flutter}
                   width="w-9"
                 />
@@ -242,6 +259,18 @@ const About = () => {
                   color="#306998"
                   percent={65}
                   icon={python}
+                />
+                <CircularProgress
+                  title="Rust"
+                  color="#FEC832"
+                  percent={30}
+                  icon={rust}
+                />
+                <CircularProgress
+                  title="Ruby on Rails"
+                  color="#CC0000"
+                  percent={25}
+                  icon={rails}
                 />
               </div>
             </div>
