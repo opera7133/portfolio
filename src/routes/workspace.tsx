@@ -58,7 +58,7 @@ const Interests = () => {
                 <tbody>
                   <tr>
                     <th class="border px-4 py-2">CPU</th>
-                    <td class="border px-4 py-2">Intel Core i5-9600K</td>
+                    <td class="border px-4 py-2">Intel Core i5-14400F</td>
                   </tr>
                   <tr>
                     <th class="border px-4 py-2">GPU</th>
@@ -70,12 +70,12 @@ const Interests = () => {
                   </tr>
                   <tr>
                     <th class="border px-4 py-2">ストレージ</th>
-                    <td class="border px-4 py-2">512GB NVMe SSD</td>
+                    <td class="border px-4 py-2">1TB NVMe SSD<br/>512GB NVMe SSD<br/>2TB HDD<br/>1TB HDD</td>
                   </tr>
                 </tbody>
               </table>
               <p>
-                旧メイン。動画編集とかするときはこれを使う。もうすぐアップグレード予定。
+                旧メイン。動画編集とかするときはこれを使う。
               </p>
             </div>
             <div class="mb-4">

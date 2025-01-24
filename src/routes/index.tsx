@@ -5,6 +5,7 @@ const Home = () => {
     "Pretending to be busy.",
     "There's never enough time.",
     "So far so good.",
+    "Better late than never.",
   ];
   const sentence =
     sentenceList[Math.floor(Math.random() * sentenceList.length)];

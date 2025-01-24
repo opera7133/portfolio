@@ -16,7 +16,7 @@ export const list: { [key: string]: WorksInfo } = {
   "station-picker": {
     img: "/img/works/station-picker.jpg",
     title: "Station Picker",
-    url: "https://dl.wmsci.com/station/",
+    url: "https://station-picker.pages.dev/",
     repo: "https://github.com/opera7133/station-picker",
     tech: ["JavaScript"],
     description: "旅の行き先をランダムに決める",
@@ -132,12 +132,6 @@ export const list: { [key: string]: WorksInfo } = {
     url: "https://vcborn.com",
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Auth.js"],
     description: "VCbornのウェブサイトを作成しました。",
-  },
-  mcborn: {
-    img: "/img/works/mcborn.jpg",
-    title: "MCborn",
-    url: "https://mc.vcborn.com",
-    description: "VCbornのマインクラフトサーバーを運営していました。（〜2023）",
   },
   unicode: {
     img: "/img/works/unicode.jpg",
