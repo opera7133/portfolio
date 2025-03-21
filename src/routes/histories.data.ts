@@ -1,5 +1,9 @@
 export const histories = [
   {
+    event: "ピクシブ株式会社 春インターン",
+    date: "2025/03"
+  },
+  {
     event: "技術英検1級合格",
     date: "2024/11"
   },
