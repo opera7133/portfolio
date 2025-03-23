@@ -27,7 +27,7 @@ export function WorksDialog({ data }: { data: WorksInfo }) {
         >
           <picture>
             <source
-              srcSet={data.img.replace("jpg", "webp")}
+              srcSet={data.img.replace("jpg", "webp").replace("png", "webp")}
               type="image/webp"
             />
             <img src={data.img} />
