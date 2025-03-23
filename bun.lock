@@ -2,6 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
+      "name": "portfolio",
       "dependencies": {
         "@astrojs/react": "^4.2.1",
         "@headlessui/react": "^2.2.0",
