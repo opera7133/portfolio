@@ -73,7 +73,10 @@ export function WorksDialog({ data }: { data: WorksInfo }) {
               )}
             </div>
             <div className="mt-2">
-              <p className="text-gray-900">{nl2br(data.description)}</p>
+              <p
+                className="text-gray-900"
+                dangerouslySetInnerHTML={{ __html: nl2br(data.description) }}
+              ></p>
             </div>
 
             <div className="mt-4">
