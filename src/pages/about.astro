@@ -1,0 +1,270 @@
+---
+import nextjs from "../assets/skills/nextjs.svg";
+import solidjs from "../assets/skills/solidjs.svg";
+import typescript from "../assets/skills/typescript.svg";
+import tailwindcss from "../assets/skills/tailwindcss.svg";
+import flutter from "../assets/skills/flutter.svg";
+import php from "../assets/skills/php.svg";
+import python from "../assets/skills/python.svg";
+import csharp from "../assets/skills/csharp.svg";
+import electron from "../assets/skills/electron.svg";
+import react from "../assets/skills/react.svg";
+import vuejs from "../assets/skills/vuejs.svg";
+import rust from "../assets/skills/rust.svg";
+import astro from "../assets/skills/astro.svg";
+import rails from "../assets/skills/rails.svg";
+import LinkCard from "../components/LinkCard.astro";
+import CircularProgress from "../components/CircularProgress.astro";
+import { histories } from "../data/histories";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About">
+  <div class="mt-28">
+    <div class="container mx-auto max-w-7xl pb-20 z-20">
+      <div class="mx-4">
+        <h2 class="text-3xl mb-4 font-semibold font-futura">About</h2>
+        <div class="mb-12">
+          <h3 class="text-5xl mb-3 font-semibold font-futura">wamo</h3>
+          <p class="text-2xl font-semibold mb-4 font-futura">Tanaka Eito</p>
+          <p class="text-2xl font-semibold text-neutral-500 mb-4 font-futura">
+            [Frontend, Backend] Developer, Designer
+          </p>
+          <p>
+            wamoと申します。
+            <br />
+            ウェブサイト制作、サーバー管理、動画制作、ロゴ制作など色々やっています。
+          </p>
+        </div>
+        <div class="mb-12">
+          <h3 class="text-3xl my-4 font-semibold font-futura">Histories</h3>
+          <div class="flex flex-col ml-8">
+            {
+              histories.map((history) => (
+                <div class="group pl-6 border-l-2 border-black relative py-4">
+                  <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
+                    <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full" />
+                  </div>
+                  <h4 class="font-semibold text-lg">{history.event}</h4>
+                  <p>{history.date}</p>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+        <div class="mb-12">
+          <h3 class="text-3xl my-4 font-semibold font-futura">Socials</h3>
+          <div
+            class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4"
+          >
+            <LinkCard
+              href="https://www.youtube.com/@wamo"
+              title="YouTube"
+              user="@wamo"
+              icon="fa6-brands:youtube"
+              class="bg-youtube"
+            />
+            <LinkCard
+              href="https://x.com/scgame_m"
+              title="X(Twitter)"
+              user="@scgame_m"
+              icon="fa6-brands:x-twitter"
+              class="bg-black"
+            />
+            <LinkCard
+              href="https://github.com/opera7133"
+              title="GitHub"
+              user="opera7133"
+              icon="fa6-brands:github"
+              class="bg-github"
+            />
+            <LinkCard
+              href="https://bsky.app/profile/wmsci.com"
+              title="Bluesky"
+              user="@wmsci.com"
+              icon="fa6-brands:bluesky"
+              class="bg-[#0085ff]"
+            />
+            <LinkCard
+              href="https://misskey.io/@wamo"
+              title="Misskey.io"
+              user="wamo@misskey.io"
+              icon="simple-icons:misskey"
+              class="bg-[#86b300]"
+            />
+            <LinkCard
+              href="https://www.nicovideo.jp/user/72238400"
+              title="Niconico (main)"
+              user="わも"
+              icon="simple-icons:niconico"
+              class="bg-[#252525]"
+            />
+            <LinkCard
+              href="https://www.nicovideo.jp/user/124870787"
+              title="Niconico (sub)"
+              user="わも"
+              icon="simple-icons:niconico"
+              class="bg-[#252525]"
+            />
+            <LinkCard
+              href="https://space.bilibili.com/1269277407"
+              title="Bilibili"
+              user="wamosc"
+              icon="simple-icons:bilibili"
+              class="bg-[#07A3D7]"
+            />
+            <LinkCard
+              href="https://soundcloud.com/wamo0"
+              title="SoundCloud"
+              user="wamo0"
+              icon="fa6-brands:soundcloud"
+              class="bg-[#ff5500]"
+            />
+            <LinkCard
+              href="https://keybase.io/opera7133"
+              title="Keybase"
+              user="opera7133"
+              icon="fa6-brands:keybase"
+              class="bg-[#ff6f21]"
+            />
+            <LinkCard
+              href="https://t.me/wamosc"
+              title="Telegram"
+              user="wamosc"
+              icon="fa6-brands:telegram"
+              class="bg-telegram"
+            />
+            <LinkCard
+              href="https://www.amazon.jp/hz/wishlist/ls/2ST3GH743NLVN?ref_=wl_share"
+              title="Amazon"
+              user="欲しい物リスト"
+              icon="fa6-brands:amazon"
+              class="bg-amazon"
+            />
+            <LinkCard
+              href="https://www.credly.com/users/wamosc"
+              title="Credly"
+              user="wamosc"
+              icon="simple-icons:credly"
+              class="bg-[#015850]"
+            />
+            <LinkCard
+              href="https://blog.wmsci.com"
+              title="Blog"
+              user="Acto"
+              icon="fa6-solid:pen-nib"
+              class="bg-[#222]"
+            />
+            <LinkCard
+              href="https://wamo.enoki.xyz"
+              title="エンカ録™"
+              user="wamo.enoki.xyz"
+              icon="fa6-solid:pen-nib"
+              class="bg-[#222]"
+            />
+            <LinkCard
+              title="無線局"
+              user="JK1UPE"
+              icon="ion:radio-outline"
+              class="bg-[#111]"
+            />
+          </div>
+        </div>
+        <div>
+          <h3 class="text-3xl my-4 font-semibold font-futura">Skills</h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4"
+          >
+            <CircularProgress
+              title="Next.js"
+              color="#000"
+              percent={70}
+              icon={nextjs}
+            />
+            <CircularProgress
+              title="React"
+              color="#60DDFD"
+              percent={60}
+              icon={react}
+            />
+            <CircularProgress
+              title="Vue.js"
+              color="#41B883"
+              percent={40}
+              icon={vuejs}
+            />
+            <CircularProgress
+              title="Electron"
+              color="#282B36"
+              percent={70}
+              icon={electron}
+            />
+            <CircularProgress
+              title="Solid.js"
+              color="#2c4f7c"
+              percent={40}
+              icon={solidjs}
+            />
+            <CircularProgress
+              title="Astro"
+              color="#7C1CBB"
+              width="w-10"
+              percent={50}
+              icon={astro}
+            />
+            <CircularProgress
+              title="TypeScript"
+              color="#3179c6"
+              percent={60}
+              icon={typescript}
+              width="w-10"
+            />
+            <CircularProgress
+              title="TailwindCSS"
+              color="#38bdf8"
+              percent={80}
+              icon={tailwindcss}
+            />
+            <CircularProgress
+              title="Flutter"
+              color="#0553B1"
+              percent={45}
+              icon={flutter}
+              width="w-9"
+            />
+            <CircularProgress
+              title="PHP"
+              color="#474A8A"
+              percent={45}
+              icon={php}
+            />
+            <CircularProgress
+              title="C#"
+              color="#189F21"
+              percent={30}
+              icon={csharp}
+            />
+            <CircularProgress
+              title="Python"
+              color="#306998"
+              percent={65}
+              icon={python}
+            />
+            <CircularProgress
+              title="Rust"
+              color="#FEC832"
+              percent={30}
+              icon={rust}
+            />
+            <CircularProgress
+              title="Ruby on Rails"
+              color="#CC0000"
+              percent={25}
+              icon={rails}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

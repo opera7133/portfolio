@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon/components";
+import { twMerge } from "tailwind-merge";
+interface Props {
+  href?: string;
+  title: string;
+  user: string;
+  icon: string;
+  class: string;
+}
+const { href, title, user, icon, class: className } = Astro.props;
+---
+
+{
+  href ? (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <div
+        class={twMerge(
+          "flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300",
+          className
+        )}
+      >
+        <Icon name={icon} size={24} color="#FFF" class="fill-white" />
+        <div>
+          <h4 class="font-semibold text-lg">{title}</h4>
+          <p>{user}</p>
+        </div>
+      </div>
+    </a>
+  ) : (
+    <div
+      class={twMerge(
+        "flex flex-row items-center px-4 py-3 rounded-lg gap-4 drop-shadow-lg hover:drop-shadow duration-300",
+        className
+      )}
+    >
+      <Icon name={icon} size={24} color="#FFF" class="fill-white" />
+      <div>
+        <h4 class="font-semibold text-lg">{title}</h4>
+        <p>{user}</p>
+      </div>
+    </div>
+  )
+}

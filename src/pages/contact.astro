@@ -1,0 +1,71 @@
+---
+import LinkCard from "../components/LinkCard.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact">
+  <div class="mt-28 pb-32 md:pb-0">
+    <div class="container mx-auto max-w-7xl z-20">
+      <div class="mx-4">
+        <h2 class="text-3xl mb-4 font-semibold font-futura">Contact</h2>
+        <p>
+          運営しているサイト・サービスへの質問等々ありましたらこちらからどうぞ。
+          <br />
+          メールで連絡していただけると助かります。
+        </p>
+        <div
+          class="text-white grid grid-cols-1 sm:grid-cols-2 md:grid-ols-3 lg:grid-cols-4 gap-4 mt-10"
+        >
+          <LinkCard
+            class="bg-zinc-800"
+            icon="fa6-solid:envelope"
+            title="Mail(main)"
+            user="ainznino@pm.me"
+            href="mailto:ainznino@pm.me"
+          />
+          <LinkCard
+            class="bg-zinc-800"
+            icon="fa6-solid:envelope"
+            title="Mail(sub)"
+            user="endxop@gmail.com"
+            href="mailto:endxop@gmail.com"
+          />
+          <LinkCard
+            class="bg-zinc-800"
+            icon="fa6-solid:envelope"
+            title="Mail(中国用)"
+            user="ainznino@126.com"
+            href="mailto:ainznino@126.com"
+          />
+          <LinkCard
+            class="bg-discord"
+            icon="fa6-brands:discord"
+            title="Discord"
+            user="wamo#8600 / wamosc"
+          />
+          <LinkCard
+            class="bg-black"
+            icon="fa6-brands:x-twitter"
+            title="X(Twitter)"
+            user="@scgame_m"
+            href="https://x.com/scgame_m"
+          />
+          <LinkCard
+            class="bg-[#ff6f21]"
+            icon="fa6-brands:keybase"
+            title="Keybase"
+            user="opera7133"
+            href="https://keybase.io/opera7133"
+          />
+          <LinkCard
+            class="bg-telegram"
+            icon="fa6-brands:telegram"
+            title="Telegram"
+            user="wamo_sc"
+            href="https://t.me/wamo_sc"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

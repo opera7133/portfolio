@@ -1,0 +1,60 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Others">
+  <div class="mt-28">
+    <div class="container mx-auto max-w-7xl pb-20 z-20">
+      <div class="mx-4">
+        <h2 class="text-3xl mb-4 font-semibold font-futura">Others</h2>
+        <div class="flex flex-col md:flex-row flex-wrap gap-2 md:items-start">
+          <a
+            href="/contact"
+            class="bg-black px-8 py-6 md:h-40 text-white rounded-lg flex flex-col gap-2"
+          >
+            <Icon name="ion:mail" class="fill-white" size={48} />
+            <h3 class="text-xl font-bold">Contact</h3>
+            <p>ポートフォリオや運営サービスの質問等々</p>
+          </a>
+          <a
+            href="/commission"
+            class="bg-black px-8 py-6 md:h-40 text-white rounded-lg flex flex-col gap-2"
+          >
+            <Icon name="ri:file-edit-line" class="fill-white" size={48} />
+            <h3 class="text-xl font-bold">Commission</h3>
+            <p>サイト・アプリ等制作の依頼について</p>
+          </a>
+          <a
+            href="/interests"
+            class="bg-black px-8 py-6 md:h-40 text-white rounded-lg flex flex-col gap-2"
+          >
+            <Icon name="ri:lightbulb-fill" class="fill-white" size={48} />
+            <h3 class="text-xl font-bold">Interests</h3>
+            <p>最近聞いてる音楽とか</p>
+          </a>
+          <a
+            href="/previous"
+            class="bg-black px-8 py-6 md:h-40 text-white rounded-lg flex flex-col gap-2"
+          >
+            <Icon
+              name="tabler:player-track-prev-filled"
+              class="fill-white"
+              size={48}
+            />
+            <h3 class="text-xl font-bold">Previous</h3>
+            <p>以前のポートフォリオ</p>
+          </a>
+          <a
+            href="/workspace"
+            class="bg-black px-8 py-6 md:h-40 text-white rounded-lg flex flex-col gap-2"
+          >
+            <Icon name="bi:pc-display" class="fill-white" size={48} />
+            <h3 class="text-xl font-bold">Workspace</h3>
+            <p>作業環境</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
