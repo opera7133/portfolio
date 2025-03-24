@@ -7,6 +7,8 @@
   --animate-waves: "wave 15s infinite linear";
 }
 
+@custom-variant hover (&:hover);
+
 @keyframes flow{
 	0% {
 		transform-origin:right;
