@@ -28,7 +28,6 @@
     "id": "emcshop",
     "img":"/img/works/emcshop.jpg",
     "title":"EMC Shop",
-    "url": "https://shop.emcmusic.net",
     "repo":"https://github.com/ElectroMusicCompany/emc-shop",
     "tech":[
       "Next.js",
@@ -127,7 +126,6 @@
     "id": "tclb",
     "img":"/img/works/tclb.jpg",
     "title":"技術科部",
-    "url": "https://www.tclb.cf",
     "tech":["Hugo"],
     "description":
       "Hugoで制作。以前使用していたHugo Serifのレイアウトを可能な限り残しました。"
