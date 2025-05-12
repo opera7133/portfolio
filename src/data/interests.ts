@@ -28,5 +28,6 @@ export const spotifyPlaylist = {
     2: "https://open.spotify.com/playlist/6G5KK9UadvicOiFEdivj59?si=ef7c06c5f1464b88",
     3: "https://open.spotify.com/playlist/5nNq3rkVBBZF900GWwEsE5?si=2360d9e7f44640a1",
     4: "https://open.spotify.com/playlist/1rfJB6uokmm0whhm0FI4ey?si=a125fbe3a1f04017",
+    5: "https://open.spotify.com/playlist/2mjSoEy9mW2AOQtNFpkitc?si=soAgPasMSvyG1LqhRTypGw",
   },
 };
