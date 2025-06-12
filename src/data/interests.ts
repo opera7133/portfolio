@@ -28,6 +28,7 @@ export const spotifyPlaylist = {
     2: "https://open.spotify.com/playlist/6G5KK9UadvicOiFEdivj59?si=ef7c06c5f1464b88",
     3: "https://open.spotify.com/playlist/5nNq3rkVBBZF900GWwEsE5?si=2360d9e7f44640a1",
     4: "https://open.spotify.com/playlist/1rfJB6uokmm0whhm0FI4ey?si=a125fbe3a1f04017",
-    5: "https://open.spotify.com/playlist/2mjSoEy9mW2AOQtNFpkitc?si=soAgPasMSvyG1LqhRTypGw",
+    5: "https://open.spotify.com/playlist/2mjSoEy9mW2AOQtNFpkitc?si=4a2d32e8dd4244f0",
+    6: "https://open.spotify.com/playlist/3B6jUWF5Addtav6bBYEXks?si=76d6db5671564fee",
   },
 };

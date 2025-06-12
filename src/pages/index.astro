@@ -1,12 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const sentenceList = [
-  "Pretending to be busy.",
-  "There's never enough time.",
-  "So far so good.",
-  "Better late than never.",
-];
-const sentence = sentenceList[Math.floor(Math.random() * sentenceList.length)];
 ---
 
 <Layout>
@@ -23,7 +16,7 @@ const sentence = sentenceList[Math.floor(Math.random() * sentenceList.length)];
           />
           <div>
             <h2 class="text-5xl pb-2 font-semibold font-futura">wamo</h2>
-            <p class="text-3xl pb-4 font-futura">{sentence}</p>
+            <p class="text-3xl pb-4 font-futura" id="sentence">&nbsp;</p>
           </div>
         </div>
       </div>
@@ -36,3 +29,17 @@ const sentence = sentenceList[Math.floor(Math.random() * sentenceList.length)];
     </div>
   </div>
 </Layout>
+
+<script>
+  const sentenceList = [
+    "Pretending to be busy.",
+    "There's never enough time.",
+    "So far so good.",
+    "Better late than never.",
+  ];
+  const sentence =
+    sentenceList[Math.floor(Math.random() * sentenceList.length)];
+  if (document.getElementById("sentence")) {
+    document.getElementById("sentence")!.innerText = sentence;
+  }
+</script>
