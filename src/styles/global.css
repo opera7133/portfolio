@@ -9,6 +9,8 @@
 
 @custom-variant hover (&:hover);
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @keyframes flow{
 	0% {
 		transform-origin:right;

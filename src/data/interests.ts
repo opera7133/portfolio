@@ -32,6 +32,22 @@ export const spotifyPlaylist = {
     6: "https://open.spotify.com/playlist/3B6jUWF5Addtav6bBYEXks?si=76d6db5671564fee",
     7: "https://open.spotify.com/playlist/0GrAyMSSqpggc0lRPWLvLy?si=2789148ec2bd457e",
     8: "https://open.spotify.com/playlist/4qibPP1NFyCPx0JTjShmoh?si=d4c3a1aa3ba44786",
-    9: "https://open.spotify.com/playlist/27fsX6SZ9GsrlBEbP8fobT?si=bf07094fc96a4da7"
+    9: "https://open.spotify.com/playlist/27fsX6SZ9GsrlBEbP8fobT?si=bf07094fc96a4da7",
   },
 };
+
+export const transitICCards = [
+  "Kitaca",
+  "SAPICA",
+  "MegoICa",
+  "totra",
+  "Suica",
+  "PASMO",
+  "TOICA",
+  "PiTaPa",
+  "SUGOCA",
+  "はやかけん",
+  "nimoca",
+  "N+カード",
+  "くまモンのIC CARD",
+];

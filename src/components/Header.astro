@@ -1,22 +1,354 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <header class="fixed top-0 left-0 right-0 z-40">
   <div class="container mx-auto py-6">
-    <nav class="mx-4 flex flex-row justify-between font-futura">
-      <h1 class="text-2xl font-semibold">
+    <nav class="mx-4 flex flex-row justify-between items-center font-futura">
+      <h1 class="text-2xl font-medium">
         <a href="/">wmsci.com</a>
       </h1>
-      <ul class="text-xl gap-4 flex flex-row list-none font-medium">
-        <li>
-          <a href="/works" class="hover:text-blue-500 duration-200"> works </a>
-        </li>
-        <li>
-          <a href="/about" class="hover:text-blue-500 duration-200"> about </a>
-        </li>
-        <li>
-          <a href="/others" class="hover:text-blue-500 duration-200">
-            others
-          </a>
-        </li>
-      </ul>
+
+      <div class="flex items-center gap-4">
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex text-xl gap-4 flex-row list-none font-medium">
+          <li>
+            <a href="/works" class="hover:text-blue-500 duration-200">
+              works
+            </a>
+          </li>
+          <li>
+            <a href="/about" class="hover:text-blue-500 duration-200">
+              about
+            </a>
+          </li>
+          <li>
+            <a href="/contact" class="hover:text-blue-500 duration-200">
+              contact
+            </a>
+          </li>
+          <li>
+            <a href="/others" class="hover:text-blue-500 duration-200">
+              others
+            </a>
+          </li>
+        </ul>
+
+        <!-- Theme Toggle Button -->
+        <div class="relative">
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 duration-200"
+            aria-label="Toggle theme"
+          >
+            <!-- Sun icon (light mode) -->
+            <Icon
+              name="ion:sunny"
+              id="sun-icon"
+              class="w-5 h-5 hidden dark:block"
+            />
+            <!-- Moon icon (dark mode) -->
+            <Icon
+              name="ion:moon"
+              id="moon-icon"
+              class="w-5 h-5 block dark:hidden"
+            />
+          </button>
+          <!-- Theme Selection Dropdown -->
+          <div
+            id="theme-dropdown"
+            class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-zinc-800 rounded-lg shadow-lg border border-zinc-200 dark:border-zinc-700 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right"
+          >
+            <div class="py-1">
+              <button
+                data-theme="light"
+                class="flex items-center justify-between w-full px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700"
+              >
+                <div class="flex items-center">
+                  <Icon name="ion:sunny" class="w-4 h-4 mr-2" />
+                  Light
+                </div>
+                <Icon
+                  name="ion:checkmark"
+                  class="w-4 h-4 theme-check theme-check-light hidden"
+                />
+              </button>
+              <button
+                data-theme="dark"
+                class="flex items-center justify-between w-full px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700"
+              >
+                <div class="flex items-center">
+                  <Icon name="ion:moon" class="w-4 h-4 mr-2" />
+                  Dark
+                </div>
+                <Icon
+                  name="ion:checkmark"
+                  class="w-4 h-4 theme-check theme-check-dark hidden"
+                />
+              </button>
+              <button
+                data-theme="system"
+                class="flex items-center justify-between w-full px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700"
+              >
+                <div class="flex items-center">
+                  <Icon name="ion:terminal" class="w-4 h-4 mr-2" />
+                  System
+                </div>
+                <Icon
+                  name="ion:checkmark"
+                  class="w-4 h-4 theme-check theme-check-system hidden"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden p-2 text-2xl"
+          aria-label="Toggle mobile menu"
+        >
+          <Icon id="mobile-menu-open-icon" name="ion:menu" class="w-6 h-6" />
+          <Icon
+            id="mobile-menu-close-icon"
+            name="ion:close"
+            class="w-6 h-6 hidden"
+          />
+        </button>
+      </div>
     </nav>
   </div>
+
+  <div
+    id="mobile-menu"
+    class="md:hidden mx-4 bg-white/90 dark:bg-zinc-800/90 backdrop-blur-sm rounded-lg shadow-lg border border-zinc-200 dark:border-zinc-700 overflow-hidden mobile-menu-hidden"
+  >
+    <ul class="flex flex-col font-futura font-medium">
+      <li>
+        <a
+          href="/works"
+          class="block px-6 py-4 text-lg hover:bg-blue-50 dark:hover:bg-zinc-700 hover:text-blue-500 duration-200 border-b border-zinc-100 dark:border-zinc-600"
+        >
+          works
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+          class="block px-6 py-4 text-lg hover:bg-blue-50 dark:hover:bg-zinc-700 hover:text-blue-500 duration-200 border-b border-zinc-100 dark:border-zinc-600"
+        >
+          about
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+          class="block px-6 py-4 text-lg hover:bg-blue-50 dark:hover:bg-zinc-700 hover:text-blue-500 duration-200 border-b border-zinc-100 dark:border-zinc-600"
+        >
+          contact
+        </a>
+      </li>
+      <li>
+        <a
+          href="/others"
+          class="block px-6 py-4 text-lg hover:bg-blue-50 dark:hover:bg-zinc-700 hover:text-blue-500 duration-200"
+        >
+          others
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>
+
+<style>
+  .mobile-menu-hidden {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mobile-menu-visible {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Theme management
+    const updateThemeCheckmarks = (currentTheme: string) => {
+      // Hide all checkmarks first
+      document.querySelectorAll(".theme-check").forEach((check) => {
+        check.classList.add("hidden");
+      });
+
+      // Show checkmark for current theme
+      const checkmark = document.querySelector(`.theme-check-${currentTheme}`);
+      if (checkmark) {
+        checkmark.classList.remove("hidden");
+      }
+    };
+
+    const initTheme = () => {
+      const savedTheme = localStorage.getItem("theme") || "system";
+      const systemPrefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+
+      const applyTheme = (theme: string) => {
+        const html = document.documentElement;
+        if (theme === "system") {
+          if (systemPrefersDark) {
+            html.classList.add("dark");
+          } else {
+            html.classList.remove("dark");
+          }
+        } else if (theme === "dark") {
+          html.classList.add("dark");
+        } else {
+          html.classList.remove("dark");
+        }
+      };
+
+      applyTheme(savedTheme);
+      updateThemeCheckmarks(savedTheme);
+
+      // Listen for system theme changes
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          const currentTheme = localStorage.getItem("theme") || "system";
+          if (currentTheme === "system") {
+            applyTheme("system");
+          }
+        });
+
+      return savedTheme;
+    };
+
+    // Theme toggle functionality
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeDropdown = document.getElementById("theme-dropdown");
+    const themeButtons = document.querySelectorAll("[data-theme]");
+
+    let isDropdownOpen = false;
+
+    // Toggle dropdown
+    themeToggle?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      isDropdownOpen = !isDropdownOpen;
+
+      if (isDropdownOpen) {
+        // Update checkmarks when opening dropdown
+        const currentTheme = localStorage.getItem("theme") || "system";
+        updateThemeCheckmarks(currentTheme);
+
+        themeDropdown?.classList.remove("opacity-0", "invisible", "scale-95");
+        themeDropdown?.classList.add("opacity-100", "visible", "scale-100");
+      } else {
+        themeDropdown?.classList.add("opacity-0", "invisible", "scale-95");
+        themeDropdown?.classList.remove("opacity-100", "visible", "scale-100");
+      }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", () => {
+      if (isDropdownOpen) {
+        isDropdownOpen = false;
+        themeDropdown?.classList.add("opacity-0", "invisible", "scale-95");
+        themeDropdown?.classList.remove("opacity-100", "visible", "scale-100");
+      }
+    });
+
+    // Theme selection
+    themeButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const theme = (e.target as HTMLElement)
+          .closest("[data-theme]")
+          ?.getAttribute("data-theme");
+        if (theme) {
+          localStorage.setItem("theme", theme);
+          initTheme();
+          updateThemeCheckmarks(theme);
+
+          // Close dropdown
+          isDropdownOpen = false;
+          themeDropdown?.classList.add("opacity-0", "invisible", "scale-95");
+          themeDropdown?.classList.remove(
+            "opacity-100",
+            "visible",
+            "scale-100"
+          );
+        }
+      });
+    });
+
+    // Mobile menu functionality
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuOpenIcon = document.getElementById("mobile-menu-open-icon");
+    const mobileMenuCloseIcon = document.getElementById(
+      "mobile-menu-close-icon"
+    );
+
+    let isMenuOpen = false;
+
+    mobileMenuButton?.addEventListener("click", () => {
+      isMenuOpen = !isMenuOpen;
+
+      if (isMenuOpen) {
+        mobileMenu?.classList.remove("mobile-menu-hidden");
+        mobileMenu?.classList.add("mobile-menu-visible");
+
+        mobileMenuOpenIcon?.classList.add("hidden");
+        mobileMenuOpenIcon?.classList.remove("block");
+        mobileMenuCloseIcon?.classList.add("block");
+        mobileMenuCloseIcon?.classList.remove("hidden");
+      } else {
+        mobileMenu?.classList.remove("mobile-menu-visible");
+        mobileMenu?.classList.add("mobile-menu-hidden");
+
+        mobileMenuOpenIcon?.classList.add("block");
+        mobileMenuOpenIcon?.classList.remove("hidden");
+        mobileMenuCloseIcon?.classList.add("hidden");
+        mobileMenuCloseIcon?.classList.remove("block");
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        isMenuOpen &&
+        !mobileMenuButton?.contains(event.target as Node) &&
+        !mobileMenu?.contains(event.target as Node)
+      ) {
+        isMenuOpen = false;
+        mobileMenu?.classList.remove("mobile-menu-visible");
+        mobileMenu?.classList.add("mobile-menu-hidden");
+
+        mobileMenuOpenIcon?.classList.add("block");
+        mobileMenuOpenIcon?.classList.remove("hidden");
+        mobileMenuCloseIcon?.classList.add("hidden");
+        mobileMenuCloseIcon?.classList.remove("block");
+      }
+    });
+
+    const menuLinks = mobileMenu?.querySelectorAll("a");
+    menuLinks?.forEach((link) => {
+      link.addEventListener("click", () => {
+        isMenuOpen = false;
+        mobileMenu?.classList.remove("mobile-menu-visible");
+        mobileMenu?.classList.add("mobile-menu-hidden");
+
+        mobileMenuOpenIcon?.classList.add("block");
+        mobileMenuOpenIcon?.classList.remove("hidden");
+        mobileMenuCloseIcon?.classList.add("hidden");
+        mobileMenuCloseIcon?.classList.remove("block");
+      });
+    });
+  });
+</script>

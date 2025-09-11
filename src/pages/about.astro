@@ -26,7 +26,9 @@ import Layout from "../layouts/Layout.astro";
         <h2 class="text-3xl mb-4 font-semibold font-futura">About</h2>
         <div class="mb-12">
           <h3 class="text-5xl mb-3 font-semibold font-futura">wamo</h3>
-          <p class="text-2xl font-semibold text-neutral-500 mb-4 font-futura">
+          <p
+            class="text-2xl font-semibold text-neutral-500 dark:text-neutral-400 mb-4 font-futura"
+          >
             Fullstack Developer, Content Creator
           </p>
           <p>
@@ -40,9 +42,9 @@ import Layout from "../layouts/Layout.astro";
           <div class="flex flex-col ml-8">
             {
               histories.map((history) => (
-                <div class="group pl-6 border-l-2 border-black relative py-4">
-                  <div class="absolute bg-black p-3 rounded-full -left-[13px] top-5">
-                    <div class="absolute left-1 top-1 bg-white group-hover:bg-black duration-200 p-2 rounded-full" />
+                <div class="group pl-6 border-l-2 border-black dark:border-white relative py-4">
+                  <div class="absolute bg-black dark:bg-white p-3 rounded-full -left-[13px] top-5">
+                    <div class="absolute left-1 top-1 bg-white dark:bg-zinc-900 group-hover:bg-black dark:group-hover:bg-white duration-200 p-2 rounded-full" />
                   </div>
                   <h4 class="font-semibold text-lg">{history.event}</h4>
                   <p>{history.date}</p>

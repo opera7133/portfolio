@@ -21,8 +21,8 @@ const {
   <head>
     <SEO
       title={title}
-      titleTemplate="%s | wm.sci"
-      titleDefault="wm.sci"
+      titleTemplate="%s | wmsci.com"
+      titleDefault="wmsci.com"
       description={description}
       noindex={noindex}
       openGraph={{
@@ -57,9 +57,17 @@ const {
       async
       src="https://analytics.ja1ykl.com/script.js"
       data-website-id="e0fa97aa-eac4-47b7-b14b-710f6224c81d"></script>
+    <script>
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+      );
+    </script>
   </head>
   <body>
-    <div class="min-h-screen overflow-hidden">
+    <div class="min-h-screen overflow-hidden dark:bg-zinc-900 dark:text-white">
       <Header />
       <div id="main-content">
         <slot />
