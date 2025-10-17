@@ -1,5 +1,14 @@
 [
   {
+    "id": "nationwide-ic",
+    "img":"/img/works/nationwide-ic.jpg",
+    "title":"全国(共通)交通系ICカード一覧",
+    "url": "https://nationwide-ic.pages.dev/",
+    "repo":"https://github.com/opera7133/nationwide-ic",
+    "tech": ["Astro", "TypeScript"],
+    "description": "日本全国の交通系ICカードをまとめたサイト"
+  },
+  {
     "id": "ez-wait",
     "img":"/img/works/ez-wait.jpg",
     "title":"EZ Wait",
