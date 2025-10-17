@@ -1,5 +1,5 @@
 ---
-import { spotifyPlaylist, transitICCards } from "../data/interests";
+import { spotifyPlaylist } from "../data/interests";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -39,10 +39,15 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <div class="my-4" id="transit">
           <h3 class="text-2xl font-semibold">交通系ICカード</h3>
-          <p class="my-4">交通系ICカードの収集にハマっています。</p>
-          <ul class="list-disc ml-8">
-            {transitICCards.map((card) => <li>{card}</li>)}
-          </ul>
+          <p class="my-2">交通系ICカードの収集にハマっています。</p>
+          <a
+            href="https://nationwide-ic.pages.dev/?s=v2%3ANoIg1glgLghgxjEAaEA7WBnArsk2DmA9grqhALbGIoAWMAnjGEwKaq7YQkoAOMGlXORZEu1EFEJQATuJ7QYfXJLG4wWcjEqoAtFw6LVAXSA"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="underline my-2"
+          >
+            現在の交通系ICカードコレクションはこちら
+          </a>
         </div>
       </div>
     </div>

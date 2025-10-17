@@ -35,19 +35,3 @@ export const spotifyPlaylist = {
     9: "https://open.spotify.com/playlist/27fsX6SZ9GsrlBEbP8fobT?si=bf07094fc96a4da7",
   },
 };
-
-export const transitICCards = [
-  "Kitaca",
-  "SAPICA",
-  "MegoICa",
-  "totra",
-  "Suica",
-  "PASMO",
-  "TOICA",
-  "PiTaPa",
-  "SUGOCA",
-  "はやかけん",
-  "nimoca",
-  "N+カード",
-  "くまモンのIC CARD",
-];
