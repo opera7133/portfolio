@@ -9,13 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.4.0",
+    "@astrojs/react": "4.4.2",
     "@headlessui/react": "^2.2.9",
     "@nanostores/react": "^0.8.4",
     "@tailwindcss/vite": "^4.1.14",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "astro": "^5.14.5",
+    "astro": "5.16.6",
     "astro-icon": "^1.1.5",
     "astro-seo": "^0.8.4",
     "nanostores": "^0.11.4",
@@ -27,6 +27,7 @@
     "tailwindcss-brand-colors": "^0.3.6"
   },
   "devDependencies": {
+    "@iconify-json/arcticons": "^1.2.44",
     "@iconify-json/bi": "^1.2.6",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
