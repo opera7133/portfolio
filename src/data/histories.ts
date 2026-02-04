@@ -1,5 +1,9 @@
 export const histories = [
   {
+    event: "2025 APAC HPC-AI Competition / Best HPC Performance賞",
+    date: "2025/12"
+  },
+  {
     event: "ピクシブ株式会社 春インターン",
     date: "2025/03",
   },
