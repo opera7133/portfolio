@@ -34,6 +34,10 @@ export const spotifyPlaylist = {
     8: "https://open.spotify.com/playlist/4qibPP1NFyCPx0JTjShmoh?si=d4c3a1aa3ba44786",
     9: "https://open.spotify.com/playlist/27fsX6SZ9GsrlBEbP8fobT?si=bf07094fc96a4da7",
     10: "https://open.spotify.com/playlist/5tXQPMltk5mdzEnRKhA4kz?si=28b22e8041554203",
-    11: "https://open.spotify.com/playlist/5ckbwL5x9cd6rYuyj4yzin?si=47a19128bda24f0f"
+    11: "https://open.spotify.com/playlist/5ckbwL5x9cd6rYuyj4yzin?si=47a19128bda24f0f",
+    12: "https://open.spotify.com/playlist/3lSSWmsHrxJdXbcpOpnwtI?si=eb7b6682f28542fe"
   },
+  2026: {
+    1: "https://open.spotify.com/playlist/1FJV4itHvCyFXL0b1T38AO?si=e80a98cb27ea4915"
+  }
 };
