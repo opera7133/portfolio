@@ -1,5 +1,9 @@
 export const histories = [
   {
+    event: "東京都立産業技術高等専門学校品川キャンパスを卒業",
+    date: "2026/03"
+  },
+  {
     event: "2025 APAC HPC-AI Competition / Best HPC Performance賞",
     date: "2025/12"
   },
