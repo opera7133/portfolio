@@ -1,5 +1,9 @@
 export const histories = [
   {
+    event: "豊橋技術科学大学に入学",
+    date: "2026/04"
+  },
+  {
     event: "東京都立産業技術高等専門学校品川キャンパスを卒業",
     date: "2026/03"
   },
