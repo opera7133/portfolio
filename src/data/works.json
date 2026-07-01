@@ -46,7 +46,7 @@
       "Stripe",
       "Meilisearch"
     ],
-    "description": "EMCのオンラインフリマ。"
+    "description": "オンラインフリマもどき。"
   },
   {
     "id": "ez-pos",
@@ -60,7 +60,6 @@
     "id": "moisskey",
     "img":"/img/works/moisskey.jpg",
     "title":"Moisskey",
-    "url": "https://moisskey.com",
     "repo":"https://github.com/opera7133/moisskey",
     "tech":["Next.js", "TypeScript", "TailwindCSS", "Prisma"],
     "description": "Misskey版Togetterです。"
@@ -69,7 +68,6 @@
     "id": "mattar",
     "img":"/img/works/mattar.png",
     "title":"Mattar",
-    "url": "https://mattar.wmsci.com",
     "repo":"https://github.com/opera7133/mattar",
     "tech":[
       "Next.js",
@@ -86,7 +84,6 @@
     "id": "spbuploader",
     "img":"/img/works/spbuploader.jpg",
     "title":"SPBUploader",
-    "url": "https://spb.wmsci.com",
     "repo":"https://github.com/opera7133/spbuploader",
     "tech":["Next.js", "TypeScript", "TailwindCSS", "Firebase"],
     "description":
@@ -166,7 +163,6 @@
     "id": "dlbase",
     "img":"/img/works/dlbase.jpg",
     "title":"DLBase",
-    "url": "https://dlbase.wmsci.com",
     "repo":"https://github.com/opera7133/DLBase",
     "tech":["PHP"],
     "description": "Linkcoreみたいなページを作成するツール。"
